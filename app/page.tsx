@@ -784,12 +784,37 @@ export default function Home() {
 
             {/* Galería */}
             <div className="text-center">
-              <h3 className="text-[#B8860B] text-xl font-bold mb-6">Galería</h3>
+              <button 
+                onClick={() => scrollToSection('galeria')} 
+                className="text-[#B8860B] text-xl font-bold mb-6 hover:text-[#D4AF37] transition-colors cursor-pointer"
+              >
+                Galería
+              </button>
               <div className="grid grid-cols-2 gap-3 justify-center">
-                <img src="/images/gallery-1.jpeg" alt="Galería 1" className="w-full h-20 object-cover rounded-lg" />
-                <img src="/images/gallery-2.jpeg" alt="Galería 2" className="w-full h-20 object-cover rounded-lg" />
-                <img src="/images/gallery-3.jpeg" alt="Galería 3" className="w-full h-20 object-cover rounded-lg" />
-                <img src="/images/gallery-4.jpeg" alt="Galería 4" className="w-full h-20 object-cover rounded-lg" />
+                <img 
+                  src="/images/gallery-1.jpeg" 
+                  alt="Galería 1" 
+                  className="w-full h-20 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity" 
+                  onClick={() => scrollToSection('galeria')}
+                />
+                <img 
+                  src="/images/gallery-2.jpeg" 
+                  alt="Galería 2" 
+                  className="w-full h-20 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity" 
+                  onClick={() => scrollToSection('galeria')}
+                />
+                <img 
+                  src="/images/gallery-3.jpeg" 
+                  alt="Galería 3" 
+                  className="w-full h-20 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity" 
+                  onClick={() => scrollToSection('galeria')}
+                />
+                <img 
+                  src="/images/gallery-4.jpeg" 
+                  alt="Galería 4" 
+                  className="w-full h-20 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity" 
+                  onClick={() => scrollToSection('galeria')}
+                />
               </div>
             </div>
           </div>
