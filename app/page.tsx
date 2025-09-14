@@ -595,9 +595,9 @@ export default function Home() {
               </div>
 
               {/* Right side: Before/After Slider */}
-              <div className="relative">
+              <div className="relative flex justify-center">
                 <div
-                  className="relative w-full max-w-md mx-auto aspect-square overflow-hidden rounded-lg shadow-2xl cursor-ew-resize select-none"
+                  className="relative max-w-md overflow-hidden rounded-lg shadow-2xl cursor-ew-resize select-none"
                   onMouseDown={handleMouseDown}
                   onMouseUp={handleMouseUp}
                   onMouseMove={handleMouseMove}
@@ -607,11 +607,11 @@ export default function Home() {
                   onTouchMove={handleTouchMove}
                 >
                   {/* After Image (Background) */}
-                  <div className="absolute inset-0">
+                  <div className="relative">
                     <img
                       src="/images/after-hair.png"
                       alt="After - Hair with extensions"
-                      className="w-full h-full object-contain"
+                      className="w-full h-auto block"
                       draggable={false}
                     />
                   </div>
@@ -624,7 +624,7 @@ export default function Home() {
                     <img
                       src="/images/before-hair.png"
                       alt="Before - Natural hair"
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                       draggable={false}
                     />
                   </div>
