@@ -223,7 +223,12 @@ html {
 
 /* Add padding to body to account for fixed header */
 body {
-  scroll-padding-top: 120px;
+  scroll-padding-top: 140px;
+}
+
+/* Add scroll padding to all sections */
+section {
+  scroll-margin-top: 140px;
 }
 
 /* Custom golden card background with subtle shine */

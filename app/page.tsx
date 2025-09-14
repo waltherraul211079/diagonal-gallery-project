@@ -151,6 +151,18 @@ export default function Home() {
     setLightboxImage("")
   }
 
+  // Smooth scroll function
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+    setIsMenuOpen(false)
+  }
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape" && lightboxOpen) {
@@ -214,15 +226,15 @@ export default function Home() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex justify-end gap-6 pr-0">
-              <a href="#" className="hover:text-gray-300 text-lg">
+              <button onClick={() => scrollToSection('home')} className="hover:text-gray-300 text-lg">
                 Inicio
-              </a>
-              <a href="#servicios" className="hover:text-gray-300 text-lg" onClick={() => setIsMenuOpen(false)}>
+              </button>
+              <button onClick={() => scrollToSection('servicios')} className="hover:text-gray-300 text-lg">
                 Servicios
-              </a>
-              <a href="#por-que-elegirnos" className="hover:text-gray-300 whitespace-nowrap text-lg">
+              </button>
+              <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300 whitespace-nowrap text-lg">
                 Por qué Elegirnos
-              </a>
+              </button>
             </nav>
 
             {/* Logo */}
@@ -236,15 +248,15 @@ export default function Home() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex justify-start gap-6 pl-0">
-              <a href="#nuestra-historia" className="hover:text-gray-300 whitespace-nowrap text-lg">
+              <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300 whitespace-nowrap text-lg">
                 Nuestra Historia
-              </a>
-              <a href="#certificaciones" className="hover:text-gray-300 text-lg">
+              </button>
+              <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300 text-lg">
                 Certificaciones
-              </a>
-              <a href="#contacto" className="hover:text-gray-300 text-lg">
+              </button>
+              <button onClick={() => scrollToSection('contacto')} className="hover:text-gray-300 text-lg">
                 Contacto
-              </a>
+              </button>
             </nav>
           </header>
 
@@ -261,24 +273,24 @@ export default function Home() {
                 <X className="h-6 w-6" />
               </Button>
               <nav className="flex flex-col items-center space-y-6 text-white text-2xl">
-                <a href="#" className="hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+                <button onClick={() => scrollToSection('home')} className="hover:text-gray-300">
                   Inicio
-                </a>
-                <a href="#servicios" className="hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+                </button>
+                <button onClick={() => scrollToSection('servicios')} className="hover:text-gray-300">
                   Servicios
-                </a>
-                <a href="#por-que-elegirnos" className="hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+                </button>
+                <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300">
                   Por qué Elegirnos
-                </a>
-                <a href="#nuestra-historia" className="hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+                </button>
+                <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300">
                   Nuestra Historia
-                </a>
-                <a href="#certificaciones" className="hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+                </button>
+                <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300">
                   Certificaciones
-                </a>
-                <a href="#contacto" className="hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+                </button>
+                <button onClick={() => scrollToSection('contacto')} className="hover:text-gray-300">
                   Contacto
-                </a>
+                </button>
               </nav>
             </div>
           )}
@@ -737,28 +749,28 @@ export default function Home() {
             <div className="text-center">
               <h3 className="text-[#B8860B] text-xl font-bold mb-6">Secciones</h3>
               <nav className="space-y-3">
-                <a href="#" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                <button onClick={() => scrollToSection('home')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Inicio
-                </a>
-                <a href="#nuestra-historia" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                </button>
+                <button onClick={() => scrollToSection('nuestra-historia')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Nuestra Historia
-                </a>
-                <a href="#servicios" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                </button>
+                <button onClick={() => scrollToSection('servicios')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Servicios
-                </a>
-                <a href="#por-que-elegirnos" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                </button>
+                <button onClick={() => scrollToSection('por-que-elegirnos')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Por Qué Elegirnos
-                </a>
-                <a href="#certificaciones" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                </button>
+                <button onClick={() => scrollToSection('certificaciones')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Certificaciones
-                </a>
-                <a
-                  href="#contacto"
+                </button>
+                <button
+                  onClick={() => scrollToSection('contacto')}
                   className="flex items-center justify-center gap-2 text-[#8B7355] hover:text-[#B8860B] text-sm transition-colors"
                 >
                   <MessageCircle className="h-4 w-4" />
                   Contacto
-                </a>
+                </button>
               </nav>
             </div>
 
