@@ -611,7 +611,7 @@ export default function Home() {
                     <img
                       src="/images/after-hair.png"
                       alt="After - Hair with extensions"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       draggable={false}
                     />
                   </div>
@@ -624,7 +624,7 @@ export default function Home() {
                     <img
                       src="/images/before-hair.png"
                       alt="Before - Natural hair"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       draggable={false}
                     />
                   </div>
