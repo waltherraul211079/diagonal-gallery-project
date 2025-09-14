@@ -350,6 +350,8 @@ export default function Home() {
             </Button>
           </div>
         </div>
+        {/* Bottom gradient fade effect */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#FFFCC6] to-transparent z-10"></div>
       </section>
 
       <div
