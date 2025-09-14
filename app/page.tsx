@@ -298,10 +298,10 @@ export default function Home() {
           {/* Main Content (Hero) */}
           <div className="flex flex-1 flex-col items-center justify-center text-center p-4 pt-32 md:pt-40">
             <p className="text-white text-xs md:text-sm uppercase tracking-widest mb-2 md:mb-4">
-              EXTENSIONES INNOVADORAS QUE REALIZAN AUN MÁS TU BELLEZA.
+              EXTENSIONES INNOVADORAS QUE REALZAN AUN MÁS TU BELLEZA.
             </p>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight max-w-md md:max-w-4xl mb-4 md:mb-6 text-white">
-              DESPIERTA EN TI TU PODER FEMENINO Y RENUEVA TU AUTOESTIMA CON NUESTRAS EXTENSIONES.
+              DESPIERTA EL PODER FEMENINO QUE HAY EN TI Y RENUEVA TU AUTOESTIMA CON NUESTRAS EXTENSIONES.
             </h1>
             <p className="text-sm md:text-lg max-w-sm md:max-w-2xl mb-6 md:mb-8 text-white">
               Descubre cómo renovar tu cabello, resaltar tu mirada y aumentar tu confianza sin comprometer tu imagen
@@ -328,7 +328,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-4">MÉTODOS MODERNOS Y ACTUALES.</h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-              OFRECEMOS EXTENSIONES SEGURAS QUE DARÁN VITALIDAD, SEGURIDAD Y BIEN ESTAR A TU VIDA
+              OFRECEMOS EXTENSIONES SEGURAS QUE DARÁN VITALIDAD, SEGURIDAD Y BIENESTAR A TU VIDA
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-24">
@@ -377,7 +377,7 @@ export default function Home() {
               <p className="text-base text-gray-800">
                 Un método que fusiona la micropiel con una ligera costura, dejando su diseño aún más invisible, fino y
                 resistente. Extensiones altamente adaptables a cualquier tipo de cabello, ideales para mujeres que
-                buscan un resultado abundante y impactante.
+                buscan un resultado abundante e impactante.
               </p>
             </div>
           </div>
@@ -524,7 +524,7 @@ export default function Home() {
                   UNA HISTORIA DE PERSEVERANCIA Y DETERMINACIÓN.
                 </p>
                 <h2 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-8 leading-tight">
-                  DE UNA SIMPLES AYUDANTE A UNA PROFESIONAL EMPRENDEDORA.
+                  DE UNA SIMPLE AYUDANTE A UNA PROFESIONAL EMPRENDEDORA.
                 </h2>
                 <div className="space-y-4 text-gray-600 text-lg">
                   <p>
@@ -567,12 +567,14 @@ export default function Home() {
                   onTouchMove={handleTouchMove}
                 >
                   {/* After Image (Background) */}
-                  <img
-                    src="/images/after-hair.png"
-                    alt="After - Hair with extensions"
-                    className="absolute inset-0 w-full h-full object-cover"
-                    draggable={false}
-                  />
+                  <div className="absolute inset-0">
+                    <img
+                      src="/images/after-hair.png"
+                      alt="After - Hair with extensions"
+                      className="w-full h-full object-cover"
+                      draggable={false}
+                    />
+                  </div>
 
                   {/* Before Image (Clipped) */}
                   <div
@@ -601,13 +603,19 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Labels */}
-                  <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm font-semibold">
-                    ANTES
-                  </div>
-                  <div className="absolute top-4 right-4 bg-black/70 text-white px-3 py-1 rounded text-sm font-semibold">
-                    DESPUÉS
-                  </div>
+                  {/* Conditional Overlays */}
+                  {sliderPosition > 50 && (
+                    <div className="absolute top-4 left-4 bg-[#D4AF37] text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                      ANTES
+                    </div>
+                  )}
+                  {sliderPosition < 50 && (
+                    <div className="absolute top-4 right-4 bg-[#D4AF37] text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                      DESPUÉS
+                    </div>
+                  )}
+
+
                 </div>
               </div>
             </div>
@@ -682,7 +690,7 @@ export default function Home() {
 
             <div className="max-w-4xl mx-auto mb-12">
               <p className="text-[#8B7355] text-base md:text-lg mb-4">
-                Si quieres formar parte de la familia Silva Hair Extensions tornándose una especialista en los más
+                Se parte de la familia Silva Hair Extensions, formándote como especialista en los más
                 novedosos métodos de extensiones del mercado, Este es tu momento!
               </p>
               <p className="text-[#B8860B] text-base md:text-lg font-semibold">
