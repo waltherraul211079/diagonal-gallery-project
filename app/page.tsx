@@ -16,6 +16,7 @@ export default function Home() {
   const [isDragging, setIsDragging] = useState(false)
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxImage, setLightboxImage] = useState("")
+  const [lightboxIndex, setLightboxIndex] = useState(0)
 
   const hairImages = [
     "/images/hair-1.jpeg",
@@ -142,6 +143,8 @@ export default function Home() {
   }
 
   const openLightbox = (imageSrc: string) => {
+    const imageIndex = galleryImages.indexOf(imageSrc)
+    setLightboxIndex(imageIndex >= 0 ? imageIndex : 0)
     setLightboxImage(imageSrc)
     setLightboxOpen(true)
   }
@@ -149,6 +152,41 @@ export default function Home() {
   const closeLightbox = () => {
     setLightboxOpen(false)
     setLightboxImage("")
+    setLightboxIndex(0)
+  }
+
+  // Keyboard navigation for lightbox
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (!lightboxOpen) return
+      
+      switch (event.key) {
+        case 'Escape':
+          closeLightbox()
+          break
+        case 'ArrowLeft':
+          prevLightboxImage()
+          break
+        case 'ArrowRight':
+          nextLightboxImage()
+          break
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [lightboxOpen, lightboxIndex])
+
+  const nextLightboxImage = () => {
+    const nextIndex = (lightboxIndex + 1) % galleryImages.length
+    setLightboxIndex(nextIndex)
+    setLightboxImage(galleryImages[nextIndex])
+  }
+
+  const prevLightboxImage = () => {
+    const prevIndex = lightboxIndex === 0 ? galleryImages.length - 1 : lightboxIndex - 1
+    setLightboxIndex(prevIndex)
+    setLightboxImage(galleryImages[prevIndex])
   }
 
   // Smooth scroll function
@@ -848,13 +886,42 @@ export default function Home() {
               <X className="h-8 w-8" />
             </button>
 
+            {/* Previous button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                prevLightboxImage()
+              }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-[#D4AF37] hover:bg-[#C0A030] text-white p-3 rounded-full shadow-lg transition-all duration-300 z-10"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </button>
+
+            {/* Next button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                nextLightboxImage()
+              }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-[#D4AF37] hover:bg-[#C0A030] text-white p-3 rounded-full shadow-lg transition-all duration-300 z-10"
+              aria-label="Next image"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
+
             {/* Image */}
             <img
               src={lightboxImage || "/placeholder.svg"}
-              alt="Preview"
+              alt={`Preview ${lightboxIndex + 1} of ${galleryImages.length}`}
               className="max-w-full max-h-full object-contain"
               onClick={(e) => e.stopPropagation()}
             />
+
+            {/* Image counter */}
+            <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 text-white text-sm">
+              {lightboxIndex + 1} / {galleryImages.length}
+            </div>
           </div>
         </div>
       )}
