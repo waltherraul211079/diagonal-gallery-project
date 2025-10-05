@@ -5,10 +5,11 @@ import type React from "react"
 import { useState } from "react"
 import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, MenuIcon, X, ChevronLeft, ChevronRight, MessageCircle } from "lucide-react"
+import { ArrowRight, MenuIcon, X, ChevronLeft, ChevronRight, MessageCircle, ChevronDown, Phone } from "lucide-react"
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
   const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0)
   const [currentInjectIndex, setCurrentInjectIndex] = useState(0)
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0)
@@ -219,6 +220,24 @@ export default function Home() {
     }
   }, [lightboxOpen])
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element
+      if (!target.closest('.dropdown-container')) {
+        setIsMetodosDropdownOpen(false)
+      }
+    }
+
+    if (isMetodosDropdownOpen) {
+      document.addEventListener('click', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    }
+  }, [isMetodosDropdownOpen])
+
   return (
     <main className="relative">
       {/* First Section: Diagonal Gallery with Hero Content */}
@@ -262,16 +281,46 @@ export default function Home() {
               </Button>
             </div>
 
-            {/* Desktop Navigation */}
+            {/* Desktop Navigation - Left Side */}
             <nav className="hidden md:flex justify-end gap-6 pr-0">
               <button onClick={() => scrollToSection('home')} className="hover:text-gray-300 text-lg">
                 Inicio
               </button>
-              <button onClick={() => scrollToSection('servicios')} className="hover:text-gray-300 text-lg">
-                Servicios
-              </button>
-              <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300 whitespace-nowrap text-lg">
-                Por qué Elegirnos
+              <div className="relative dropdown-container">
+                <button 
+                  onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
+                  className="hover:text-gray-300 text-lg flex items-center gap-1"
+                >
+                  Métodos
+                  <ChevronDown className={`h-4 w-4 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isMetodosDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-50">
+                    <div className="py-1">
+                      <a href="/inject-3d-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        Inject 3d Slim
+                      </a>
+                      <a href="/butterfly-welf" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        Butterfly Welf
+                      </a>
+                      <a href="/invisible-welf-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        Invisible Welf Slim
+                      </a>
+                      <a href="/extensiones-adhesivas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        Extensiones Adhesivas
+                      </a>
+                      <a href="/toppers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        Toppers
+                      </a>
+                      <a href="/flequillos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        Flequillos
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
+              <button onClick={() => scrollToSection('accesorios')} className="hover:text-gray-300 text-lg">
+                Accesorios
               </button>
             </nav>
 
@@ -284,16 +333,16 @@ export default function Home() {
               />
             </div>
 
-            {/* Desktop Navigation */}
+            {/* Desktop Navigation - Right Side */}
             <nav className="hidden md:flex justify-start gap-6 pl-0">
               <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300 whitespace-nowrap text-lg">
                 Nuestra Historia
               </button>
+              <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300 whitespace-nowrap text-lg">
+                Por qué Elegirnos
+              </button>
               <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300 text-lg">
                 Certificaciones
-              </button>
-              <button onClick={() => scrollToSection('contacto')} className="hover:text-gray-300 text-lg">
-                Contacto
               </button>
             </nav>
           </header>
@@ -311,23 +360,51 @@ export default function Home() {
                 <X className="h-6 w-6" />
               </Button>
               <nav className="flex flex-col items-center space-y-6 text-white text-2xl">
-                <button onClick={() => scrollToSection('home')} className="hover:text-gray-300">
+                <button onClick={() => { scrollToSection('home'); setIsMenuOpen(false); }} className="hover:text-gray-300">
                   Inicio
                 </button>
-                <button onClick={() => scrollToSection('servicios')} className="hover:text-gray-300">
-                  Servicios
+                <div className="flex flex-col items-center space-y-3">
+                  <button 
+                    onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
+                    className="hover:text-gray-300 flex items-center gap-2"
+                  >
+                    Métodos
+                    <ChevronDown className={`h-5 w-5 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {isMetodosDropdownOpen && (
+                    <div className="flex flex-col items-center space-y-2 text-lg pl-4">
+                      <a href="/inject-3d-slim" className="hover:text-gray-300">
+                        Inject 3d Slim
+                      </a>
+                      <a href="/butterfly-welf" className="hover:text-gray-300">
+                        Butterfly Welf
+                      </a>
+                      <a href="/invisible-welf-slim" className="hover:text-gray-300">
+                        Invisible Welf Slim
+                      </a>
+                      <a href="/extensiones-adhesivas" className="hover:text-gray-300">
+                        Extensiones Adhesivas
+                      </a>
+                      <a href="/toppers" className="hover:text-gray-300">
+                        Toppers
+                      </a>
+                      <a href="/flequillos" className="hover:text-gray-300">
+                        Flequillos
+                      </a>
+                    </div>
+                  )}
+                </div>
+                <button onClick={() => { scrollToSection('accesorios'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                  Accesorios
                 </button>
-                <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300">
-                  Por qué Elegirnos
-                </button>
-                <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300">
+                <button onClick={() => { scrollToSection('nuestra-historia'); setIsMenuOpen(false); }} className="hover:text-gray-300">
                   Nuestra Historia
                 </button>
-                <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300">
-                  Certificaciones
+                <button onClick={() => { scrollToSection('por-que-elegirnos'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                  Por qué Elegirnos
                 </button>
-                <button onClick={() => scrollToSection('contacto')} className="hover:text-gray-300">
-                  Contacto
+                <button onClick={() => { scrollToSection('certificaciones'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                  Certificaciones
                 </button>
               </nav>
             </div>
@@ -778,7 +855,7 @@ export default function Home() {
             {/* Logo and Description */}
             <div className="space-y-6 text-center">
               <img
-                src="/images/silva-hair-logo-footer.png"
+                src="/images/silva-h-logo-branca-300x291.png"
                 alt="Silva Hair Extensions"
                 className="h-20 w-auto mx-auto"
               />
@@ -800,24 +877,40 @@ export default function Home() {
                 <button onClick={() => scrollToSection('home')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Inicio
                 </button>
+                <div className="space-y-2">
+                  <span className="block text-[#8B7355] font-medium">Métodos</span>
+                  <div className="pl-4 space-y-1 text-sm">
+                    <a href="/inject-3d-slim" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                      Inject 3d Slim
+                    </a>
+                    <a href="/butterfly-welf" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                      Butterfly Welf
+                    </a>
+                    <a href="/invisible-welf-slim" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                      Invisible Welf Slim
+                    </a>
+                    <a href="/extensiones-adhesivas" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                      Extensiones Adhesivas
+                    </a>
+                    <a href="/toppers" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                      Toppers
+                    </a>
+                    <a href="/flequillos" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                      Flequillos
+                    </a>
+                  </div>
+                </div>
+                <button onClick={() => scrollToSection('accesorios')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                  Accesorios
+                </button>
                 <button onClick={() => scrollToSection('nuestra-historia')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Nuestra Historia
                 </button>
-                <button onClick={() => scrollToSection('servicios')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                  Servicios
-                </button>
                 <button onClick={() => scrollToSection('por-que-elegirnos')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                  Por Qué Elegirnos
+                  Por qué Elegirnos
                 </button>
                 <button onClick={() => scrollToSection('certificaciones')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Certificaciones
-                </button>
-                <button
-                  onClick={() => scrollToSection('contacto')}
-                  className="flex items-center justify-center gap-2 text-[#8B7355] hover:text-[#B8860B] text-sm transition-colors"
-                >
-                  <MessageCircle className="h-4 w-4" />
-                  Contacto
                 </button>
               </nav>
             </div>
@@ -927,6 +1020,19 @@ export default function Home() {
           </div>
         </div>
       )}
+
+      {/* Floating WhatsApp Icon */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="https://wa.me/1234567890" // Replace with actual WhatsApp number
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
+          aria-label="Contactar por WhatsApp"
+        >
+          <MessageCircle className="h-6 w-6" />
+        </a>
+      </div>
     </main>
   )
 }
