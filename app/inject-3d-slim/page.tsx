@@ -1,34 +1,194 @@
 "use client"
 
 import type React from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 
 export default function Inject3dSlim() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement
+      if (!target.closest('.dropdown-container')) {
+        setIsMetodosDropdownOpen(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside)
+    return () => document.removeEventListener('click', handleClickOutside)
+  }, [])
+
+  const scrollToSection = (sectionId: string) => {
+    if (sectionId === 'home') {
+      window.location.href = '/'
+      return
+    }
+    
+    // For other sections, navigate to main page with hash
+    window.location.href = `/#${sectionId}`
+  }
   return (
-    <main className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50">
+    <main 
+      className="min-h-screen bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: 'url("/images/services-bg-hd.png")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
       {/* Header */}
-      <header className="bg-black/90 backdrop-blur-sm text-white py-6">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 hover:text-gray-300 transition-colors">
-              <ArrowLeft className="h-5 w-5" />
-              Volver al inicio
-            </Link>
-            <Link href="/" className="hover:opacity-80 transition-opacity">
-              <img
-                src="/images/silva-h-logo-branca-300x291.png"
-                alt="Silva Hair Extensions Logo"
-                className="h-16"
-              />
-            </Link>
-          </div>
+      <header className="fixed top-0 left-0 right-0 z-50 flex flex-col items-center pt-4 px-4 md:grid md:grid-cols-3 md:items-center md:pt-4 md:px-8 text-white bg-black/30 backdrop-blur-sm transition-all duration-300">
+        {/* Mobile Menu Button */}
+        <div className="absolute top-4 left-4 md:hidden">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(true)}
+            className="text-white hover:bg-white/20"
+            aria-label="Open menu"
+          >
+            <MenuIcon className="h-6 w-6" />
+          </Button>
         </div>
+
+        {/* Desktop Navigation - Left Side */}
+        <nav className="hidden md:flex justify-end gap-6 pr-0">
+          <Link href="/" className="hover:text-gray-300 text-lg">
+            Inicio
+          </Link>
+          <div className="relative dropdown-container">
+            <button 
+              onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
+              className="hover:text-gray-300 text-lg flex items-center gap-1"
+            >
+              Métodos
+              <ChevronDown className={`h-4 w-4 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {isMetodosDropdownOpen && (
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-50">
+                <div className="py-1">
+                  <a href="/inject-3d-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Inject 3d Slim
+                  </a>
+                  <a href="/butterfly-welf" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Butterfly Welf
+                  </a>
+                  <a href="/invisible-welf-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Invisible Welf Slim
+                  </a>
+                  <a href="/extensiones-adhesivas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Extensiones Adhesivas
+                  </a>
+                  <a href="/toppers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Toppers
+                  </a>
+                  <a href="/flequillos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Flequillos
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
+          <Link href="/accesorios" className="hover:text-gray-300 text-lg">
+            Accesorios
+          </Link>
+        </nav>
+
+        {/* Logo */}
+        <div className="flex justify-center mb-4 md:mb-0">
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <img
+              src="/images/silva-h-logo-branca-300x291.png"
+              alt="Silva Hair Extensions Logo"
+              className="h-28 md:h-32 animate-popup"
+            />
+          </Link>
+        </div>
+
+        {/* Desktop Navigation - Right Side */}
+        <nav className="hidden md:flex justify-start gap-6 pl-0">
+          <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300 whitespace-nowrap text-lg">
+            Nuestra Historia
+          </button>
+          <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300 whitespace-nowrap text-lg">
+            Por qué Elegirnos
+          </button>
+          <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300 text-lg">
+            Certificaciones
+          </button>
+        </nav>
       </header>
 
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-black/90 z-[60] flex flex-col items-center justify-center space-y-6 transition-transform duration-300 ease-in-out">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(false)}
+            className="absolute top-4 right-4 text-white hover:bg-white/20"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6" />
+          </Button>
+          <nav className="flex flex-col items-center space-y-6 text-white text-2xl">
+            <Link href="/" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+              Inicio
+            </Link>
+            <div className="flex flex-col items-center space-y-3">
+              <button 
+                onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
+                className="hover:text-gray-300 flex items-center gap-2"
+              >
+                Métodos
+                <ChevronDown className={`h-5 w-5 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMetodosDropdownOpen && (
+                <div className="flex flex-col items-center space-y-2 text-lg pl-4">
+                  <a href="/inject-3d-slim" className="hover:text-gray-300">
+                    Inject 3d Slim
+                  </a>
+                  <a href="/butterfly-welf" className="hover:text-gray-300">
+                    Butterfly Welf
+                  </a>
+                  <a href="/invisible-welf-slim" className="hover:text-gray-300">
+                    Invisible Welf Slim
+                  </a>
+                  <a href="/extensiones-adhesivas" className="hover:text-gray-300">
+                    Extensiones Adhesivas
+                  </a>
+                  <a href="/toppers" className="hover:text-gray-300">
+                    Toppers
+                  </a>
+                  <a href="/flequillos" className="hover:text-gray-300">
+                    Flequillos
+                  </a>
+                </div>
+              )}
+            </div>
+            <Link href="/accesorios" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+              Accesorios
+            </Link>
+            <button onClick={() => { scrollToSection('nuestra-historia'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Nuestra Historia
+            </button>
+            <button onClick={() => { scrollToSection('por-que-elegirnos'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Por qué Elegirnos
+            </button>
+            <button onClick={() => { scrollToSection('certificaciones'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Certificaciones
+            </button>
+          </nav>
+        </div>
+      )}
+
       {/* Hero Section */}
-      <section className="py-20">
+      <section className="pt-40 pb-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             Inject 3D Slim
@@ -40,11 +200,11 @@ export default function Inject3dSlim() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl font-bold text-black mb-6">
                 ¿Qué es Inject 3D Slim?
               </h2>
               <p className="text-gray-600 mb-4">
@@ -84,9 +244,9 @@ export default function Inject3dSlim() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-black mb-12">
             Proceso de Aplicación
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -122,12 +282,12 @@ export default function Inject3dSlim() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+      <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-black">
             ¿Lista para transformar tu cabello?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-xl mb-8 text-black">
             Agenda tu cita y descubre el poder de Inject 3D Slim
           </p>
           <Button className="bg-white text-pink-600 hover:bg-gray-100 px-8 py-3 text-lg">

@@ -1,11 +1,36 @@
 "use client"
 
 import type React from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 
 export default function ButterflyWelf() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement
+      if (!target.closest('.dropdown-container')) {
+        setIsMetodosDropdownOpen(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside)
+    return () => document.removeEventListener('click', handleClickOutside)
+  }, [])
+
+  const scrollToSection = (sectionId: string) => {
+    if (sectionId === 'home') {
+      window.location.href = '/'
+      return
+    }
+    
+    // For other sections, navigate to main page with hash
+    window.location.href = `/#${sectionId}`
+  }
   return (
     <main 
       className="min-h-screen bg-cover bg-center bg-fixed"
@@ -18,13 +43,64 @@ export default function ButterflyWelf() {
     >
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 flex flex-col items-center pt-4 px-4 md:grid md:grid-cols-3 md:items-center md:pt-4 md:px-8 text-white bg-black/30 backdrop-blur-sm transition-all duration-300">
-        <div className="flex items-center gap-2">
-          <Link href="/" className="flex items-center gap-2 hover:text-gray-300 transition-colors">
-            <ArrowLeft className="h-5 w-5" />
-            Volver al inicio
-          </Link>
+        {/* Mobile Menu Button */}
+        <div className="absolute top-4 left-4 md:hidden">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(true)}
+            className="text-white hover:bg-white/20"
+            aria-label="Open menu"
+          >
+            <MenuIcon className="h-6 w-6" />
+          </Button>
         </div>
-        <div className="flex justify-center">
+
+        {/* Desktop Navigation - Left Side */}
+        <nav className="hidden md:flex justify-end gap-6 pr-0">
+          <Link href="/" className="hover:text-gray-300 text-lg">
+            Inicio
+          </Link>
+          <div className="relative dropdown-container">
+            <button 
+              onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
+              className="hover:text-gray-300 text-lg flex items-center gap-1"
+            >
+              Métodos
+              <ChevronDown className={`h-4 w-4 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {isMetodosDropdownOpen && (
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-50">
+                <div className="py-1">
+                  <a href="/inject-3d-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Inject 3d Slim
+                  </a>
+                  <a href="/butterfly-welf" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Butterfly Welf
+                  </a>
+                  <a href="/invisible-welf-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Invisible Welf Slim
+                  </a>
+                  <a href="/extensiones-adhesivas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Extensiones Adhesivas
+                  </a>
+                  <a href="/toppers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Toppers
+                  </a>
+                  <a href="/flequillos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Flequillos
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
+          <Link href="/accesorios" className="hover:text-gray-300 text-lg">
+            Accesorios
+          </Link>
+        </nav>
+
+        {/* Logo */}
+        <div className="flex justify-center mb-4 md:mb-0">
           <Link href="/" className="hover:opacity-80 transition-opacity">
             <img
               src="/images/silva-h-logo-branca-300x291.png"
@@ -33,27 +109,102 @@ export default function ButterflyWelf() {
             />
           </Link>
         </div>
-        <div></div>
+
+        {/* Desktop Navigation - Right Side */}
+        <nav className="hidden md:flex justify-start gap-6 pl-0">
+          <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300 whitespace-nowrap text-lg">
+            Nuestra Historia
+          </button>
+          <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300 whitespace-nowrap text-lg">
+            Por qué Elegirnos
+          </button>
+          <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300 text-lg">
+            Certificaciones
+          </button>
+        </nav>
       </header>
 
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-black/90 z-[60] flex flex-col items-center justify-center space-y-6 transition-transform duration-300 ease-in-out">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(false)}
+            className="absolute top-4 right-4 text-white hover:bg-white/20"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6" />
+          </Button>
+          <nav className="flex flex-col items-center space-y-6 text-white text-2xl">
+            <Link href="/" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+              Inicio
+            </Link>
+            <div className="flex flex-col items-center space-y-3">
+              <button 
+                onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
+                className="hover:text-gray-300 flex items-center gap-2"
+              >
+                Métodos
+                <ChevronDown className={`h-5 w-5 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMetodosDropdownOpen && (
+                <div className="flex flex-col items-center space-y-2 text-lg pl-4">
+                  <a href="/inject-3d-slim" className="hover:text-gray-300">
+                    Inject 3d Slim
+                  </a>
+                  <a href="/butterfly-welf" className="hover:text-gray-300">
+                    Butterfly Welf
+                  </a>
+                  <a href="/invisible-welf-slim" className="hover:text-gray-300">
+                    Invisible Welf Slim
+                  </a>
+                  <a href="/extensiones-adhesivas" className="hover:text-gray-300">
+                    Extensiones Adhesivas
+                  </a>
+                  <a href="/toppers" className="hover:text-gray-300">
+                    Toppers
+                  </a>
+                  <a href="/flequillos" className="hover:text-gray-300">
+                    Flequillos
+                  </a>
+                </div>
+              )}
+            </div>
+            <Link href="/accesorios" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+              Accesorios
+            </Link>
+            <button onClick={() => { scrollToSection('nuestra-historia'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Nuestra Historia
+            </button>
+            <button onClick={() => { scrollToSection('por-que-elegirnos'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Por qué Elegirnos
+            </button>
+            <button onClick={() => { scrollToSection('certificaciones'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Certificaciones
+            </button>
+          </nav>
+        </div>
+      )}
+
       {/* Hero Section */}
-      <section className="py-32 bg-gradient-to-br from-[#D4AF37]/20 to-[#B8860B]/20">
+      <section className="pt-40 pb-20 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
             Butterfly Welf
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-black mb-8 max-w-3xl mx-auto">
             Técnica innovadora que proporciona volumen y movimiento natural. El método Butterfly Welf crea un efecto mariposa único en tu cabello.
           </p>
         </div>
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl font-bold text-black mb-6">
                 ¿Qué es Butterfly Welf?
               </h2>
               <p className="text-gray-600 mb-4">
@@ -93,13 +244,13 @@ export default function ButterflyWelf() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-gradient-to-br from-[#D4AF37]/10 to-[#B8860B]/10">
+      <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-black mb-12">
             Beneficios del Butterfly Welf
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 ✨
               </div>
@@ -108,7 +259,7 @@ export default function ButterflyWelf() {
                 Obtén el volumen que siempre has deseado de manera inmediata y completamente natural.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 🦋
               </div>
@@ -117,7 +268,7 @@ export default function ButterflyWelf() {
                 El patrón único de colocación crea un movimiento natural que imita el vuelo de una mariposa.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 💎
               </div>
@@ -131,12 +282,12 @@ export default function ButterflyWelf() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#D4AF37]/20 to-[#B8860B]/20">
+      <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          <h2 className="text-3xl font-bold text-black mb-6">
             Experimenta la magia del Butterfly Welf
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-black mb-8">
             Transforma tu cabello con nuestra técnica exclusiva
           </p>
           <Button className="bg-[#D4AF37] hover:bg-[#B8860B] text-white px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300">

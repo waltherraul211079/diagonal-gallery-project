@@ -187,23 +187,23 @@ export default function AccesoriosPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#D4AF37]/20 to-[#B8860B]/20">
+      <section className="py-20 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
             Accesorios para el Cuidado de tu Cabello
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-black mb-8 max-w-3xl mx-auto">
             Descubre nuestra selección de accesorios premium para el cuidado y mantenimiento de tus extensiones de cabello.
           </p>
         </div>
       </section>
 
       {/* Products Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Product Card 1 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
                 <Image 
                   src="/images/hair-1.jpeg" 
@@ -222,7 +222,7 @@ export default function AccesoriosPage() {
             </div>
 
             {/* Product Card 2 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
                 <Image 
                   src="/images/hair-2.jpeg" 
@@ -241,7 +241,7 @@ export default function AccesoriosPage() {
             </div>
 
             {/* Product Card 3 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
                 <Image 
                   src="/images/hair-3.jpeg" 
@@ -263,10 +263,10 @@ export default function AccesoriosPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-gradient-to-br from-[#D4AF37]/10 to-[#B8860B]/10">
+      <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">¿Necesitas ayuda para elegir?</h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-black mb-6">¿Necesitas ayuda para elegir?</h2>
+          <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
             Nuestro equipo está listo para asesorarte y responder todas tus dudas sobre nuestros productos y accesorios.
           </p>
           <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg flex items-center gap-2 shadow-lg transform hover:scale-105 transition-all duration-300">
