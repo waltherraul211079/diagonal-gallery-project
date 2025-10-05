@@ -16,11 +16,13 @@ export default function Inject3dSlim() {
               <ArrowLeft className="h-5 w-5" />
               Volver al inicio
             </Link>
-            <img
-              src="/images/silva-h-logo-branca-300x291.png"
-              alt="Silva Hair Extensions Logo"
-              className="h-16"
-            />
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <img
+                src="/images/silva-h-logo-branca-300x291.png"
+                alt="Silva Hair Extensions Logo"
+                className="h-16"
+              />
+            </Link>
           </div>
         </div>
       </header>

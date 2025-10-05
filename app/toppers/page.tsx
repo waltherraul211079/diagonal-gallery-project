@@ -7,26 +7,36 @@ import Link from "next/link"
 
 export default function Toppers() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-purple-50 to-violet-50">
+    <main 
+      className="min-h-screen bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: 'url("/images/services-bg-hd.png")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
       {/* Header */}
-      <header className="bg-black/90 backdrop-blur-sm text-white py-6">
+      <header className="bg-black/90 backdrop-blur-sm text-white py-6 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 hover:text-gray-300 transition-colors">
+            <Link href="/" className="flex items-center gap-2 hover:text-gray-400 transition-colors">
               <ArrowLeft className="h-5 w-5" />
               Volver al inicio
             </Link>
-            <img
-              src="/images/silva-h-logo-branca-300x291.png"
-              alt="Silva Hair Extensions Logo"
-              className="h-16"
-            />
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <img
+                src="/images/silva-h-logo-branca-300x291.png"
+                alt="Silva Hair Extensions Logo"
+                className="h-16"
+              />
+            </Link>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             Toppers
@@ -38,7 +48,7 @@ export default function Toppers() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-orange-100 to-amber-100">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -53,7 +63,7 @@ export default function Toppers() {
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                  <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                   Cobertura instantánea
                 </li>
                 <li className="flex items-center gap-2">
@@ -82,7 +92,7 @@ export default function Toppers() {
       </section>
 
       {/* Types Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
             Tipos de Toppers
@@ -142,7 +152,7 @@ export default function Toppers() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
               <h3 className="font-semibold mb-2">Cobertura Precisa</h3>
@@ -205,7 +215,7 @@ export default function Toppers() {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Aplicación</h3>
                 <p className="text-gray-600 text-sm">
-                  Colocamos y ajustamos el topper para un resultado natural y cómodo.
+                  Instalamos profesionalmente tu topper para un resultado natural.
                 </p>
               </div>
             </div>
@@ -214,26 +224,43 @@ export default function Toppers() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-500 to-violet-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-orange-500 to-amber-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            Recupera tu confianza
+            ¿Lista para recuperar tu confianza?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Descubre cómo nuestros toppers pueden transformar tu look
+            Agenda una consulta y descubre cómo nuestros toppers pueden transformar tu imagen
           </p>
-          <Button className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 text-lg">
-            Consulta Gratuita
+          <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 text-lg">
+            Reservar Consulta
           </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8">
+      <footer className="bg-black/90 backdrop-blur-sm text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2024 Silva Hair Extensions. Todos los derechos reservados.</p>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Icon */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="https://wa.me/34634277456"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
+          aria-label="Contactar por WhatsApp"
+        >
+          <img
+            src="/images/socialw.png"
+            alt="WhatsApp"
+            className="h-16 w-16"
+          />
+        </a>
+      </div>
     </main>
   )
 }

@@ -7,26 +7,36 @@ import Link from "next/link"
 
 export default function Flequillos() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-rose-50 to-pink-50">
+    <main 
+      className="min-h-screen bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: 'url("/images/services-bg-hd.png")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
       {/* Header */}
-      <header className="backdrop-blur-sm text-gray-800 py-6" style={{backgroundColor: '#DCDCDC'}}>
+      <header className="bg-black/90 backdrop-blur-sm text-white py-6 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 hover:text-gray-300 transition-colors">
+            <Link href="/" className="flex items-center gap-2 hover:text-gray-400 transition-colors">
               <ArrowLeft className="h-5 w-5" />
               Volver al inicio
             </Link>
-            <img
-              src="/images/silva-h-logo-branca-300x291.png"
-              alt="Silva Hair Extensions Logo"
-              className="h-16"
-            />
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <img
+                src="/images/silva-h-logo-branca-300x291.png"
+                alt="Silva Hair Extensions Logo"
+                className="h-16"
+              />
+            </Link>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             Flequillos
@@ -38,7 +48,7 @@ export default function Flequillos() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-orange-100 to-amber-100">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -53,7 +63,7 @@ export default function Flequillos() {
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full"></span>
+                  <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                   Cabello humano 100% natural
                 </li>
                 <li className="flex items-center gap-2">
@@ -82,14 +92,14 @@ export default function Flequillos() {
       </section>
 
       {/* Styles Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
             Estilos de Flequillos
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 ✂️
               </div>
               <h3 className="text-lg font-semibold mb-2">Recto Clásico</h3>
@@ -129,14 +139,14 @@ export default function Flequillos() {
       </section>
 
       {/* Application Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-orange-100 to-amber-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
             Métodos de Aplicación
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">📎</span>
               </div>
               <h3 className="text-xl font-semibold mb-4">Clip-In</h3>
@@ -182,43 +192,43 @@ export default function Flequillos() {
       </section>
 
       {/* Tips Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
             Consejos para el Cuidado
           </h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4 text-rose-600">Cuidado Diario</h3>
+              <h3 className="text-xl font-semibold mb-4 text-orange-600">Cuidado Diario</h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
                   Cepilla suavemente con un cepillo de cerdas suaves
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Usa productos sin sulfatos ni alcohol
+                  Usa productos sin sulfatos
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Evita el calor excesivo al peinar
+                  Evita dormir con el flequillo húmedo
                 </li>
               </ul>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4 text-rose-600">Almacenamiento</h3>
+              <h3 className="text-xl font-semibold mb-4 text-orange-600">Mantenimiento</h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Guarda en un lugar seco y ventilado
+                  Lava cada 15-20 usos
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Usa el soporte original para mantener la forma
+                  Almacena en un lugar fresco y seco
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Evita la exposición directa al sol
+                  Revisa y ajusta los clips regularmente
                 </li>
               </ul>
             </div>
@@ -227,26 +237,43 @@ export default function Flequillos() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-rose-500 to-pink-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-orange-500 to-amber-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            ¿Lista para un nuevo look?
+            ¿Lista para un cambio de look?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Descubre el flequillo perfecto para ti sin compromisos
+            Descubre nuestros flequillos y encuentra el estilo perfecto para ti
           </p>
-          <Button className="bg-white text-rose-600 hover:bg-gray-100 px-8 py-3 text-lg">
-            Probar Ahora
+          <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 text-lg">
+            Reservar Ahora
           </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8">
+      <footer className="bg-black/90 backdrop-blur-sm text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2024 Silva Hair Extensions. Todos los derechos reservados.</p>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Icon */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="https://wa.me/34634277456"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
+          aria-label="Contactar por WhatsApp"
+        >
+          <img
+            src="/images/socialw.png"
+            alt="WhatsApp"
+            className="h-16 w-16"
+          />
+        </a>
+      </div>
     </main>
   )
 }

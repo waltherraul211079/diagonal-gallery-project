@@ -6,6 +6,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, MenuIcon, X, ChevronLeft, ChevronRight, MessageCircle, ChevronDown, Phone } from "lucide-react"
+import Link from "next/link"
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -319,18 +320,20 @@ export default function Home() {
                   </div>
                 )}
               </div>
-              <button onClick={() => scrollToSection('accesorios')} className="hover:text-gray-300 text-lg">
+              <Link href="/accesorios" className="hover:text-gray-300 text-lg">
                 Accesorios
-              </button>
+              </Link>
             </nav>
 
             {/* Logo */}
             <div className="flex justify-center mb-4 md:mb-0">
-              <img
-                src="/images/silva-h-logo-branca-300x291.png"
-                alt="Silva Hair Extensions Logo"
-                className="h-28 md:h-32 animate-popup"
-              />
+              <Link href="/" className="hover:opacity-80 transition-opacity">
+                <img
+                  src="/images/silva-h-logo-branca-300x291.png"
+                  alt="Silva Hair Extensions Logo"
+                  className="h-28 md:h-32 animate-popup"
+                />
+              </Link>
             </div>
 
             {/* Desktop Navigation - Right Side */}
@@ -394,9 +397,9 @@ export default function Home() {
                     </div>
                   )}
                 </div>
-                <button onClick={() => { scrollToSection('accesorios'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                <Link href="/accesorios" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
                   Accesorios
-                </button>
+                </Link>
                 <button onClick={() => { scrollToSection('nuestra-historia'); setIsMenuOpen(false); }} className="hover:text-gray-300">
                   Nuestra Historia
                 </button>
@@ -505,7 +508,50 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Third Section: Por Qué Elegirnos */}
+        {/* Fifth Section: Nuestra Historia */}
+        <section id="nuestra-historia" className="relative py-20 px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side: Portrait and Signature */}
+              <div className="relative flex flex-col items-center lg:items-start">
+                {/* Portrait */}
+                <div className="relative w-80 h-80 mb-8">
+                  <img
+                    src="/images/founder-portrait.jpeg"
+                    alt="Founder Portrait"
+                    className="w-full h-full rounded-full object-cover shadow-2xl border-4 border-[#D4AF37]"
+                  />
+                </div>
+                {/* Signature */}
+                <div className="flex flex-col items-center lg:items-start">
+                  <img src="/images/founder-signature.png" alt="E Silva Signature" className="h-16 w-auto mb-2" />
+                  <p className="text-gray-600 text-lg italic">Founder e CEO</p>
+                </div>
+              </div>
+
+              {/* Right side: Content */}
+              <div className="text-left">
+                <p className="text-gray-600 text-lg mb-4 uppercase tracking-wide">
+                  UNA HISTORIA DE PERSEVERANCIA Y DETERMINACIÓN.
+                </p>
+                <h2 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-8 leading-tight">
+                  DE UNA SIMPLE AYUDANTE A UNA PROFESIONAL EMPRENDEDORA.
+                </h2>
+                <div className="space-y-4 text-gray-600 text-lg">
+                  <p>
+                    <span className="font-semibold">Silva Hair Extensions representa mucho más que belleza.</span> Es un
+                    símbolo de esfuerzo, dedicación, aprendizaje constante y la satisfacción de ayudar a otras mujeres a
+                    sentirse más hermosas, resaltando aun más su belleza natural. Con años de experiencia, ha adquirido
+                    formación en diversas áreas y se ha especializado en los métodos más actuales del mercado, logrando
+                    mejoras pensadas en su salud y bienestar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Por Qué Elegirnos */}
         <section id="por-que-elegirnos" className="relative py-20 px-4 md:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -558,100 +604,6 @@ export default function Home() {
                 <Button className="bg-[#D4AF37] text-black hover:bg-[#C0A030] text-lg px-8 py-4 rounded-full shadow-lg border-2 border-[#D4AF37]">
                   Descubre cómo trabajamos <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Fourth Section: INJECT 3D SLIM */}
-        <section id="inject-3d-slim" className="relative py-20 px-4 md:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side: Content */}
-              <div className="text-left">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-6">INJECT 3D SLIM</h2>
-                <h3 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
-                  NUESTRO MÉTODO EXCLUSIVO EN SILVA HAIR EXTENSIONS.
-                </h3>
-                <div className="space-y-4 text-gray-600 text-lg mb-8">
-                  <p>
-                    Las extensiones más discretas hoy en día destacan por su acabado{" "}
-                    <span className="font-semibold">invisible y natural</span>, creando un efecto muy similar al cuero
-                    cabelludo gracias a la inyección de los pelos. Ofrecen levesa, conforto y naturalidad.
-                  </p>
-                </div>
-                <Button className="bg-[#D4AF37] text-black hover:bg-[#C0A030] text-lg px-8 py-4 rounded-full shadow-lg border-2 border-[#D4AF37]">
-                  Conoce nuestra técnica exclusiva <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
-
-              {/* Right side: Carousel */}
-              <div className="relative">
-                <div className="relative w-80 h-80 mx-auto">
-                  <img
-                    src={injectImages[currentInjectIndex] || "/placeholder.svg"}
-                    alt={`INJECT 3D SLIM ${currentInjectIndex + 1}`}
-                    className="w-full h-full rounded-full object-cover shadow-2xl"
-                  />
-                  {/* Navigation arrows */}
-                  <button
-                    onClick={prevInjectImage}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110"
-                    aria-label="Previous image"
-                  >
-                    <ChevronLeft className="h-6 w-6" />
-                  </button>
-                  <button
-                    onClick={nextInjectImage}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110"
-                    aria-label="Next image"
-                  >
-                    <ChevronRight className="h-6 w-6" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Fifth Section: Nuestra Historia */}
-        <section id="nuestra-historia" className="relative py-20 px-4 md:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side: Portrait and Signature */}
-              <div className="relative flex flex-col items-center lg:items-start">
-                {/* Portrait */}
-                <div className="relative w-80 h-80 mb-8">
-                  <img
-                    src="/images/founder-portrait.jpeg"
-                    alt="Founder Portrait"
-                    className="w-full h-full rounded-full object-cover shadow-2xl border-4 border-[#D4AF37]"
-                  />
-                </div>
-                {/* Signature */}
-                <div className="flex flex-col items-center lg:items-start">
-                  <img src="/images/founder-signature.png" alt="E Silva Signature" className="h-16 w-auto mb-2" />
-                  <p className="text-gray-600 text-lg italic">Founder e CEO</p>
-                </div>
-              </div>
-
-              {/* Right side: Content */}
-              <div className="text-left">
-                <p className="text-gray-600 text-lg mb-4 uppercase tracking-wide">
-                  UNA HISTORIA DE PERSEVERANCIA Y DETERMINACIÓN.
-                </p>
-                <h2 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-8 leading-tight">
-                  DE UNA SIMPLE AYUDANTE A UNA PROFESIONAL EMPRENDEDORA.
-                </h2>
-                <div className="space-y-4 text-gray-600 text-lg">
-                  <p>
-                    <span className="font-semibold">Silva Hair Extensions representa mucho más que belleza.</span> Es un
-                    símbolo de esfuerzo, dedicación, aprendizaje constante y la satisfacción de ayudar a otras mujeres a
-                    sentirse más hermosas, resaltando aun más su belleza natural. Con años de experiencia, ha adquirido
-                    formación en diversas áreas y se ha especializado en los métodos más actuales del mercado, logrando
-                    mejoras pensadas en su salud y bienestar.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -855,7 +807,7 @@ export default function Home() {
             {/* Logo and Description */}
             <div className="space-y-6 text-center">
               <img
-                src="/images/silva-h-logo-branca-300x291.png"
+                src="/images/Silva Hair Logolargonegro.png"
                 alt="Silva Hair Extensions"
                 className="h-20 w-auto mx-auto"
               />
@@ -1024,13 +976,17 @@ export default function Home() {
       {/* Floating WhatsApp Icon */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/1234567890" // Replace with actual WhatsApp number
+          href="https://wa.me/34634277456"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
+          className="shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
           aria-label="Contactar por WhatsApp"
         >
-          <MessageCircle className="h-6 w-6" />
+          <img
+            src="/images/socialw.png"
+            alt="WhatsApp"
+            className="h-16 w-16"
+          />
         </a>
       </div>
     </main>

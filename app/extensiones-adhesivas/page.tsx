@@ -7,26 +7,36 @@ import Link from "next/link"
 
 export default function ExtensionesAdhesivas() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50">
+    <main 
+      className="min-h-screen bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: 'url("/images/services-bg-hd.png")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
       {/* Header */}
-      <header className="bg-black/90 backdrop-blur-sm text-white py-6">
+      <header className="bg-black/90 backdrop-blur-sm text-white py-6 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 hover:text-gray-300 transition-colors">
               <ArrowLeft className="h-5 w-5" />
               Volver al inicio
             </Link>
-            <img
-              src="/images/silva-h-logo-branca-300x291.png"
-              alt="Silva Hair Extensions Logo"
-              className="h-16"
-            />
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <img
+                src="/images/silva-h-logo-branca-300x291.png"
+                alt="Silva Hair Extensions Logo"
+                className="h-16"
+              />
+            </Link>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             Extensiones Adhesivas
@@ -38,7 +48,7 @@ export default function ExtensionesAdhesivas() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-orange-100 to-amber-100">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -82,7 +92,7 @@ export default function ExtensionesAdhesivas() {
       </section>
 
       {/* Advantages Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
             Ventajas de las Extensiones Adhesivas
@@ -120,7 +130,7 @@ export default function ExtensionesAdhesivas() {
       </section>
 
       {/* Care Instructions */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-orange-100 to-amber-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
             Cuidados y Mantenimiento
@@ -182,11 +192,28 @@ export default function ExtensionesAdhesivas() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8">
+      <footer className="bg-black/90 backdrop-blur-sm text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2024 Silva Hair Extensions. Todos los derechos reservados.</p>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Icon */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="https://wa.me/34634277456"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
+          aria-label="Contactar por WhatsApp"
+        >
+          <img
+            src="/images/socialw.png"
+            alt="WhatsApp"
+            className="h-16 w-16"
+          />
+        </a>
+      </div>
     </main>
   )
 }
