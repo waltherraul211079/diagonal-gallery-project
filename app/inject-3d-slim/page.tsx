@@ -3,31 +3,12 @@
 import type React from "react"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, MenuIcon, X, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react"
+import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 
 export default function Inject3dSlim() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
-
-  const injectImages = [
-    "/images/inject-1.jpeg",
-    "/images/inject-2.jpeg",
-    "/images/inject-3.jpeg",
-    "/images/inject-4.jpeg",
-    "/images/inject-5.jpeg",
-    "/images/inject-6.jpeg",
-    "/images/inject-7.jpeg"
-  ]
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % injectImages.length)
-  }
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + injectImages.length) % injectImages.length)
-  }
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -258,85 +239,122 @@ export default function Inject3dSlim() {
               </ul>
             </div>
             <div className="relative w-full max-w-lg mx-auto">
-              {/* Carousel Container */}
+              {/* Fixed Image */}
               <div className="w-full h-80 relative bg-transparent overflow-hidden rounded-lg shadow-xl">
                 <img
-                  src={injectImages[currentImageIndex]}
-                  alt={`Inject 3D Slim resultado ${currentImageIndex + 1}`}
-                  className="w-full h-full object-cover bg-transparent transition-opacity duration-300"
+                  src="/images/Injec 3d slim/1000057251.jpg"
+                  alt="Inject 3D Slim - Extensiones capilares con microesferas"
+                  className="w-full h-full object-cover bg-transparent"
                 />
-                
-                {/* Navigation Buttons */}
-                <button
-                  onClick={prevImage}
-                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200"
-                  aria-label="Imagen anterior"
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-                
-                <button
-                  onClick={nextImage}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200"
-                  aria-label="Siguiente imagen"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                </button>
-              </div>
-              
-              {/* Position Indicators */}
-              <div className="flex justify-center mt-4 space-x-2">
-                {injectImages.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentImageIndex(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                      index === currentImageIndex 
-                        ? 'bg-pink-500' 
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                    aria-label={`Ir a imagen ${index + 1}`}
-                  />
-                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
+
+
+      {/* Gallery Section */}
       <section className="py-10 bg-transparent">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-black mb-8">
-            Proceso de Aplicación
+            Galería de Colores Inject 3D Slim
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                1
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {/* Negro Nº 1 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Negro Nº 1.jpg"
+                alt="Negro Nº 1"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center text-black">Negro Nº 1</h3>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Consulta</h3>
-              <p className="text-gray-600">
-                Evaluamos tu cabello y determinamos la mejor estrategia para lograr el resultado deseado.
-              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                2
+
+            {/* Negro Nº 1B */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Negro Nº 1B.jpg"
+                alt="Negro Nº 1B"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center text-black">Negro Nº 1B</h3>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Aplicación</h3>
-              <p className="text-gray-600">
-                Colocamos las extensiones Inject 3D Slim con precisión milimétrica para un resultado natural.
-              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                3
+
+            {/* Castaño Nº 2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Castano Nº2.jpg"
+                alt="Castaño Nº 2"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center text-black">Castaño Nº 2</h3>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Finalización</h3>
-              <p className="text-gray-600">
-                Cortamos y peinamos para integrar perfectamente las extensiones con tu cabello natural.
-              </p>
+            </div>
+
+            {/* Castaño Nº 4 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Castano Nº 4.jpg"
+                alt="Castaño Nº 4"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center text-black">Castaño Nº 4</h3>
+              </div>
+            </div>
+
+            {/* Rubio Extraclaro Nº 60 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Rubio Extraclaro Nº 60.jpg"
+                alt="Rubio Extraclaro Nº 60"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center text-black">Rubio Extraclaro Nº 60</h3>
+              </div>
+            </div>
+
+            {/* Rubio Mechado Nº 60-8 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Rubiomechado Nº 60-8.jpg"
+                alt="Rubio Mechado Nº 60-8"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center text-black">Rubio Mechado Nº 60-8</h3>
+              </div>
+            </div>
+
+            {/* Rubio Claro Nº 613 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Rubio Claro Nº 613.jpg"
+                alt="Rubio Claro Nº 613"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center text-black">Rubio Claro Nº 613</h3>
+              </div>
+            </div>
+
+            {/* Colores Personalizados */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Colores Personalizados.jpg"
+                alt="Colores Personalizados"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center text-black">Colores Personalizados</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -349,11 +367,18 @@ export default function Inject3dSlim() {
             ¿Lista para transformar tu cabello?
           </h2>
           <p className="text-xl mb-8 text-black">
-            Agenda tu cita y descubre el poder de Inject 3D Slim
+            Descubre el poder que hay en tí con Inject 3D Slim
           </p>
-          <Button className="bg-white text-pink-600 hover:bg-gray-100 px-8 py-3 text-lg">
-            Contactar Ahora
-          </Button>
+          <a
+            href="https://wa.me/34634277456"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button className="bg-yellow-500 text-white hover:bg-white hover:text-black px-8 py-3 text-lg transition-colors duration-300">
+              Contactar Ahora
+            </Button>
+          </a>
         </div>
       </section>
 
