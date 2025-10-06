@@ -823,45 +823,45 @@ export default function Home() {
             </div>
 
             {/* Secciones */}
-            <div className="text-left">
+            <div className="text-center">
               <h3 className="text-[#B8860B] text-xl font-bold mb-6">Secciones</h3>
               <nav className="space-y-3">
-                <button onClick={() => scrollToSection('home')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('home')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Inicio
                 </button>
                 <div className="space-y-2">
-                  <span className="block text-[#8B7355] font-medium text-left">Métodos</span>
+                  <span className="block text-[#8B7355] font-medium">Métodos</span>
                   <div className="pl-4 space-y-1 text-sm">
-                    <a href="/inject-3d-slim" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                    <a href="/inject-3d-slim" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                       Inject 3d Slim
                     </a>
-                    <a href="/butterfly-welf" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                    <a href="/butterfly-welf" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                       Butterfly Welf
                     </a>
-                    <a href="/invisible-welf-slim" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                    <a href="/invisible-welf-slim" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                       Invisible Welf Slim
                     </a>
-                    <a href="/extensiones-adhesivas" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                    <a href="/extensiones-adhesivas" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                       Extensiones Adhesivas
                     </a>
-                    <a href="/toppers" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                    <a href="/toppers" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                       Toppers
                     </a>
-                    <a href="/flequillos" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                    <a href="/flequillos" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                       Flequillos
                     </a>
                   </div>
                 </div>
-                <a href="/accesorios" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('accesorios')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Accesorios
-                </a>
-                <button onClick={() => scrollToSection('nuestra-historia')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                </button>
+                <button onClick={() => scrollToSection('nuestra-historia')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Nuestra Historia
                 </button>
-                <button onClick={() => scrollToSection('por-que-elegirnos')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('por-que-elegirnos')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Por qué Elegirnos
                 </button>
-                <button onClick={() => scrollToSection('certificaciones')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('certificaciones')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Certificaciones
                 </button>
               </nav>
