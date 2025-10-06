@@ -1,23 +1,44 @@
 "use client"
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Menu as MenuIcon, X, ChevronDown } from 'lucide-react'
-import { MessageCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { MessageCircle, MenuIcon, X, ChevronDown } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
+import { useState, useEffect } from "react"
 
 export default function AccesoriosPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
 
+  // Smooth scroll function
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
     }
     setIsMenuOpen(false)
   }
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element
+      if (!target.closest('.dropdown-container')) {
+        setIsMetodosDropdownOpen(false)
+      }
+    }
+
+    if (isMetodosDropdownOpen) {
+      document.addEventListener('click', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    }
+  }, [isMetodosDropdownOpen])
   return (
     <main 
       className="flex min-h-screen flex-col bg-cover bg-center bg-fixed"
@@ -87,8 +108,8 @@ export default function AccesoriosPage() {
         </nav>
 
         {/* Logo */}
-        <div className="flex justify-center mb-4 md:mb-0">
-          <Link href="/" className="hover:opacity-80 transition-opacity">
+        <div className="flex justify-center">
+          <Link href="/">
             <img
               src="/images/silva-h-logo-branca-300x291.png"
               alt="Silva Hair Extensions Logo"
@@ -99,15 +120,15 @@ export default function AccesoriosPage() {
 
         {/* Desktop Navigation - Right Side */}
         <nav className="hidden md:flex justify-start gap-6 pl-0">
-          <Link href="/#nuestra-historia" className="hover:text-gray-300 whitespace-nowrap text-lg">
+          <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300 text-lg">
             Nuestra Historia
-          </Link>
-          <Link href="/#por-que-elegirnos" className="hover:text-gray-300 whitespace-nowrap text-lg">
+          </button>
+          <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300 text-lg">
             Por qué Elegirnos
-          </Link>
-          <Link href="/#certificaciones" className="hover:text-gray-300 text-lg">
+          </button>
+          <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300 text-lg">
             Certificaciones
-          </Link>
+          </button>
         </nav>
 
         {/* Mobile Menu Overlay */}
@@ -127,55 +148,46 @@ export default function AccesoriosPage() {
                 Inicio
               </Link>
               <div className="flex flex-col items-center space-y-3">
-                <button 
-                  onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
-                  className="hover:text-gray-300 flex items-center gap-2"
-                >
-                  Métodos
-                  <ChevronDown className={`h-5 w-5 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {isMetodosDropdownOpen && (
-                  <div className="flex flex-col items-center space-y-2 text-lg pl-4">
-                    <a href="/inject-3d-slim" className="hover:text-gray-300">
-                      Inject 3d Slim
-                    </a>
-                    <a href="/butterfly-welf" className="hover:text-gray-300">
-                      Butterfly Welf
-                    </a>
-                    <a href="/invisible-welf-slim" className="hover:text-gray-300">
-                      Invisible Welf Slim
-                    </a>
-                    <a href="/extensiones-adhesivas" className="hover:text-gray-300">
-                      Extensiones Adhesivas
-                    </a>
-                    <a href="/toppers" className="hover:text-gray-300">
-                      Toppers
-                    </a>
-                    <a href="/flequillos" className="hover:text-gray-300">
-                      Flequillos
-                    </a>
-                  </div>
-                )}
+                <a href="/inject-3d-slim" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+                  Inject 3d Slim
+                </a>
+                <a href="/butterfly-welf" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+                  Butterfly Welf
+                </a>
+                <a href="/invisible-welf-slim" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+                  Invisible Welf Slim
+                </a>
+                <a href="/extensiones-adhesivas" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+                  Extensiones Adhesivas
+                </a>
+                <a href="/toppers" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+                  Toppers
+                </a>
+                <a href="/flequillos" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+                  Flequillos
+                </a>
+                <a href="/accesorios" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+                  Accesorios
+                </a>
               </div>
-              <Link href="/accesorios" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                 Accesorios
-               </Link>
-               <Link href="/#nuestra-historia" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                 Nuestra Historia
-               </Link>
-               <Link href="/#por-que-elegirnos" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                 Por qué Elegirnos
-               </Link>
-               <Link href="/#certificaciones" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                 Certificaciones
-               </Link>
+              <div className="flex flex-col items-center space-y-3 mt-6">
+                <button onClick={() => { scrollToSection('nuestra-historia'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                  Nuestra Historia
+                </button>
+                <button onClick={() => { scrollToSection('por-que-elegirnos'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                  Por qué Elegirnos
+                </button>
+                <button onClick={() => { scrollToSection('certificaciones'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                  Certificaciones
+                </button>
+              </div>
             </nav>
           </div>
         )}
       </header>
 
       {/* Hero Section */}
-      <section className="py-36 bg-transparent">
+      <section className="py-20 bg-transparent">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
             Accesorios para el Cuidado de tu Cabello

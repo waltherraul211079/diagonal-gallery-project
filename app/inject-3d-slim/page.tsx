@@ -3,12 +3,31 @@
 import type React from "react"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
+import { ArrowLeft, MenuIcon, X, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
 
 export default function Inject3dSlim() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  const injectImages = [
+    "/images/inject-1.jpeg",
+    "/images/inject-2.jpeg",
+    "/images/inject-3.jpeg",
+    "/images/inject-4.jpeg",
+    "/images/inject-5.jpeg",
+    "/images/inject-6.jpeg",
+    "/images/inject-7.jpeg"
+  ]
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % injectImages.length)
+  }
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + injectImages.length) % injectImages.length)
+  }
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -188,7 +207,7 @@ export default function Inject3dSlim() {
       )}
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20">
+      <section className="pt-40 pb-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             Inject 3D Slim
@@ -200,7 +219,7 @@ export default function Inject3dSlim() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-transparent">
+      <section className="py-10 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -213,40 +232,82 @@ export default function Inject3dSlim() {
               <p className="text-gray-600 mb-6">
                 Esta técnica es ideal para personas que buscan un cambio sutil pero efectivo, proporcionando densidad y movimiento natural al cabello.
               </p>
+              
+              <p className="text-gray-700 mb-4">
+                Las Extensiones Inject 3D Slim son fabricadas por piezas de 25cm de largo e aproximadamente 20gr cada pieza
+              </p>
+              
+              <h4 className="font-semibold text-gray-800 mb-3">Estilo y largos disponibles:</h4>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                  Aplicación rápida y cómoda
+                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
+                  25cm 50cm / 2Piezas 30gr
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                  Resultado completamente natural
+                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
+                  25cm 60cm / 2piezas 40gr
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                  Duración de 3-4 meses
+                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
+                  25cm 70cm / 2piezas 50gr
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
-                  No daña el cabello natural
+                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
+                  25cm 75cm / 2piezas 60gr
                 </li>
               </ul>
             </div>
-            <div className="relative">
-              <img
-                src="/images/inject-1.jpeg"
-                alt="Inject 3D Slim resultado"
-                className="rounded-lg shadow-xl w-full"
-              />
+            <div className="relative w-full max-w-lg mx-auto">
+              {/* Carousel Container */}
+              <div className="w-full h-80 relative bg-transparent overflow-hidden rounded-lg shadow-xl">
+                <img
+                  src={injectImages[currentImageIndex]}
+                  alt={`Inject 3D Slim resultado ${currentImageIndex + 1}`}
+                  className="w-full h-full object-cover bg-transparent transition-opacity duration-300"
+                />
+                
+                {/* Navigation Buttons */}
+                <button
+                  onClick={prevImage}
+                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200"
+                  aria-label="Imagen anterior"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                
+                <button
+                  onClick={nextImage}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200"
+                  aria-label="Siguiente imagen"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
+              
+              {/* Position Indicators */}
+              <div className="flex justify-center mt-4 space-x-2">
+                {injectImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                      index === currentImageIndex 
+                        ? 'bg-pink-500' 
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                    aria-label={`Ir a imagen ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-transparent">
+      <section className="py-10 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center text-black mb-8">
             Proceso de Aplicación
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -282,7 +343,7 @@ export default function Inject3dSlim() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-transparent">
+      <section className="py-10 bg-transparent">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-black">
             ¿Lista para transformar tu cabello?
@@ -302,6 +363,23 @@ export default function Inject3dSlim() {
           <p>&copy; 2024 Silva Hair Extensions. Todos los derechos reservados.</p>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Icon */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="https://wa.me/34634277456"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
+          aria-label="Contactar por WhatsApp"
+        >
+          <img
+            src="/images/socialw.png"
+            alt="WhatsApp"
+            className="h-16 w-16"
+          />
+        </a>
+      </div>
     </main>
   )
 }
