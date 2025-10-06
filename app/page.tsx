@@ -425,9 +425,6 @@ export default function Home() {
               Descubre cómo renovar tu cabello, resaltar tu mirada y aumentar tu confianza sin comprometer tu imagen
               natural.
             </p>
-            <Button className="bg-[#D4AF37] text-black hover:bg-[#C0A030] text-base md:text-lg px-6 py-4 md:px-8 md:py-6 rounded-full shadow-lg">
-              CONSULTAR CON ESPECIALISTA <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-            </Button>
           </div>
         </div>
         {/* Bottom gradient fade effect */}
@@ -453,58 +450,59 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-24">
             {/* Card 1: Inject 3D Slim */}
-            <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center">
-              <div className="absolute -top-16 left-1/2 -translate-x-1/2">
-                <img
-                  src="/images/method-1.jpeg"
-                  alt="Inject 3D Slim"
-                  className="w-32 h-32 rounded-full object-cover border-4 border-[#D4AF37]"
-                />
+            <Link href="/inject-3d-slim" className="block">
+              <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="absolute -top-16 left-1/2 -translate-x-1/2">
+                  <img
+                    src="/images/method-1.jpeg"
+                    alt="Inject 3D Slim"
+                    className="w-32 h-32 rounded-full object-cover border-4 border-[#D4AF37]"
+                  />
+                </div>
+                <h3 className="text-3xl font-bold text-gray-800 mb-4">INJECT 3D SLIM</h3>
+                <p className="text-base text-gray-800">
+                  El método más natural de la actualidad: las extensiones Inject 3D Slim se integran al cabello haciendo
+                  un efecto completamente invisible e imperceptible. Ideal para mujeres que buscan volumen y discreción a
+                  la vez.
+                </p>
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-4">INJECT 3D SLIM</h3>
-              <p className="text-base text-gray-800">
-                El método más natural de la actualidad: las extensiones Inject 3D Slim se integran al cabello haciendo
-                un efecto completamente invisible e imperceptible. Ideal para mujeres que buscan volumen y discreción a
-                la vez.
-              </p>
-            </div>
+            </Link>
             {/* Card 2: Butterfly Welf */}
-            <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center">
-              <div className="absolute -top-16 left-1/2 -translate-x-1/2">
-                <img
-                  src="/images/method-2.jpeg"
-                  alt="Butterfly Welf"
-                  className="w-32 h-32 rounded-full object-cover border-4 border-[#D4AF37]"
-                />
+            <Link href="/butterfly-welf" className="block">
+              <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="absolute -top-16 left-1/2 -translate-x-1/2">
+                  <img
+                    src="/images/method-2.jpeg"
+                    alt="Butterfly Welf"
+                    className="w-32 h-32 rounded-full object-cover border-4 border-[#D4AF37]"
+                  />
+                </div>
+                <h3 className="text-3xl font-bold text-gray-800 mb-4">BUTTERFLY WELF</h3>
+                <p className="text-base text-gray-800">
+                  El método más práctico y rápido de hoy en día. Las extensiones Butterfly combinan practicidad y
+                  modernidad en un único diseño. Perfectas para mujeres que desean un cabello más abundante sin tener que
+                  esperar horas.
+                </p>
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-4">BUTTERFLY WELF</h3>
-              <p className="text-base text-gray-800">
-                El método más práctico y rápido de hoy en día. Las extensiones Butterfly combinan practicidad y
-                modernidad en un único diseño. Perfectas para mujeres que desean un cabello más abundante sin tener que
-                esperar horas.
-              </p>
-            </div>
+            </Link>
             {/* Card 3: Invisible Welf Slim */}
-            <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center">
-              <div className="absolute -top-16 left-1/2 -translate-x-1/2">
-                <img
-                  src="/images/method-3.jpeg"
-                  alt="Invisible Welf Slim"
-                  className="w-32 h-32 rounded-full object-cover border-4 border-[#D4AF37]"
-                />
+            <Link href="/invisible-welf-slim" className="block">
+              <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+                <div className="absolute -top-16 left-1/2 -translate-x-1/2">
+                  <img
+                    src="/images/method-3.jpeg"
+                    alt="Invisible Welf Slim"
+                    className="w-32 h-32 rounded-full object-cover border-4 border-[#D4AF37]"
+                  />
+                </div>
+                <h3 className="text-3xl font-bold text-gray-800 mb-4">INVISIBLE WELF SLIM</h3>
+                <p className="text-base text-gray-800">
+                  Un método que fusiona la micropiel con una ligera costura, dejando su diseño aún más invisible, fino y
+                  resistente. Extensiones altamente adaptables a cualquier tipo de cabello, ideales para mujeres que
+                  buscan un resultado abundante e impactante.
+                </p>
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-4">INVISIBLE WELF SLIM</h3>
-              <p className="text-base text-gray-800">
-                Un método que fusiona la micropiel con una ligera costura, dejando su diseño aún más invisible, fino y
-                resistente. Extensiones altamente adaptables a cualquier tipo de cabello, ideales para mujeres que
-                buscan un resultado abundante e impactante.
-              </p>
-            </div>
-          </div>
-          <div className="text-center mt-12">
-            <Button className="bg-[#D4AF37] text-black hover:bg-[#C0A030] text-lg px-8 py-6 rounded-full shadow-lg">
-              Descubre Tu Método Ideal <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </Link>
           </div>
         </section>
 
@@ -601,9 +599,6 @@ export default function Home() {
                   </p>
                   <p className="font-semibold">Un lujo que está a tu alcance.</p>
                 </div>
-                <Button className="bg-[#D4AF37] text-black hover:bg-[#C0A030] text-lg px-8 py-4 rounded-full shadow-lg border-2 border-[#D4AF37]">
-                  Descubre cómo trabajamos <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
               </div>
             </div>
           </div>
@@ -791,11 +786,6 @@ export default function Home() {
               CONSULTA GRATIS CON UNA ESPECIALISTA Y DESCUBRE EL MÉTODO IDEAL PARA TU TIPO DE CABELLO, ESTILO DE VIDA Y
               OBJETIVOS PERSONALES.
             </h2>
-
-            <Button className="bg-[#D4AF37] hover:bg-[#B8860B] text-white px-8 py-4 text-lg font-semibold rounded-lg transition-colors duration-300 flex items-center gap-2 mx-auto">
-              <MessageCircle className="h-5 w-5" />
-              CONSULTAR CON ESPECIALISTA
-            </Button>
           </div>
         </section>
       </div>
