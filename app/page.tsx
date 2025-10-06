@@ -797,7 +797,7 @@ export default function Home() {
             {/* Logo and Description */}
             <div className="space-y-6 text-center">
               <img
-                src="/images/Silva Hair Logolargonegro.png"
+                src="/images/silva-hair-logo-footer.png"
                 alt="Silva Hair Extensions"
                 className="h-20 w-auto mx-auto"
               />
