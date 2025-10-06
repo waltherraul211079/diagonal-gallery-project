@@ -425,9 +425,6 @@ export default function Home() {
               Descubre cómo renovar tu cabello, resaltar tu mirada y aumentar tu confianza sin comprometer tu imagen
               natural.
             </p>
-            <Button className="bg-[#D4AF37] text-black hover:bg-[#C0A030] text-base md:text-lg px-6 py-4 md:px-8 md:py-6 rounded-full shadow-lg">
-              CONSULTAR CON ESPECIALISTA <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-            </Button>
           </div>
         </div>
         {/* Bottom gradient fade effect */}
@@ -453,7 +450,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-24">
             {/* Card 1: Inject 3D Slim */}
-            <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center">
+            <Link href="/inject-3d-slim" className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow cursor-pointer">
               <div className="absolute -top-16 left-1/2 -translate-x-1/2">
                 <img
                   src="/images/method-1.jpeg"
@@ -467,9 +464,9 @@ export default function Home() {
                 un efecto completamente invisible e imperceptible. Ideal para mujeres que buscan volumen y discreción a
                 la vez.
               </p>
-            </div>
+            </Link>
             {/* Card 2: Butterfly Welf */}
-            <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center">
+            <Link href="/butterfly-welf" className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow cursor-pointer">
               <div className="absolute -top-16 left-1/2 -translate-x-1/2">
                 <img
                   src="/images/method-2.jpeg"
@@ -483,9 +480,9 @@ export default function Home() {
                 modernidad en un único diseño. Perfectas para mujeres que desean un cabello más abundante sin tener que
                 esperar horas.
               </p>
-            </div>
+            </Link>
             {/* Card 3: Invisible Welf Slim */}
-            <div className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center">
+            <Link href="/invisible-welf-slim" className="relative bg-golden-card p-8 pt-24 rounded-lg shadow-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow cursor-pointer">
               <div className="absolute -top-16 left-1/2 -translate-x-1/2">
                 <img
                   src="/images/method-3.jpeg"
@@ -499,12 +496,7 @@ export default function Home() {
                 resistente. Extensiones altamente adaptables a cualquier tipo de cabello, ideales para mujeres que
                 buscan un resultado abundante e impactante.
               </p>
-            </div>
-          </div>
-          <div className="text-center mt-12">
-            <Button className="bg-[#D4AF37] text-black hover:bg-[#C0A030] text-lg px-8 py-6 rounded-full shadow-lg">
-              Descubre Tu Método Ideal <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </Link>
           </div>
         </section>
 
@@ -601,9 +593,6 @@ export default function Home() {
                   </p>
                   <p className="font-semibold">Un lujo que está a tu alcance.</p>
                 </div>
-                <Button className="bg-[#D4AF37] text-black hover:bg-[#C0A030] text-lg px-8 py-4 rounded-full shadow-lg border-2 border-[#D4AF37]">
-                  Descubre cómo trabajamos <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
               </div>
             </div>
           </div>
@@ -791,11 +780,6 @@ export default function Home() {
               CONSULTA GRATIS CON UNA ESPECIALISTA Y DESCUBRE EL MÉTODO IDEAL PARA TU TIPO DE CABELLO, ESTILO DE VIDA Y
               OBJETIVOS PERSONALES.
             </h2>
-
-            <Button className="bg-[#D4AF37] hover:bg-[#B8860B] text-white px-8 py-4 text-lg font-semibold rounded-lg transition-colors duration-300 flex items-center gap-2 mx-auto">
-              <MessageCircle className="h-5 w-5" />
-              CONSULTAR CON ESPECIALISTA
-            </Button>
           </div>
         </section>
       </div>
@@ -807,7 +791,7 @@ export default function Home() {
             {/* Logo and Description */}
             <div className="space-y-6 text-center">
               <img
-                src="/images/Silva Hair Logolargonegro.png"
+                src="/images/silva-hair-logo-footer.png"
                 alt="Silva Hair Extensions"
                 className="h-20 w-auto mx-auto"
               />
@@ -829,32 +813,12 @@ export default function Home() {
                 <button onClick={() => scrollToSection('home')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Inicio
                 </button>
-                <div className="space-y-2">
-                  <span className="block text-[#8B7355] font-medium">Métodos</span>
-                  <div className="pl-4 space-y-1 text-sm">
-                    <a href="/inject-3d-slim" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                      Inject 3d Slim
-                    </a>
-                    <a href="/butterfly-welf" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                      Butterfly Welf
-                    </a>
-                    <a href="/invisible-welf-slim" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                      Invisible Welf Slim
-                    </a>
-                    <a href="/extensiones-adhesivas" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                      Extensiones Adhesivas
-                    </a>
-                    <a href="/toppers" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                      Toppers
-                    </a>
-                    <a href="/flequillos" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                      Flequillos
-                    </a>
-                  </div>
-                </div>
-                <button onClick={() => scrollToSection('accesorios')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
-                  Accesorios
+                <button onClick={() => scrollToSection('servicios')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
+                  Métodos
                 </button>
+                <a href="/accesorios" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                  Accesorios
+                </a>
                 <button onClick={() => scrollToSection('nuestra-historia')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors">
                   Nuestra Historia
                 </button>
