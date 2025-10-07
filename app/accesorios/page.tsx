@@ -120,15 +120,15 @@ export default function AccesoriosPage() {
 
         {/* Desktop Navigation - Right Side */}
         <nav className="hidden md:flex justify-start gap-6 pl-0">
-          <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300 text-lg">
+          <Link href="/#nuestra-historia" className="hover:text-gray-300 text-lg">
             Nuestra Historia
-          </button>
-          <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300 text-lg">
+          </Link>
+          <Link href="/#por-que-elegirnos" className="hover:text-gray-300 text-lg">
             Por qué Elegirnos
-          </button>
-          <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300 text-lg">
+          </Link>
+          <Link href="/#certificaciones" className="hover:text-gray-300 text-lg">
             Certificaciones
-          </button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Overlay */}
@@ -171,15 +171,15 @@ export default function AccesoriosPage() {
                 </a>
               </div>
               <div className="flex flex-col items-center space-y-3 mt-6">
-                <button onClick={() => { scrollToSection('nuestra-historia'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                <Link href="/#nuestra-historia" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
                   Nuestra Historia
-                </button>
-                <button onClick={() => { scrollToSection('por-que-elegirnos'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                </Link>
+                <Link href="/#por-que-elegirnos" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
                   Por qué Elegirnos
-                </button>
-                <button onClick={() => { scrollToSection('certificaciones'); setIsMenuOpen(false); }} className="hover:text-gray-300">
+                </Link>
+                <Link href="/#certificaciones" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
                   Certificaciones
-                </button>
+                </Link>
               </div>
             </nav>
           </div>
