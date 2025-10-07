@@ -66,9 +66,9 @@ export default function AccesoriosPage() {
 
         {/* Desktop Navigation - Left Side */}
         <nav className="hidden md:flex justify-end gap-6 pr-0">
-          <Link href="/" className="hover:text-gray-300 text-lg">
+          <button onClick={() => window.location.href = '/#home'} className="hover:text-gray-300 text-lg">
             Inicio
-          </Link>
+          </button>
           <div className="relative dropdown-container">
             <button 
               onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
@@ -108,8 +108,8 @@ export default function AccesoriosPage() {
         </nav>
 
         {/* Logo */}
-        <div className="flex justify-center">
-          <Link href="/">
+        <div className="flex justify-center mb-4 md:mb-0">
+          <Link href="/" className="hover:opacity-80 transition-opacity">
             <img
               src="/images/silva-h-logo-branca-300x291.png"
               alt="Silva Hair Extensions Logo"
@@ -120,71 +120,80 @@ export default function AccesoriosPage() {
 
         {/* Desktop Navigation - Right Side */}
         <nav className="hidden md:flex justify-start gap-6 pl-0">
-          <Link href="/#nuestra-historia" className="hover:text-gray-300 text-lg">
+          <button onClick={() => window.location.href = '/#nuestra-historia'} className="hover:text-gray-300 whitespace-nowrap text-lg">
             Nuestra Historia
-          </Link>
-          <Link href="/#por-que-elegirnos" className="hover:text-gray-300 text-lg">
+          </button>
+          <button onClick={() => window.location.href = '/#por-que-elegirnos'} className="hover:text-gray-300 whitespace-nowrap text-lg">
             Por qué Elegirnos
-          </Link>
-          <Link href="/#certificaciones" className="hover:text-gray-300 text-lg">
+          </button>
+          <button onClick={() => window.location.href = '/#certificaciones'} className="hover:text-gray-300 text-lg">
             Certificaciones
-          </Link>
+          </button>
         </nav>
-
-        {/* Mobile Menu Overlay */}
-        {isMenuOpen && (
-          <div className="fixed inset-0 bg-black/90 z-[60] flex flex-col items-center justify-center space-y-6 transition-transform duration-300 ease-in-out">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(false)}
-              className="absolute top-4 right-4 text-white hover:bg-white/20"
-              aria-label="Close menu"
-            >
-              <X className="h-6 w-6" />
-            </Button>
-            <nav className="flex flex-col items-center space-y-6 text-white text-2xl">
-              <Link href="/" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                Inicio
-              </Link>
-              <div className="flex flex-col items-center space-y-3">
-                <a href="/inject-3d-slim" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Inject 3d Slim
-                </a>
-                <a href="/butterfly-welf" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Butterfly Welf
-                </a>
-                <a href="/invisible-welf-slim" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Invisible Welf Slim
-                </a>
-                <a href="/extensiones-adhesivas" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Extensiones Adhesivas
-                </a>
-                <a href="/toppers" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Toppers
-                </a>
-                <a href="/flequillos" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Flequillos
-                </a>
-                <a href="/accesorios" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Accesorios
-                </a>
-              </div>
-              <div className="flex flex-col items-center space-y-3 mt-6">
-                <Link href="/#nuestra-historia" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Nuestra Historia
-                </Link>
-                <Link href="/#por-que-elegirnos" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Por qué Elegirnos
-                </Link>
-                <Link href="/#certificaciones" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
-                  Certificaciones
-                </Link>
-              </div>
-            </nav>
-          </div>
-        )}
       </header>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-black/90 z-[60] flex flex-col items-center justify-center space-y-6 transition-transform duration-300 ease-in-out">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(false)}
+            className="absolute top-4 right-4 text-white hover:bg-white/20"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6" />
+          </Button>
+          <nav className="flex flex-col items-center space-y-6 text-white text-2xl">
+            <button onClick={() => { window.location.href = '/#home'; setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Inicio
+            </button>
+            <div className="flex flex-col items-center space-y-3">
+              <button 
+                onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
+                className="hover:text-gray-300 flex items-center gap-2"
+              >
+                Métodos
+                <ChevronDown className={`h-5 w-5 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMetodosDropdownOpen && (
+                <div className="flex flex-col items-center space-y-2 text-lg pl-4">
+                  <a href="/inject-3d-slim" className="hover:text-gray-300">
+                    Inject 3d Slim
+                  </a>
+                  <a href="/butterfly-welf" className="hover:text-gray-300">
+                    Butterfly Welf
+                  </a>
+                  <a href="/invisible-welf-slim" className="hover:text-gray-300">
+                    Invisible Welf Slim
+                  </a>
+                  <a href="/extensiones-adhesivas" className="hover:text-gray-300">
+                    Extensiones Adhesivas
+                  </a>
+                  <a href="/toppers" className="hover:text-gray-300">
+                    Toppers
+                  </a>
+                  <a href="/flequillos" className="hover:text-gray-300">
+                    Flequillos
+                  </a>
+                </div>
+              )}
+            </div>
+            <Link href="/accesorios" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300">
+              Accesorios
+            </Link>
+            <button onClick={() => { window.location.href = '/#nuestra-historia'; setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Nuestra Historia
+            </button>
+            <button onClick={() => { window.location.href = '/#por-que-elegirnos'; setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Por qué Elegirnos
+            </button>
+            <button onClick={() => { window.location.href = '/#certificaciones'; setIsMenuOpen(false); }} className="hover:text-gray-300">
+              Certificaciones
+            </button>
+          </nav>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section className="py-20 bg-transparent">
