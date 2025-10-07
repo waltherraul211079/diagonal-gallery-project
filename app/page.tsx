@@ -816,22 +816,22 @@ export default function Home() {
             <div className="text-left">
               <h3 className="text-[#B8860B] text-xl font-bold mb-6">Secciones</h3>
               <nav className="space-y-3">
-                <button onClick={() => scrollToSection('home')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('home')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left cursor-pointer">
                   Inicio
                 </button>
-                <button onClick={() => scrollToSection('servicios')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('servicios')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left cursor-pointer">
                   Métodos
                 </button>
-                <Link href="/accesorios" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <Link href="/accesorios" className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left cursor-pointer">
                   Accesorios
                 </Link>
-                <button onClick={() => scrollToSection('nuestra-historia')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('nuestra-historia')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left cursor-pointer">
                   Nuestra Historia
                 </button>
-                <button onClick={() => scrollToSection('por-que-elegirnos')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('por-que-elegirnos')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left cursor-pointer">
                   Por qué Elegirnos
                 </button>
-                <button onClick={() => scrollToSection('certificaciones')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left">
+                <button onClick={() => scrollToSection('certificaciones')} className="block text-[#8B7355] hover:text-[#B8860B] transition-colors text-left cursor-pointer">
                   Certificaciones
                 </button>
               </nav>
