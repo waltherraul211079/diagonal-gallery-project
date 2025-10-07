@@ -195,13 +195,19 @@ export default function AccesoriosPage() {
         </div>
       )}
 
-      {/* Hero Section */}
-      <section className="py-20 bg-transparent">
+      {/* Page Title Section */}
+      <section className="pt-40 pb-8 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
-            Accesorios para el Cuidado de tu Cabello
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in" style={{color: '#B8860B'}}>
+            Accesorios para el Cuidado de tu cabello
           </h1>
-          <p className="text-xl text-black mb-8 max-w-3xl mx-auto">
+        </div>
+      </section>
+
+      {/* Hero Section */}
+      <section className="py-16 bg-transparent">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-xl mb-8 max-w-3xl mx-auto" style={{color: '#B8860B'}}>
             Descubre nuestra selección de accesorios premium para el cuidado y mantenimiento de tus extensiones de cabello.
           </p>
         </div>
@@ -223,8 +229,8 @@ export default function AccesoriosPage() {
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold">Cepillo Especial para Extensiones</h3>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Cepillo Especial para Extensiones</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
                   Cepillo diseñado específicamente para el cuidado de extensiones, evita enredos y mantiene el cabello suave.
                 </p>
               </div>
@@ -242,8 +248,8 @@ export default function AccesoriosPage() {
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold">Kit de Mantenimiento</h3>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Kit de Mantenimiento</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
                   Kit completo con productos esenciales para el cuidado y mantenimiento de tus extensiones.
                 </p>
               </div>
@@ -261,8 +267,8 @@ export default function AccesoriosPage() {
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold">Champú Especial</h3>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Champú Especial</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
                   Champú formulado específicamente para extensiones de cabello, mantiene el brillo y la suavidad.
                 </p>
               </div>
@@ -272,23 +278,22 @@ export default function AccesoriosPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-transparent">
+      <section className="py-16 bg-black/20 backdrop-blur-sm">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-black mb-6">¿Necesitas ayuda para elegir?</h2>
-          <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
-            Nuestro equipo está listo para asesorarte y responder todas tus dudas sobre nuestros productos y accesorios.
+          <h2 className="text-3xl font-bold mb-4" style={{color: '#B8860B'}}>¿Necesitas ayuda para elegir?</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto" style={{color: '#B8860B'}}>
+            Nuestro equipo de expertos está aquí para asesorarte y ayudarte a encontrar los accesorios perfectos para tu tipo de cabello.
           </p>
-          <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg flex items-center gap-2 shadow-lg transform hover:scale-105 transition-all duration-300">
-            <MessageCircle className="h-5 w-5" />
-            Contáctanos por WhatsApp
-          </Button>
+          <button className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-3 rounded-full font-semibold hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300 transform hover:scale-105">
+            Contactar Ahora
+          </button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8">
+      <footer className="py-8 bg-black/30 backdrop-blur-sm">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm opacity-80">&copy; 2024 Silva Hair Extensions. Todos los derechos reservados.</p>
+          <p style={{color: '#B8860B'}}>&copy; 2024 Silva Hair. Todos los derechos reservados.</p>
         </div>
       </footer>
 

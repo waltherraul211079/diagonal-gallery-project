@@ -444,7 +444,7 @@ export default function Home() {
         <section id="servicios" className="relative py-20 px-4 md:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-4">MÉTODOS MODERNOS Y ACTUALES.</h2>
-            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{color: '#B8860B'}}>
               OFRECEMOS EXTENSIONES SEGURAS QUE DARÁN VITALIDAD, SEGURIDAD Y BIENESTAR A TU VIDA
             </p>
           </div>
@@ -535,7 +535,7 @@ export default function Home() {
                 <h2 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-8 leading-tight">
                   DE UNA SIMPLE AYUDANTE A UNA PROFESIONAL EMPRENDEDORA.
                 </h2>
-                <div className="space-y-4 text-gray-600 text-lg">
+                <div className="space-y-4 text-lg" style={{color: '#B8860B'}}>
                   <p>
                     <span className="font-semibold">Silva Hair Extensions representa mucho más que belleza.</span> Es un
                     símbolo de esfuerzo, dedicación, aprendizaje constante y la satisfacción de ayudar a otras mujeres a
@@ -584,10 +584,10 @@ export default function Home() {
                 <h2 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-6">
                   PORQUE ELEGIR NUESTRAS EXTENSIONES?
                 </h2>
-                <h3 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-6" style={{color: '#B8860B'}}>
                   PORQUE MÁS QUE UN CAMBIO DE LOOK, ES UN RENACER.
                 </h3>
-                <div className="space-y-4 text-gray-600 text-lg mb-8">
+                <div className="space-y-4 text-lg mb-8" style={{color: '#B8860B'}}>
                   <p>
                     Cada método de extensiones es una oportunidad para que cada mujer se mire al espejo y reconecte con
                     su mejor versión.
@@ -744,7 +744,7 @@ export default function Home() {
         {/* Certificaciones Section */}
         <section id="certificaciones" className="py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-[#B8860B] text-sm md:text-base uppercase tracking-widest mb-4">
+            <p className="text-sm md:text-base uppercase tracking-widest mb-4" style={{color: 'black'}}>
               Cursos Online y Presenciales.
             </p>
 
@@ -778,7 +778,7 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contacto" className="py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-[#B8860B] text-sm md:text-base uppercase tracking-widest mb-4">
+            <p className="text-sm md:text-base uppercase tracking-widest mb-4" style={{color: 'black'}}>
               ¿Lista para tu transformación?
             </p>
 
