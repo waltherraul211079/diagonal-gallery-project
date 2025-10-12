@@ -290,13 +290,6 @@ export default function AccesoriosPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 bg-black/30 backdrop-blur-sm">
-        <div className="container mx-auto px-4 text-center">
-          <p style={{color: '#B8860B'}}>&copy; 2024 Silva Hair. Todos los derechos reservados.</p>
-        </div>
-      </footer>
-
       {/* Floating WhatsApp Icon */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
@@ -313,6 +306,40 @@ export default function AccesoriosPage() {
           />
         </a>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-gradient-to-br from-[#FFFCC6] to-[#FAF1A4] py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="border-t border-[#D4AF37]/30 mt-12 pt-8 text-center">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
+              <Link
+                href="/terminos-servicio"
+                className="text-[#8B7355] hover:text-[#4A4A4A] transition-colors underline text-sm"
+              >
+                Términos del Servicio
+              </Link>
+              <span className="text-[#8B7355] hidden md:inline">|</span>
+              <Link
+                href="/politica-privacidad"
+                className="text-[#8B7355] hover:text-[#4A4A4A] transition-colors underline text-sm"
+              >
+                Política de Privacidad
+              </Link>
+            </div>
+            <p className="text-[#8B7355] text-sm">
+              © 2025 Silva Hair Extensions – Todos los derechos reservados. Web desarrollada por{" "}
+              <a
+                href="https://github.com/cronoxxxx"
+                target="_blank"
+                className="text-[#8B7355] hover:text-[#4A4A4A] transition-colors underline"
+                rel="noreferrer"
+              >
+                @cronoxxxx
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }
