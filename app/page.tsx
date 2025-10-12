@@ -495,10 +495,10 @@ export default function Home() {
                     className="w-32 h-32 rounded-full object-cover border-4 border-[#D4AF37]"
                   />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-800 mb-4">INVISIBLE WELF SLIM</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">INVISIBLE WELF SLIM</h3>
                 <p className="text-base text-gray-800">
-                  Un método que fusiona la micropiel con una ligera costura, dejando su diseño aún más invisible, fino y
-                  resistente. Extensiones altamente adaptables a cualquier tipo de cabello, ideales para mujeres que
+                  Un método que fusiona la micropiel con una ligera costura en un diseñio invisible, fino y
+                  resistente. Extensiones altamente adaptables a cualquier tipo de cabello, para mujeres que
                   buscan un resultado abundante e impactante.
                 </p>
               </div>
