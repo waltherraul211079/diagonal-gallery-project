@@ -421,7 +421,7 @@ export default function Flequillos() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#F5F5DC] py-16 px-4">
+      <footer className="bg-gradient-to-br from-[#FFFCC6] to-[#FAF1A4] py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="border-t border-[#D4AF37]/30 mt-12 pt-8 text-center">
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
