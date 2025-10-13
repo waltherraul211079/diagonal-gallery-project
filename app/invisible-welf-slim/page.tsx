@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
+import InvisibleCarousel from "@/app/components/InvisibleCarousel"
 
 export default function InvisibleWelfSlim() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -232,11 +233,9 @@ export default function InvisibleWelfSlim() {
               </ul>
             </div>
             <div className="relative">
-              <img
-                src="/images/inject-3.jpeg"
-                alt="Invisible Welf Slim resultado"
-                className="rounded-lg shadow-xl w-full"
-              />
+              <div className="aspect-[16/9] w-full">
+                <InvisibleCarousel />
+              </div>
             </div>
           </div>
         </div>
