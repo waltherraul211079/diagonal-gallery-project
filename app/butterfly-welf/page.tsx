@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import ButterflyCarousel from '../components/ButterflyCarousel'
+import ColorGallery from '../components/ColorGallery'
 
 export default function ButterflyWelf() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -243,41 +244,12 @@ export default function ButterflyWelf() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+
+
+      {/* Color Gallery Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
-            Beneficios del Butterfly Welf
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                ✨
-              </div>
-              <h3 className="text-xl font-semibold mb-2" style={{color: '#B8860B'}}>Volumen Instantáneo</h3>
-              <p style={{color: '#B8860B'}}>
-                Obtén el volumen que siempre has deseado de manera inmediata y completamente natural.
-              </p>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                🦋
-              </div>
-              <h3 className="text-xl font-semibold mb-2" style={{color: '#B8860B'}}>Efecto Mariposa</h3>
-              <p style={{color: '#B8860B'}}>
-                El patrón único de colocación crea un movimiento natural que imita el vuelo de una mariposa.
-              </p>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                💎
-              </div>
-              <h3 className="text-xl font-semibold mb-2" style={{color: '#B8860B'}}>Calidad Premium</h3>
-              <p style={{color: '#B8860B'}}>
-                Utilizamos solo cabello humano de la más alta calidad para garantizar resultados excepcionales.
-              </p>
-            </div>
-          </div>
+          <ColorGallery />
         </div>
       </section>
 
