@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
+import ButterflyCarousel from '../components/ButterflyCarousel'
 
 export default function ButterflyWelf() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -233,11 +234,10 @@ export default function ButterflyWelf() {
               </ul>
             </div>
             <div className="relative">
-              <img
-                src="/images/inject-2.jpeg"
-                alt="Butterfly Welf resultado"
-                className="rounded-lg shadow-xl w-full"
-              />
+              {/* Carousel Container */}
+              <div className="rounded-lg shadow-xl overflow-hidden h-96">
+                <ButterflyCarousel />
+              </div>
             </div>
           </div>
         </div>
