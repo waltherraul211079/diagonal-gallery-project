@@ -57,36 +57,36 @@ export default function InvisibleWelfSlim() {
 
         {/* Desktop Navigation - Left Side */}
         <nav className="hidden md:flex justify-end gap-6 pr-0">
-          <Link href="/" className="hover:text-gray-300 text-lg cursor-pointer">
+          <button onClick={() => scrollToSection('home')} className="hover:text-gray-300 text-lg cursor-pointer">
             Inicio
-          </Link>
+          </button>
           <div className="relative dropdown-container">
             <button 
               onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
-              className="hover:text-gray-300 text-lg flex items-center gap-2 cursor-pointer"
+              className="hover:text-gray-300 text-lg flex items-center gap-1 cursor-pointer"
             >
               Métodos
               <ChevronDown className={`h-4 w-4 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             {isMetodosDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg p-4 min-w-[200px] z-50 text-black">
-                <div className="flex flex-col space-y-2">
-                  <a href="/inject-3d-slim" className="hover:text-gray-300 text-base whitespace-nowrap cursor-pointer">
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-50">
+                <div className="py-1">
+                  <a href="/inject-3d-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
                     Inject 3d Slim
                   </a>
-                  <a href="/butterfly-welf" className="hover:text-gray-300 text-base whitespace-nowrap cursor-pointer">
+                  <a href="/butterfly-welf" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
                     Butterfly Welf
                   </a>
-                  <a href="/invisible-welf-slim" className="hover:text-gray-300 text-base whitespace-nowrap cursor-pointer">
+                  <a href="/invisible-welf-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
                     Invisible Welf Slim
                   </a>
-                  <a href="/extensiones-adhesivas" className="hover:text-gray-300 text-base whitespace-nowrap cursor-pointer">
+                  <a href="/extensiones-adhesivas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
                     Extensiones Adhesivas
                   </a>
-                  <a href="/toppers" className="hover:text-gray-300 text-base whitespace-nowrap cursor-pointer">
+                  <a href="/toppers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
                     Toppers
                   </a>
-                  <a href="/flequillos" className="hover:text-gray-300 text-base whitespace-nowrap cursor-pointer">
+                  <a href="/flequillos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
                     Flequillos
                   </a>
                 </div>
@@ -100,7 +100,7 @@ export default function InvisibleWelfSlim() {
 
         {/* Logo */}
         <div className="flex justify-center mb-4 md:mb-0">
-          <Link href="/" className="hover:opacity-80 transition-opacity">
+          <Link href="/" className="hover:opacity-80 transition-opacity cursor-pointer">
             <img
               src="/images/silva-h-logo-branca-300x291.png"
               alt="Silva Hair Extensions Logo"
@@ -111,13 +111,13 @@ export default function InvisibleWelfSlim() {
 
         {/* Desktop Navigation - Right Side */}
         <nav className="hidden md:flex justify-start gap-6 pl-0">
-          <button onClick={() => window.location.href = '/#nuestra-historia'} className="hover:text-gray-300 text-lg cursor-pointer">
+          <button onClick={() => scrollToSection('nuestra-historia')} className="hover:text-gray-300 whitespace-nowrap text-lg cursor-pointer">
             Nuestra Historia
           </button>
-          <button onClick={() => window.location.href = '/#por-que-elegirnos'} className="hover:text-gray-300 text-lg cursor-pointer">
+          <button onClick={() => scrollToSection('por-que-elegirnos')} className="hover:text-gray-300 whitespace-nowrap text-lg cursor-pointer">
             Por qué Elegirnos
           </button>
-          <button onClick={() => window.location.href = '/#certificaciones'} className="hover:text-gray-300 text-lg cursor-pointer">
+          <button onClick={() => scrollToSection('certificaciones')} className="hover:text-gray-300 text-lg cursor-pointer">
             Certificaciones
           </button>
         </nav>
