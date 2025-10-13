@@ -190,10 +190,10 @@ export default function ButterflyWelf() {
       {/* Hero Section */}
       <section className="pt-40 pb-20 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Butterfly Welf
           </h1>
-          <p className="text-xl text-black mb-8 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 max-w-3xl mx-auto" style={{color: '#B8860B'}}>
             Técnica innovadora que proporciona volumen y movimiento natural. El método Butterfly Welf crea un efecto mariposa único en tu cabello.
           </p>
         </div>
@@ -204,16 +204,16 @@ export default function ButterflyWelf() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-black mb-6">
+              <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
                 ¿Qué es Butterfly Welf?
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Butterfly Welf es una técnica especializada que utiliza un patrón de colocación único que imita el movimiento natural del cabello, creando un efecto voluminoso y dinámico.
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="mb-6" style={{color: '#B8860B'}}>
                 Esta técnica es perfecta para quienes buscan un cambio dramático pero natural, proporcionando cuerpo y textura excepcionales.
               </p>
-              <ul className="space-y-2 text-gray-600">
+              <ul className="space-y-2" style={{color: '#B8860B'}}>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
                   Efecto volumen natural
@@ -246,7 +246,7 @@ export default function ButterflyWelf() {
       {/* Benefits Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Beneficios del Butterfly Welf
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -254,8 +254,8 @@ export default function ButterflyWelf() {
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 ✨
               </div>
-              <h3 className="text-xl font-semibold mb-2">Volumen Instantáneo</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2" style={{color: '#B8860B'}}>Volumen Instantáneo</h3>
+              <p style={{color: '#B8860B'}}>
                 Obtén el volumen que siempre has deseado de manera inmediata y completamente natural.
               </p>
             </div>
@@ -263,8 +263,8 @@ export default function ButterflyWelf() {
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 🦋
               </div>
-              <h3 className="text-xl font-semibold mb-2">Efecto Mariposa</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2" style={{color: '#B8860B'}}>Efecto Mariposa</h3>
+              <p style={{color: '#B8860B'}}>
                 El patrón único de colocación crea un movimiento natural que imita el vuelo de una mariposa.
               </p>
             </div>
@@ -272,8 +272,8 @@ export default function ButterflyWelf() {
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 💎
               </div>
-              <h3 className="text-xl font-semibold mb-2">Calidad Premium</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2" style={{color: '#B8860B'}}>Calidad Premium</h3>
+              <p style={{color: '#B8860B'}}>
                 Utilizamos solo cabello humano de la más alta calidad para garantizar resultados excepcionales.
               </p>
             </div>
@@ -284,10 +284,10 @@ export default function ButterflyWelf() {
       {/* CTA Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-black mb-6">
+          <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
             Experimenta la magia del Butterfly Welf
           </h2>
-          <p className="text-xl text-black mb-8">
+          <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Transforma tu cabello con nuestra técnica exclusiva
           </p>
           <Button className="bg-[#D4AF37] hover:bg-[#B8860B] text-white px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300">

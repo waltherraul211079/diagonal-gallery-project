@@ -191,10 +191,10 @@ export default function Inject3dSlim() {
       {/* Hero Section */}
       <section className="pt-40 pb-12">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Inject 3D Slim
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 max-w-3xl mx-auto" style={{color: '#B8860B'}}>
             La técnica más avanzada en extensiones capilares. Volumen natural y resultados espectaculares con la innovadora tecnología Inject 3D Slim.
           </p>
         </div>
@@ -205,22 +205,22 @@ export default function Inject3dSlim() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-black mb-6">
+              <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
                 ¿Qué es Inject 3D Slim?
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Inject 3D Slim es una técnica revolucionaria que permite agregar volumen y longitud de manera completamente natural. Utilizamos hebras ultra-finas que se integran perfectamente con tu cabello natural.
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="mb-6" style={{color: '#B8860B'}}>
                 Esta técnica es ideal para personas que buscan un cambio sutil pero efectivo, proporcionando densidad y movimiento natural al cabello.
               </p>
               
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Las Extensiones Inject 3D Slim son fabricadas por piezas de 25cm de largo e aproximadamente 20gr cada pieza
               </p>
               
-              <h4 className="font-semibold text-gray-800 mb-3">Estilo y largos disponibles:</h4>
-              <ul className="space-y-2 text-gray-600">
+              <h4 className="font-semibold mb-3" style={{color: '#B8860B'}}>Estilo y largos disponibles:</h4>
+              <ul className="space-y-2" style={{color: '#B8860B'}}>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
                   25cm 50cm / 2Piezas 30gr
@@ -258,7 +258,7 @@ export default function Inject3dSlim() {
       {/* Gallery Section */}
       <section className="py-10 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-8">
+          <h2 className="text-3xl font-bold text-center mb-8" style={{color: '#B8860B'}}>
             Galería de Colores Inject 3D Slim
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -270,7 +270,7 @@ export default function Inject3dSlim() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-center text-black">Negro Nº 1</h3>
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Negro Nº 1</h3>
               </div>
             </div>
 
@@ -282,7 +282,7 @@ export default function Inject3dSlim() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-center text-black">Negro Nº 1B</h3>
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Negro Nº 1B</h3>
               </div>
             </div>
 
@@ -294,7 +294,7 @@ export default function Inject3dSlim() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-center text-black">Castaño Nº 2</h3>
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 2</h3>
               </div>
             </div>
 
@@ -306,7 +306,7 @@ export default function Inject3dSlim() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-center text-black">Castaño Nº 4</h3>
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 4</h3>
               </div>
             </div>
 
@@ -318,7 +318,7 @@ export default function Inject3dSlim() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-center text-black">Rubio Extraclaro Nº 60</h3>
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Extraclaro Nº 60</h3>
               </div>
             </div>
 
@@ -330,7 +330,7 @@ export default function Inject3dSlim() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-center text-black">Rubio Mechado Nº 60-8</h3>
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Mechado Nº 60-8</h3>
               </div>
             </div>
 
@@ -342,7 +342,7 @@ export default function Inject3dSlim() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-center text-black">Rubio Claro Nº 613</h3>
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Claro Nº 613</h3>
               </div>
             </div>
 
@@ -354,7 +354,7 @@ export default function Inject3dSlim() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-center text-black">Colores Personalizados</h3>
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Colores Personalizados</h3>
               </div>
             </div>
           </div>
@@ -364,10 +364,10 @@ export default function Inject3dSlim() {
       {/* CTA Section */}
       <section className="py-10 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-black">
+          <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
             ¿Lista para transformar tu cabello?
           </h2>
-          <p className="text-xl mb-8 text-black">
+          <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Descubre el poder que hay en tí con Inject 3D Slim
           </p>
           <a

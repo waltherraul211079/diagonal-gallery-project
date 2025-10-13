@@ -69,7 +69,7 @@ export default function InvisibleWelfSlim() {
               <ChevronDown className={`h-4 w-4 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             {isMetodosDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 bg-black bg-opacity-90 rounded-lg shadow-lg p-4 min-w-[200px] z-50">
+              <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg p-4 min-w-[200px] z-50 text-black">
                 <div className="flex flex-col space-y-2">
                   <a href="/inject-3d-slim" className="hover:text-gray-300 text-base whitespace-nowrap cursor-pointer">
                     Inject 3d Slim
@@ -189,10 +189,10 @@ export default function InvisibleWelfSlim() {
       {/* Hero Section */}
       <section className="pt-40 pb-20 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Invisible Welf Slim
           </h1>
-          <p className="text-xl text-black mb-8 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 max-w-3xl mx-auto" style={{color: '#B8860B'}}>
             La técnica más discreta y natural. Invisible Welf Slim proporciona longitud y volumen sin que nadie note que llevas extensiones.
           </p>
         </div>
@@ -203,16 +203,16 @@ export default function InvisibleWelfSlim() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-black mb-6">
+              <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
                 ¿Qué es Invisible Welf Slim?
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Invisible Welf Slim es la técnica más avanzada en discreción. Utiliza hebras ultra-finas y un método de aplicación que hace completamente imperceptible la presencia de extensiones.
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="mb-6" style={{color: '#B8860B'}}>
                 Ideal para personas con cabello fino o que buscan un resultado completamente natural sin comprometer la comodidad.
               </p>
-              <ul className="space-y-2 text-gray-600">
+              <ul className="space-y-2" style={{color: '#B8860B'}}>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
                   Completamente invisible
@@ -245,7 +245,7 @@ export default function InvisibleWelfSlim() {
       {/* Features Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Características Únicas
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -253,29 +253,29 @@ export default function InvisibleWelfSlim() {
               <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
                 👁️
               </div>
-              <h3 className="font-semibold mb-2">Invisible</h3>
-              <p className="text-sm text-gray-600">Nadie notará que llevas extensiones</p>
+              <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Invisible</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>Nadie notará que llevas extensiones</p>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
               <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
                 🪶
               </div>
-              <h3 className="font-semibold mb-2">Ultra-ligero</h3>
-              <p className="text-sm text-gray-600">Sensación de cabello natural</p>
+              <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Ultra-ligero</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>Sensación de cabello natural</p>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
               <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
                 💧
               </div>
-              <h3 className="font-semibold mb-2">Resistente</h3>
-              <p className="text-sm text-gray-600">Resistente al agua y sudor</p>
+              <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Resistente</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>Resistente al agua y sudor</p>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
               <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
                 ⚡
               </div>
-              <h3 className="font-semibold mb-2">Rápido</h3>
-              <p className="text-sm text-gray-600">Aplicación en tiempo récord</p>
+              <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Rápido</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>Aplicación en tiempo récord</p>
             </div>
           </div>
         </div>
@@ -284,12 +284,12 @@ export default function InvisibleWelfSlim() {
       {/* Before/After Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Resultados Increíbles
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-4">Antes</h3>
+              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Antes</h3>
               <img
                 src="/images/inject-4.jpeg"
                 alt="Antes del tratamiento"
@@ -297,7 +297,7 @@ export default function InvisibleWelfSlim() {
               />
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-4">Después</h3>
+              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Después</h3>
               <img
                 src="/images/inject-5.jpeg"
                 alt="Después del tratamiento"
@@ -311,10 +311,10 @@ export default function InvisibleWelfSlim() {
       {/* CTA Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-black mb-6">
+          <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
             Descubre la magia de lo invisible
           </h2>
-          <p className="text-xl text-black mb-8">
+          <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Experimenta la técnica más discreta y natural del mercado
           </p>
           <Button className="bg-[#D4AF37] hover:bg-[#B8860B] text-white px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300">

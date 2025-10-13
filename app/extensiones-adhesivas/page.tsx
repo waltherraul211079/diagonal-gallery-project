@@ -70,7 +70,7 @@ export default function ExtensionesAdhesivas() {
               <ChevronDown className={`h-4 w-4 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             {isMetodosDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 bg-black bg-opacity-90 rounded-lg shadow-lg p-4 min-w-[200px] z-50">
+              <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg p-4 min-w-[200px] z-50 text-black">
                 <div className="flex flex-col space-y-2">
                   <a href="/inject-3d-slim" className="hover:text-gray-300 text-base whitespace-nowrap cursor-pointer">
                     Inject 3d Slim
@@ -190,10 +190,10 @@ export default function ExtensionesAdhesivas() {
       {/* Hero Section */}
       <section className="pt-40 pb-20 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Extensiones Adhesivas
           </h1>
-          <p className="text-xl text-black mb-8 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 max-w-3xl mx-auto" style={{color: '#B8860B'}}>
             La solución perfecta para un cambio rápido y temporal. Nuestras extensiones adhesivas ofrecen versatilidad y comodidad sin compromisos.
           </p>
         </div>
@@ -204,16 +204,16 @@ export default function ExtensionesAdhesivas() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-black mb-6">
+              <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
                 ¿Qué son las Extensiones Adhesivas?
               </h2>
-              <p className="text-black mb-4">
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Las extensiones adhesivas son la opción ideal para quienes buscan flexibilidad y facilidad de uso. Se aplican mediante un adhesivo especial que es seguro para el cabello y permite cambios rápidos de look.
               </p>
-              <p className="text-black mb-6">
+              <p className="mb-6" style={{color: '#B8860B'}}>
                 Perfectas para eventos especiales, cambios temporales o para probar un nuevo estilo antes de comprometerse con algo más permanente.
               </p>
-              <ul className="space-y-2 text-black">
+              <ul className="space-y-2" style={{color: '#B8860B'}}>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                   Aplicación rápida (30-45 min)
@@ -246,7 +246,7 @@ export default function ExtensionesAdhesivas() {
       {/* Advantages Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Ventajas de las Extensiones Adhesivas
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -254,8 +254,8 @@ export default function ExtensionesAdhesivas() {
               <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 ⚡
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center">Rapidez</h3>
-              <p className="text-gray-600 text-center">
+              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Rapidez</h3>
+              <p className="text-center" style={{color: '#B8860B'}}>
                 Aplicación en menos de una hora. Perfecto para cambios de último minuto.
               </p>
             </div>
@@ -263,8 +263,8 @@ export default function ExtensionesAdhesivas() {
               <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 🔄
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center">Versatilidad</h3>
-              <p className="text-gray-600 text-center">
+              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Versatilidad</h3>
+              <p className="text-center" style={{color: '#B8860B'}}>
                 Cambia tu look cuando quieras. Ideal para experimentar con diferentes estilos.
               </p>
             </div>
@@ -272,8 +272,8 @@ export default function ExtensionesAdhesivas() {
               <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 💰
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center">Económico</h3>
-              <p className="text-gray-600 text-center">
+              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Económico</h3>
+              <p className="text-center" style={{color: '#B8860B'}}>
                 Opción más accesible para probar extensiones sin una gran inversión inicial.
               </p>
             </div>
@@ -284,14 +284,14 @@ export default function ExtensionesAdhesivas() {
       {/* Care Instructions */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Cuidados y Mantenimiento
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-orange-600">Cuidados Diarios</h3>
-                <ul className="space-y-3 text-gray-600">
+                <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Cuidados Diarios</h3>
+                <ul className="space-y-3" style={{color: '#B8860B'}}>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
                     Cepilla suavemente desde las puntas hacia arriba
@@ -307,8 +307,8 @@ export default function ExtensionesAdhesivas() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-orange-600">Recomendaciones</h3>
-                <ul className="space-y-3 text-gray-600">
+                <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Recomendaciones</h3>
+                <ul className="space-y-3" style={{color: '#B8860B'}}>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
                     Duerme con el cabello recogido en una trenza suelta
@@ -331,10 +331,10 @@ export default function ExtensionesAdhesivas() {
       {/* CTA Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-black">
+          <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
             ¿Lista para un cambio rápido?
           </h2>
-          <p className="text-xl mb-8 text-black">
+          <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Prueba nuestras extensiones adhesivas y transforma tu look en minutos
           </p>
           <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">

@@ -190,10 +190,10 @@ export default function Flequillos() {
       {/* Hero Section */}
       <section className="pt-40 pb-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Flequillos
           </h1>
-          <p className="text-xl text-black mb-8 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 max-w-3xl mx-auto" style={{color: '#B8860B'}}>
             Cambia tu look al instante con nuestros flequillos naturales. La forma más rápida y versátil de renovar tu estilo sin compromisos.
           </p>
         </div>
@@ -204,16 +204,16 @@ export default function Flequillos() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-black mb-6">
+              <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
                 ¿Por qué elegir nuestros Flequillos?
               </h2>
-              <p className="text-black mb-4">
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Nuestros flequillos están fabricados con cabello humano de la más alta calidad, diseñados para integrarse perfectamente con tu cabello natural. Son la solución ideal para experimentar con un nuevo look sin el compromiso de cortar tu propio cabello.
               </p>
-              <p className="text-black mb-6">
+              <p className="mb-6" style={{color: '#B8860B'}}>
                 Disponibles en múltiples estilos, desde flequillos rectos clásicos hasta modernos flequillos laterales, todos personalizables según tu rostro y preferencias.
               </p>
-              <ul className="space-y-2 text-black">
+              <ul className="space-y-2" style={{color: '#B8860B'}}>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                   Cabello humano 100% natural
@@ -246,7 +246,7 @@ export default function Flequillos() {
       {/* Styles Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Estilos de Flequillos
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -254,8 +254,8 @@ export default function Flequillos() {
               <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 ✂️
               </div>
-              <h3 className="text-lg font-semibold mb-2">Recto Clásico</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Recto Clásico</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>
                 El flequillo tradicional que nunca pasa de moda. Perfecto para rostros ovalados.
               </p>
             </div>
@@ -263,8 +263,8 @@ export default function Flequillos() {
               <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 🌊
               </div>
-              <h3 className="text-lg font-semibold mb-2">Lateral</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Lateral</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>
                 Flequillo peinado hacia un lado. Ideal para suavizar facciones angulares.
               </p>
             </div>
@@ -272,8 +272,8 @@ export default function Flequillos() {
               <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 ✨
               </div>
-              <h3 className="text-lg font-semibold mb-2">Desfilado</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Desfilado</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>
                 Flequillo con capas que aporta movimiento y textura natural.
               </p>
             </div>
@@ -281,8 +281,8 @@ export default function Flequillos() {
               <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 🎭
               </div>
-              <h3 className="text-lg font-semibold mb-2">Cortina</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Cortina</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>
                 Flequillo dividido al medio que enmarca el rostro elegantemente.
               </p>
             </div>
@@ -293,7 +293,7 @@ export default function Flequillos() {
       {/* Application Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Métodos de Aplicación
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -301,11 +301,11 @@ export default function Flequillos() {
               <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">📎</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Clip-In</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Clip-In</h3>
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Aplicación instantánea con clips seguros. Perfecto para uso ocasional o diario.
               </p>
-              <ul className="text-sm text-gray-600 space-y-2">
+              <ul className="text-sm space-y-2" style={{color: '#B8860B'}}>
                 <li>• Aplicación en segundos</li>
                 <li>• No requiere profesional</li>
                 <li>• Reutilizable infinitas veces</li>
@@ -315,11 +315,11 @@ export default function Flequillos() {
               <div className="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🎯</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Adhesivo</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Adhesivo</h3>
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Fijación con adhesivo especial para mayor seguridad y naturalidad.
               </p>
-              <ul className="text-sm text-gray-600 space-y-2">
+              <ul className="text-sm space-y-2" style={{color: '#B8860B'}}>
                 <li>• Mayor seguridad</li>
                 <li>• Aspecto más natural</li>
                 <li>• Duración de 2-4 semanas</li>
@@ -329,11 +329,11 @@ export default function Flequillos() {
               <div className="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">✨</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Integrado</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Integrado</h3>
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Aplicación profesional que se integra completamente con tu cabello.
               </p>
-              <ul className="text-sm text-gray-600 space-y-2">
+              <ul className="text-sm space-y-2" style={{color: '#B8860B'}}>
                 <li>• Resultado profesional</li>
                 <li>• Máxima naturalidad</li>
                 <li>• Personalización completa</li>
@@ -346,13 +346,13 @@ export default function Flequillos() {
       {/* Tips Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Consejos para el Cuidado
           </h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4 text-orange-600">Cuidado Diario</h3>
-              <ul className="space-y-3 text-gray-600">
+              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Cuidado Diario</h3>
+              <ul className="space-y-3" style={{color: '#B8860B'}}>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
                   Cepilla suavemente con un cepillo de cerdas suaves
@@ -368,8 +368,8 @@ export default function Flequillos() {
               </ul>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4 text-orange-600">Mantenimiento</h3>
-              <ul className="space-y-3 text-gray-600">
+              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Mantenimiento</h3>
+              <ul className="space-y-3" style={{color: '#B8860B'}}>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
                   Lava cada 15-20 usos
@@ -391,10 +391,10 @@ export default function Flequillos() {
       {/* CTA Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-black">
+          <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
             ¿Lista para un cambio de look?
           </h2>
-          <p className="text-xl mb-8 text-black">
+          <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Descubre nuestros flequillos y encuentra el estilo perfecto para ti
           </p>
           <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">

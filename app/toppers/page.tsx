@@ -189,10 +189,10 @@ export default function Toppers() {
       {/* Hero Section */}
       <section className="pt-40 pb-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Toppers
           </h1>
-          <p className="text-xl text-black mb-8 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 max-w-3xl mx-auto" style={{color: '#B8860B'}}>
             La solución perfecta para agregar volumen y cobertura en la zona superior. Nuestros toppers proporcionan densidad instantánea donde más la necesitas.
           </p>
         </div>
@@ -203,16 +203,16 @@ export default function Toppers() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-black mb-6">
+              <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
                 ¿Qué son los Toppers?
               </h2>
-              <p className="text-black mb-4">
+              <p className="mb-4" style={{color: '#B8860B'}}>
                 Los toppers son piezas capilares especialmente diseñadas para cubrir y dar volumen a la zona superior de la cabeza. Son ideales para personas con adelgazamiento capilar o que buscan mayor densidad en áreas específicas.
               </p>
-              <p className="text-black mb-6">
+              <p className="mb-6" style={{color: '#B8860B'}}>
                 Fabricados con cabello humano de alta calidad, se integran perfectamente con tu cabello natural, proporcionando cobertura y volumen instantáneos.
               </p>
-              <ul className="space-y-2 text-black">
+              <ul className="space-y-2" style={{color: '#B8860B'}}>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                   Cobertura instantánea
@@ -245,7 +245,7 @@ export default function Toppers() {
       {/* Types Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Tipos de Toppers
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -253,11 +253,11 @@ export default function Toppers() {
               <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 📎
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center">Clip-In</h3>
-              <p className="text-gray-600 text-center mb-4">
+              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Clip-In</h3>
+              <p className="text-center mb-4" style={{color: '#B8860B'}}>
                 Fácil aplicación con clips seguros. Perfecto para uso diario y ocasional.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1">
+              <ul className="text-sm space-y-1" style={{color: '#B8860B'}}>
                 <li>• Aplicación en segundos</li>
                 <li>• Reutilizable</li>
                 <li>• No daña el cabello</li>
@@ -267,11 +267,11 @@ export default function Toppers() {
               <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 🔗
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center">Semi-Permanente</h3>
-              <p className="text-gray-600 text-center mb-4">
+              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Semi-Permanente</h3>
+              <p className="text-center mb-4" style={{color: '#B8860B'}}>
                 Aplicación profesional con mayor duración. Ideal para uso continuo.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1">
+              <ul className="text-sm space-y-1" style={{color: '#B8860B'}}>
                 <li>• Duración 2-3 meses</li>
                 <li>• Mayor seguridad</li>
                 <li>• Aplicación profesional</li>
@@ -281,11 +281,11 @@ export default function Toppers() {
               <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                 ✨
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center">Personalizado</h3>
-              <p className="text-gray-600 text-center mb-4">
+              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Personalizado</h3>
+              <p className="text-center mb-4" style={{color: '#B8860B'}}>
                 Diseñado específicamente para tu tipo de cabello y necesidades.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1">
+              <ul className="text-sm space-y-1" style={{color: '#B8860B'}}>
                 <li>• Medidas exactas</li>
                 <li>• Color perfecto</li>
                 <li>• Máxima naturalidad</li>
@@ -298,7 +298,7 @@ export default function Toppers() {
       {/* Benefits Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Beneficios de los Toppers
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -306,29 +306,29 @@ export default function Toppers() {
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="font-semibold mb-2">Cobertura Precisa</h3>
-              <p className="text-sm text-gray-600">Cubre exactamente donde necesitas volumen</p>
+              <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Cobertura Precisa</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>Cubre exactamente donde necesitas volumen</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">⚡</span>
               </div>
-              <h3 className="font-semibold mb-2">Resultado Inmediato</h3>
-              <p className="text-sm text-gray-600">Volumen y densidad al instante</p>
+              <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Resultado Inmediato</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>Volumen y densidad al instante</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🌟</span>
               </div>
-              <h3 className="font-semibold mb-2">Aspecto Natural</h3>
-              <p className="text-sm text-gray-600">Se integra perfectamente con tu cabello</p>
+              <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Aspecto Natural</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>Se integra perfectamente con tu cabello</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">💪</span>
               </div>
-              <h3 className="font-semibold mb-2">Confianza</h3>
-              <p className="text-sm text-gray-600">Recupera tu autoestima y seguridad</p>
+              <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Confianza</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>Recupera tu autoestima y seguridad</p>
             </div>
           </div>
         </div>
@@ -337,7 +337,7 @@ export default function Toppers() {
       {/* Process Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
             Proceso de Selección
           </h2>
           <div className="max-w-4xl mx-auto">
@@ -346,8 +346,8 @@ export default function Toppers() {
                 <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
                   1
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Consulta</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Consulta</h3>
+                <p className="text-sm" style={{color: '#B8860B'}}>
                   Evaluamos tu cabello y determinamos el tipo de topper ideal para ti.
                 </p>
               </div>
@@ -355,8 +355,8 @@ export default function Toppers() {
                 <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
                   2
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Personalización</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Personalización</h3>
+                <p className="text-sm" style={{color: '#B8860B'}}>
                   Seleccionamos el color, textura y tamaño perfecto para tu caso.
                 </p>
               </div>
@@ -364,8 +364,8 @@ export default function Toppers() {
                 <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
                   3
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Aplicación</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Aplicación</h3>
+                <p className="text-sm" style={{color: '#B8860B'}}>
                   Instalamos profesionalmente tu topper para un resultado natural.
                 </p>
               </div>
@@ -377,10 +377,10 @@ export default function Toppers() {
       {/* CTA Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-black">
+          <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
             ¿Lista para recuperar tu confianza?
           </h2>
-          <p className="text-xl mb-8 text-black">
+          <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Agenda una consulta y descubre cómo nuestros toppers pueden transformar tu imagen
           </p>
           <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">
