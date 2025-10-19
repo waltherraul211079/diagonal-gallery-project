@@ -511,17 +511,17 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left side: Portrait and Signature */}
-              <div className="relative flex flex-col items-center lg:items-start">
+              <div className="relative flex flex-col items-center">
                 {/* Portrait */}
                 <div className="relative w-80 h-80 mb-8">
                   <img
                     src="/images/founder-portrait.jpeg"
                     alt="Founder Portrait"
-                    className="w-full h-full rounded-full object-cover shadow-2xl border-4 border-[#D4AF37]"
+                    className="w-full h-full rounded-full object-cover object-top shadow-2xl border-4 border-[#D4AF37]"
                   />
                 </div>
                 {/* Signature */}
-                <div className="flex flex-col items-center lg:items-start">
+                <div className="flex flex-col items-center">
                   <img src="/images/founder-signature.png" alt="E Silva Signature" className="h-16 w-auto mb-2" />
                   <p className="text-gray-600 text-lg italic">Founder e CEO</p>
                 </div>

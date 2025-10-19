@@ -333,7 +333,7 @@ export default function Inject3dSlim() {
           <h2 className="text-3xl font-bold text-center mb-8" style={{color: '#B8860B'}}>
             Galería de Colores Inject 3D Slim
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-5 grid-rows-2 gap-6">
             {/* Negro Nº 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <img
@@ -379,6 +379,18 @@ export default function Inject3dSlim() {
               />
               <div className="p-4">
                 <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 4</h3>
+              </div>
+            </div>
+
+            {/* Castaño Nº 7 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Injec 3d slim/Castano N7.jpg"
+                alt="Castaño Nº 7"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 7</h3>
               </div>
             </div>
 
