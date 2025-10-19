@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import InjectCarousel from "@/app/components/InjectCarousel"
 
 export default function Inject3dSlim() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -189,7 +190,7 @@ export default function Inject3dSlim() {
       )}
 
       {/* Hero Section */}
-      <section className="pt-40 pb-12">
+      <section className="pt-40 pb-6">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Inject 3D Slim
@@ -201,7 +202,7 @@ export default function Inject3dSlim() {
       </section>
 
       {/* Content Section */}
-      <section className="py-10 bg-transparent">
+      <section className="pt-4 pb-10 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -218,35 +219,106 @@ export default function Inject3dSlim() {
               <p className="mb-4" style={{color: '#B8860B'}}>
                 Las Extensiones Inject 3D Slim son fabricadas por piezas de 25cm de largo e aproximadamente 20gr cada pieza
               </p>
+              <br />
+              <h4 className="font-semibold mb-4" style={{color: '#B8860B'}}>Estilos y Largos Disponibles</h4>
               
-              <h4 className="font-semibold mb-3" style={{color: '#B8860B'}}>Estilo y largos disponibles:</h4>
-              <ul className="space-y-2" style={{color: '#B8860B'}}>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  25cm 50cm / 2Piezas 30gr
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  25cm 60cm / 2piezas 40gr
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  25cm 70cm / 2piezas 50gr
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  25cm 75cm / 2piezas 60gr
-                </li>
-              </ul>
+              
+              {/* Tabla de Estilos y Precios */}
+              <div className="mb-6">
+                <table className="w-full border-collapse border border-gray-400 mb-4">
+                  <thead>
+                    <tr className="bg-gray-100">
+                      <th className="border border-gray-400 px-3 py-2 text-left font-semibold" style={{color: '#B8860B'}}>
+                        Capa y largo
+                      </th>
+                      <th className="border border-gray-400 px-3 py-2 text-center font-semibold" style={{color: '#B8860B'}}>
+                        Precio tono oscuro
+                      </th>
+                      <th className="border border-gray-400 px-3 py-2 text-center font-semibold" style={{color: '#B8860B'}}>
+                        Precio tono claro
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-400 px-3 py-2" style={{color: '#B8860B'}}>
+                        25cm 50cm / 1 Pieza 20gr
+                      </td>
+                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
+                        €79,90
+                      </td>
+                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
+                        €89,90
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-400 px-3 py-2" style={{color: '#B8860B'}}>
+                        25cm 60cm / 1 pieza 20gr
+                      </td>
+                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
+                        €79,90
+                      </td>
+                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
+                        €89,90
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-400 px-3 py-2" style={{color: '#B8860B'}}>
+                        25cm 70cm / 1 pieza 25gr
+                      </td>
+                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
+                        Agotado
+                      </td>
+                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
+                        Agotado
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Tabla de Colores */}
+              <div>
+                <h5 className="font-semibold mb-3" style={{color: '#B8860B'}}>Colores:</h5>
+                <table className="w-full border-collapse border border-gray-400">
+                  <thead>
+                    <tr className="bg-gray-100">
+                      <th className="border border-gray-400 px-3 py-2 text-left font-semibold" style={{color: '#B8860B'}}>
+                        Tonos oscuros
+                      </th>
+                      <th className="border border-gray-400 px-3 py-2 text-left font-semibold" style={{color: '#B8860B'}}>
+                        Tonos claros
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-400 px-3 py-2 align-top" style={{color: '#B8860B'}}>
+                        <ul className="space-y-1">
+                          <li>• 1</li>
+                          <li>• 1B</li>
+                          <li>• 2</li>
+                          <li>• 4</li>
+                          <li>• 7</li>
+                        </ul>
+                      </td>
+                      <td className="border border-gray-400 px-3 py-2 align-top" style={{color: '#B8860B'}}>
+                        <ul className="space-y-1">
+                          <li>• 613</li>
+                          <li>• 60</li>
+                          <li>• 60/8</li>
+                          <li>• Color personalizado</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div className="relative w-full max-w-lg mx-auto">
-              {/* Fixed Image */}
+            <div className="relative w-full max-w-lg mx-auto self-start mt-6">
+              {/* Inject Carousel */}
               <div className="w-full h-80 relative bg-transparent overflow-hidden rounded-lg shadow-xl">
-                <img
-                  src="/images/Injec 3d slim/1000057251.jpg"
-                  alt="Inject 3D Slim - Extensiones capilares con microesferas"
-                  className="w-full h-full object-cover bg-transparent"
-                />
+                <InjectCarousel />
               </div>
             </div>
           </div>
