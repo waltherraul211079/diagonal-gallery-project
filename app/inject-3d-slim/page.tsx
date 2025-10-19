@@ -217,7 +217,7 @@ export default function Inject3dSlim() {
               </p>
               
               <p className="mb-4" style={{color: '#B8860B'}}>
-                Las Extensiones Inject 3D Slim son fabricadas por piezas de 25cm de largo e aproximadamente 20gr cada pieza
+                Las Extensiones Inject 3D Slim son fabricadas en piezas de 50cm, 60cm y 70cm de largo y aproximadamente 20gr cada pieza.
               </p>
               <br />
               <h4 className="font-semibold mb-4" style={{color: '#B8860B'}}>Estilos y Largos Disponibles</h4>
