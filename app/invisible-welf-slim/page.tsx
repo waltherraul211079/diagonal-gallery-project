@@ -202,7 +202,7 @@ export default function InvisibleWelfSlim() {
       {/* Content Section */}
       <section className="pt-2 pb-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl font-bold mb-6" style={{color: '#B8860B'}}>
                 ¿Qué es Invisible Welf Slim?
@@ -210,152 +210,89 @@ export default function InvisibleWelfSlim() {
               <p className="mb-4" style={{color: '#B8860B'}}>
                 Invisible Welf Slim es la técnica más avanzada en discreción. Utiliza hebras ultra-finas y un método de aplicación que hace completamente imperceptible la presencia de extensiones.
               </p>
-              <p className="mb-6" style={{color: '#B8860B'}}>
+              <p className="mb-8" style={{color: '#B8860B'}}>
                 Ideal para personas con cabello fino o que buscan un resultado completamente natural sin comprometer la comodidad.
               </p>
+
+              {/* Estilos y Largos Disponibles */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4" style={{color: '#B8860B'}}>
+                  Estilos y Largos Disponibles
+                </h3>
+                <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
+                  <table className="w-full">
+                    <thead className="bg-[#B8860B] text-white">
+                      <tr>
+                        <th className="px-4 py-3 text-left">Capa y largo</th>
+                        <th className="px-4 py-3 text-center">Precio tono oscuro</th>
+                        <th className="px-4 py-3 text-center">Precio tono claro</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[#B8860B]">
+                      <tr className="border-b border-[#B8860B]/20">
+                        <td className="px-4 py-3">25cm 50cm / 1 Pieza 20gr</td>
+                        <td className="px-4 py-3 text-center">€55,90</td>
+                        <td className="px-4 py-3 text-center">€59,90</td>
+                      </tr>
+                      <tr className="border-b border-[#B8860B]/20">
+                        <td className="px-4 py-3">25cm 60cm / 1 pieza 20gr</td>
+                        <td className="px-4 py-3 text-center">€59,90</td>
+                        <td className="px-4 py-3 text-center">€64,90</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3">25cm 70cm / 1 pieza 25gr</td>
+                        <td className="px-4 py-3 text-center">Agotado</td>
+                        <td className="px-4 py-3 text-center">Agotado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Colores */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4" style={{color: '#B8860B'}}>
+                  Colores:
+                </h3>
+                <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
+                  <div className="bg-[#B8860B] text-white">
+                    <div className="grid md:grid-cols-2 gap-0">
+                      <div className="px-4 py-3 text-left">
+                        <h5 className="font-medium">Tonos oscuros</h5>
+                      </div>
+                      <div className="px-4 py-3 text-left">
+                        <h5 className="font-medium">Tonos claros</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-0 text-[#B8860B]">
+                    <div className="px-4 py-3">
+                      <ul className="space-y-1">
+                        <li>• 1</li>
+                        <li>• 1B</li>
+                        <li>• 2</li>
+                        <li>• 4</li>
+                        <li>• 7</li>
+                      </ul>
+                    </div>
+                    <div className="px-4 py-3">
+                      <ul className="space-y-1">
+                        <li>• 60</li>
+                        <li>• 4-60</li>
+                        <li>• 613</li>
+                        <li>• 4-613</li>
+                        <li>• 7-613</li>
+                        <li>• 60/8</li>
+                        <li>• Color personalizado</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="relative w-full max-w-lg mx-auto self-start mt-6">
               <div className="w-full h-80 relative bg-transparent overflow-hidden rounded-lg shadow-xl">
                 <InvisibleCarousel />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing and Colors Section */}
-      <section className="py-16 bg-transparent">
-        <div className="container mx-auto px-4">
-          {/* Estilos y Largos Disponibles */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-6 text-center" style={{color: '#B8860B'}}>
-              Estilos y Largos Disponibles
-            </h2>
-            <div className="bg-gradient-to-br from-[#FFFCC6] to-[#FAF1A4] rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white">
-                <div className="grid grid-cols-3 gap-0">
-                  <div className="px-4 py-3 font-semibold border-r border-[#B8860B]/30">
-                    Capa y largo
-                  </div>
-                  <div className="px-4 py-3 font-semibold text-center border-r border-[#B8860B]/30">
-                    Precio tono oscuro
-                  </div>
-                  <div className="px-4 py-3 font-semibold text-center">
-                    Precio tono claro
-                  </div>
-                </div>
-              </div>
-              <div className="divide-y divide-[#D4AF37]/20">
-                <div className="grid grid-cols-3 gap-0 hover:bg-[#FFFCC6]/50 transition-colors">
-                  <div className="px-4 py-3 border-r border-[#D4AF37]/20" style={{color: '#B8860B'}}>
-                    25cm 50cm / 1 Pieza 20gr
-                  </div>
-                  <div className="px-4 py-3 text-center border-r border-[#D4AF37]/20" style={{color: '#B8860B'}}>
-                    €55,90
-                  </div>
-                  <div className="px-4 py-3 text-center" style={{color: '#B8860B'}}>
-                    €59,90
-                  </div>
-                </div>
-                <div className="grid grid-cols-3 gap-0 hover:bg-[#FFFCC6]/50 transition-colors">
-                  <div className="px-4 py-3 border-r border-[#D4AF37]/20" style={{color: '#B8860B'}}>
-                    25cm 60cm / 1 pieza 20gr
-                  </div>
-                  <div className="px-4 py-3 text-center border-r border-[#D4AF37]/20" style={{color: '#B8860B'}}>
-                    €59,90
-                  </div>
-                  <div className="px-4 py-3 text-center" style={{color: '#B8860B'}}>
-                    €64,90
-                  </div>
-                </div>
-                <div className="grid grid-cols-3 gap-0 hover:bg-[#FFFCC6]/50 transition-colors">
-                  <div className="px-4 py-3 border-r border-[#D4AF37]/20" style={{color: '#B8860B'}}>
-                    25cm 70cm / 1 pieza 25gr
-                  </div>
-                  <div className="px-4 py-3 text-center border-r border-[#D4AF37]/20" style={{color: '#B8860B'}}>
-                    Agotado
-                  </div>
-                  <div className="px-4 py-3 text-center" style={{color: '#B8860B'}}>
-                    Agotado
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Colores */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-6 text-center" style={{color: '#B8860B'}}>
-              Colores:
-            </h2>
-            <div className="bg-gradient-to-br from-[#FFFCC6] to-[#FAF1A4] rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white">
-                <div className="grid grid-cols-2 gap-0">
-                  <div className="px-4 py-3 font-semibold border-r border-[#B8860B]/30">
-                    Tonos oscuros
-                  </div>
-                  <div className="px-4 py-3 font-semibold">
-                    Tonos claros
-                  </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-0">
-                <div className="px-4 py-6 border-r border-[#D4AF37]/20">
-                  <ul className="space-y-2" style={{color: '#B8860B'}}>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      1
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      1B
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      2
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      4
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      7
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4 py-6">
-                  <ul className="space-y-2" style={{color: '#B8860B'}}>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      60
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      4-60
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      613
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      4-613
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      7-613
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      60/8
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      Color personalizado
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>
