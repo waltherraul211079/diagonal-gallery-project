@@ -190,7 +190,7 @@ export default function ButterflyWelf() {
       )}
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20 bg-transparent">
+      <section className="pt-40 pb-8 bg-transparent">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Butterfly Welf
@@ -202,7 +202,7 @@ export default function ButterflyWelf() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-transparent">
+      <section className="pt-4 pb-8 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -218,21 +218,90 @@ export default function ButterflyWelf() {
               <ul className="space-y-2" style={{color: '#B8860B'}}>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  Efecto volumen natural
+                  25cm 50cm / 1 Pieza 20gr
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  Movimiento dinámico
+                  25cm 60cm / 1 pieza 20gr
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  Duración de 4-5 meses
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  Técnica patentada
+                  25cm 70cm / 1 pieza 25gr
                 </li>
               </ul>
+              
+              {/* Pricing Table */}
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>
+                  Estilos y Largos Disponibles
+                </h3>
+                <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
+                  <table className="w-full">
+                    <thead className="bg-[#B8860B] text-white">
+                      <tr>
+                        <th className="px-4 py-3 text-left">Capa y largo</th>
+                        <th className="px-4 py-3 text-center">Precio tono oscuro</th>
+                        <th className="px-4 py-3 text-center">Precio tono claro</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[#B8860B]">
+                      <tr className="border-b border-[#B8860B]/20">
+                        <td className="px-4 py-3">25cm 50cm / 1 Pieza 20gr</td>
+                        <td className="px-4 py-3 text-center">€79,90</td>
+                        <td className="px-4 py-3 text-center">€89,90</td>
+                      </tr>
+                      <tr className="border-b border-[#B8860B]/20">
+                        <td className="px-4 py-3">25cm 60cm / 1 pieza 20gr</td>
+                        <td className="px-4 py-3 text-center">€79,90</td>
+                        <td className="px-4 py-3 text-center">€89,90</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3">25cm 70cm / 1 pieza 25gr</td>
+                        <td className="px-4 py-3 text-center">Agotado</td>
+                        <td className="px-4 py-3 text-center">Agotado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                {/* Colors Section */}
+                <div className="mt-6">
+                  <h4 className="text-lg font-semibold mb-3" style={{color: '#B8860B'}}>
+                    Colores:
+                  </h4>
+                  <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
+                    <div className="bg-[#B8860B] text-white">
+                      <div className="grid md:grid-cols-2 gap-0">
+                        <div className="px-4 py-3 text-left">
+                          <h5 className="font-medium">Tonos oscuros</h5>
+                        </div>
+                        <div className="px-4 py-3 text-left">
+                          <h5 className="font-medium">Tonos claros</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-0 text-[#B8860B]">
+                      <div className="px-4 py-3">
+                        <ul className="space-y-1">
+                          <li>• 1</li>
+                          <li>• 1B</li>
+                          <li>• 2</li>
+                          <li>• 4</li>
+                          <li>• 7</li>
+                        </ul>
+                      </div>
+                      <div className="px-4 py-3">
+                        <ul className="space-y-1">
+                          <li>• 613</li>
+                          <li>• 60</li>
+                          <li>• 60/8</li>
+                          <li>• Color personalizado</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="relative">
               {/* Carousel Container */}

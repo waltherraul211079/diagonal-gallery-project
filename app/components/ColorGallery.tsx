@@ -59,24 +59,12 @@ const ColorGallery = () => {
           {/* Rubio Extraclaro Nº 60 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <img
-              src="/images/Butterfly Welf/Rubio Nº613.jpg"
+              src="/images/Butterfly Welf/Rubio Extraclaro Nº 60.jpg"
               alt="Rubio Extraclaro Nº 60"
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Extraclaro Nº 60</h3>
-            </div>
-          </div>
-
-          {/* Rubio Mechado Nº 60-8 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <img
-              src="/images/Butterfly Welf/Rubio mechado Nº60-8.jpg"
-              alt="Rubio Mechado Nº 60-8"
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Mechado Nº 60-8</h3>
             </div>
           </div>
 
@@ -89,6 +77,18 @@ const ColorGallery = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Claro Nº 613</h3>
+            </div>
+          </div>
+
+          {/* Rubio Mechado Nº 60-8 */}
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <img
+              src="/images/Butterfly Welf/Rubio mechado Nº60-8.jpg"
+              alt="Rubio Mechado Nº 60-8"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Mechado Nº 60-8</h3>
             </div>
           </div>
 
