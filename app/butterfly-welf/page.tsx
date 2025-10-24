@@ -215,20 +215,6 @@ export default function ButterflyWelf() {
               <p className="mb-6" style={{color: '#B8860B'}}>
                 Esta técnica es perfecta para quienes buscan un cambio dramático pero natural, proporcionando cuerpo y textura excepcionales.
               </p>
-              <ul className="space-y-2" style={{color: '#B8860B'}}>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  25cm 50cm / 1 Pieza 20gr
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  25cm 60cm / 1 pieza 20gr
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-[#D4AF37] rounded-full"></span>
-                  25cm 70cm / 1 pieza 25gr
-                </li>
-              </ul>
               
               {/* Pricing Table */}
               <div className="mt-8">
