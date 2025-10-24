@@ -220,99 +220,78 @@ export default function Inject3dSlim() {
                 Las Extensiones Inject 3D Slim son fabricadas en piezas de 50cm, 60cm y 70cm de largo y aproximadamente 20gr cada pieza.
               </p>
               <br />
-              <h4 className="font-semibold mb-4" style={{color: '#B8860B'}}>Estilos y Largos Disponibles</h4>
-              
               
               {/* Tabla de Estilos y Precios */}
               <div className="mb-6">
-                <table className="w-full border-collapse border border-gray-400 mb-4">
-                  <thead>
-                    <tr className="bg-gray-100">
-                      <th className="border border-gray-400 px-3 py-2 text-left font-semibold" style={{color: '#B8860B'}}>
-                        Capa y largo
-                      </th>
-                      <th className="border border-gray-400 px-3 py-2 text-center font-semibold" style={{color: '#B8860B'}}>
-                        Precio tono oscuro
-                      </th>
-                      <th className="border border-gray-400 px-3 py-2 text-center font-semibold" style={{color: '#B8860B'}}>
-                        Precio tono claro
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="border border-gray-400 px-3 py-2" style={{color: '#B8860B'}}>
-                        25cm 50cm / 1 Pieza 20gr
-                      </td>
-                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
-                        €79,90
-                      </td>
-                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
-                        €89,90
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-400 px-3 py-2" style={{color: '#B8860B'}}>
-                        25cm 60cm / 1 pieza 20gr
-                      </td>
-                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
-                        €79,90
-                      </td>
-                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
-                        €89,90
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-400 px-3 py-2" style={{color: '#B8860B'}}>
-                        25cm 70cm / 1 pieza 25gr
-                      </td>
-                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
-                        Agotado
-                      </td>
-                      <td className="border border-gray-400 px-3 py-2 text-center" style={{color: '#B8860B'}}>
-                        Agotado
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>
+                  Estilos y Largos Disponibles
+                </h3>
+                <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
+                  <table className="w-full">
+                    <thead className="bg-[#B8860B] text-white">
+                      <tr>
+                        <th className="px-4 py-3 text-left">Capa y largo</th>
+                        <th className="px-4 py-3 text-center">Precio tono oscuro</th>
+                        <th className="px-4 py-3 text-center">Precio tono claro</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[#B8860B]">
+                      <tr className="border-b border-[#B8860B]/20">
+                        <td className="px-4 py-3">25cm 50cm / 1 Pieza 20gr</td>
+                        <td className="px-4 py-3 text-center">€79,90</td>
+                        <td className="px-4 py-3 text-center">€89,90</td>
+                      </tr>
+                      <tr className="border-b border-[#B8860B]/20">
+                        <td className="px-4 py-3">25cm 60cm / 1 pieza 20gr</td>
+                        <td className="px-4 py-3 text-center">€79,90</td>
+                        <td className="px-4 py-3 text-center">€89,90</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3">25cm 70cm / 1 pieza 25gr</td>
+                        <td className="px-4 py-3 text-center">Agotado</td>
+                        <td className="px-4 py-3 text-center">Agotado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               {/* Tabla de Colores */}
               <div>
-                <h5 className="font-semibold mb-3" style={{color: '#B8860B'}}>Colores:</h5>
-                <table className="w-full border-collapse border border-gray-400">
-                  <thead>
-                    <tr className="bg-gray-100">
-                      <th className="border border-gray-400 px-3 py-2 text-left font-semibold" style={{color: '#B8860B'}}>
-                        Tonos oscuros
-                      </th>
-                      <th className="border border-gray-400 px-3 py-2 text-left font-semibold" style={{color: '#B8860B'}}>
-                        Tonos claros
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="border border-gray-400 px-3 py-2 align-top" style={{color: '#B8860B'}}>
-                        <ul className="space-y-1">
-                          <li>• 1</li>
-                          <li>• 1B</li>
-                          <li>• 2</li>
-                          <li>• 4</li>
-                          <li>• 7</li>
-                        </ul>
-                      </td>
-                      <td className="border border-gray-400 px-3 py-2 align-top" style={{color: '#B8860B'}}>
-                        <ul className="space-y-1">
-                          <li>• 613</li>
-                          <li>• 60</li>
-                          <li>• 60/8</li>
-                          <li>• Color personalizado</li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <h4 className="text-lg font-semibold mb-3" style={{color: '#B8860B'}}>
+                  Colores:
+                </h4>
+                <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
+                  <div className="bg-[#B8860B] text-white">
+                    <div className="grid md:grid-cols-2 gap-0">
+                      <div className="px-4 py-3 text-left">
+                        <h5 className="font-medium">Tonos oscuros</h5>
+                      </div>
+                      <div className="px-4 py-3 text-left">
+                        <h5 className="font-medium">Tonos claros</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-0 text-[#B8860B]">
+                    <div className="px-4 py-3">
+                      <ul className="space-y-1">
+                        <li>• 1</li>
+                        <li>• 1B</li>
+                        <li>• 2</li>
+                        <li>• 4</li>
+                        <li>• 7</li>
+                      </ul>
+                    </div>
+                    <div className="px-4 py-3">
+                      <ul className="space-y-1">
+                        <li>• 613</li>
+                        <li>• 60</li>
+                        <li>• 60/8</li>
+                        <li>• Color personalizado</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="relative w-full max-w-lg mx-auto self-start mt-6">
@@ -333,112 +312,109 @@ export default function Inject3dSlim() {
           <h2 className="text-3xl font-bold text-center mb-8" style={{color: '#B8860B'}}>
             Galería de Colores Inject 3D Slim
           </h2>
-          <div className="grid grid-cols-5 grid-rows-2 gap-6">
-            {/* Negro Nº 1 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Negro Nº 1.jpg"
-                alt="Negro Nº 1"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Negro Nº 1</h3>
+          <div className="space-y-6">
+            {/* Primera fila - 5 imágenes */}
+            <div className="grid grid-cols-5 gap-6">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Negro Nº 1.jpg"
+                  alt="Negro Nº 1"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Negro Nº 1</h3>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Negro Nº 1B.jpg"
+                  alt="Negro Nº 1B"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Negro Nº 1B</h3>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Castano Nº2.jpg"
+                  alt="Castaño Nº 2"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 2</h3>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Castano Nº 4.jpg"
+                  alt="Castaño Nº 4"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 4</h3>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Castano N7.jpg"
+                  alt="Castaño Nº 7"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 7</h3>
+                </div>
               </div>
             </div>
 
-            {/* Negro Nº 1B */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Negro Nº 1B.jpg"
-                alt="Negro Nº 1B"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Negro Nº 1B</h3>
+            {/* Segunda fila - 4 imágenes centradas */}
+            <div className="grid grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Rubio Extraclaro Nº 60.jpg"
+                  alt="Rubio Extraclaro Nº 60"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Extraclaro Nº 60</h3>
+                </div>
               </div>
-            </div>
 
-            {/* Castaño Nº 2 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Castano Nº2.jpg"
-                alt="Castaño Nº 2"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 2</h3>
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Rubiomechado Nº 60-8.jpg"
+                  alt="Rubio Mechado Nº 60-8"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Mechado Nº 60-8</h3>
+                </div>
               </div>
-            </div>
 
-            {/* Castaño Nº 4 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Castano Nº 4.jpg"
-                alt="Castaño Nº 4"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 4</h3>
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Rubio Claro Nº 613.jpg"
+                  alt="Rubio Claro Nº 613"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Claro Nº 613</h3>
+                </div>
               </div>
-            </div>
 
-            {/* Castaño Nº 7 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Castano N7.jpg"
-                alt="Castaño Nº 7"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 7</h3>
-              </div>
-            </div>
-
-            {/* Rubio Extraclaro Nº 60 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Rubio Extraclaro Nº 60.jpg"
-                alt="Rubio Extraclaro Nº 60"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Extraclaro Nº 60</h3>
-              </div>
-            </div>
-
-            {/* Rubio Mechado Nº 60-8 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Rubiomechado Nº 60-8.jpg"
-                alt="Rubio Mechado Nº 60-8"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Mechado Nº 60-8</h3>
-              </div>
-            </div>
-
-            {/* Rubio Claro Nº 613 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Rubio Claro Nº 613.jpg"
-                alt="Rubio Claro Nº 613"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Claro Nº 613</h3>
-              </div>
-            </div>
-
-            {/* Colores Personalizados */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/images/Injec 3d slim/Colores Personalizados.jpg"
-                alt="Colores Personalizados"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Colores Personalizados</h3>
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="/images/Injec 3d slim/Colores Personalizados.jpg"
+                  alt="Colores Personalizados"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Colores Personalizados</h3>
+                </div>
               </div>
             </div>
           </div>
