@@ -303,9 +303,9 @@ export default function ButterflyWelf() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative w-full max-w-lg mx-auto self-start mt-6">
               {/* Carousel Container */}
-              <div className="rounded-lg shadow-xl overflow-hidden h-96">
+              <div className="w-full h-80 relative bg-transparent overflow-hidden rounded-lg shadow-xl">
                 <ButterflyCarousel />
               </div>
             </div>

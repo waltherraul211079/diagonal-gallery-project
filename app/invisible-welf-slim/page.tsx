@@ -188,7 +188,7 @@ export default function InvisibleWelfSlim() {
       )}
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20 bg-transparent">
+      <section className="pt-40 pb-8 bg-transparent">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Invisible Welf Slim
@@ -200,7 +200,7 @@ export default function InvisibleWelfSlim() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-transparent">
+      <section className="pt-8 pb-16 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -232,8 +232,8 @@ export default function InvisibleWelfSlim() {
                 </li>
               </ul>
             </div>
-            <div className="relative">
-              <div className="aspect-[16/9] w-full">
+            <div className="relative w-full max-w-lg mx-auto self-start mt-6">
+              <div className="w-full h-80 relative bg-transparent overflow-hidden rounded-lg shadow-xl">
                 <InvisibleCarousel />
               </div>
             </div>
