@@ -188,7 +188,7 @@ export default function InvisibleWelfSlim() {
       )}
 
       {/* Hero Section */}
-      <section className="pt-40 pb-8 bg-transparent">
+      <section className="pt-40 pb-2 bg-transparent">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Invisible Welf Slim
@@ -200,7 +200,7 @@ export default function InvisibleWelfSlim() {
       </section>
 
       {/* Content Section */}
-      <section className="pt-8 pb-16 bg-transparent">
+      <section className="pt-2 pb-16 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -251,10 +251,10 @@ export default function InvisibleWelfSlim() {
                     25cm 50cm / 1 Pieza 20gr
                   </div>
                   <div className="px-4 py-3 text-center border-r border-[#D4AF37]/20" style={{color: '#B8860B'}}>
-                    €79,90
+                    €55,90
                   </div>
                   <div className="px-4 py-3 text-center" style={{color: '#B8860B'}}>
-                    €89,90
+                    €59,90
                   </div>
                 </div>
                 <div className="grid grid-cols-3 gap-0 hover:bg-[#FFFCC6]/50 transition-colors">
@@ -262,10 +262,10 @@ export default function InvisibleWelfSlim() {
                     25cm 60cm / 1 pieza 20gr
                   </div>
                   <div className="px-4 py-3 text-center border-r border-[#D4AF37]/20" style={{color: '#B8860B'}}>
-                    €79,90
+                    €59,90
                   </div>
                   <div className="px-4 py-3 text-center" style={{color: '#B8860B'}}>
-                    €89,90
+                    €64,90
                   </div>
                 </div>
                 <div className="grid grid-cols-3 gap-0 hover:bg-[#FFFCC6]/50 transition-colors">
@@ -328,11 +328,23 @@ export default function InvisibleWelfSlim() {
                   <ul className="space-y-2" style={{color: '#B8860B'}}>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
+                      60
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
+                      4-60
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
                       613
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
-                      60
+                      4-613
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
+                      7-613
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-2"></span>
