@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import InvisibleCarousel from "@/app/components/InvisibleCarousel"
+import InvisibleColorGallery from "@/app/components/InvisibleColorGallery"
 
 export default function InvisibleWelfSlim() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -298,6 +299,9 @@ export default function InvisibleWelfSlim() {
           </div>
         </div>
       </section>
+
+      {/* Color Gallery Section */}
+      <InvisibleColorGallery />
 
       {/* CTA Section */}
       <section className="py-16 bg-transparent">
