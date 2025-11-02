@@ -231,24 +231,24 @@ export default function ExtensionesAdhesivas() {
                       <tr>
                         <th className="px-4 py-3 text-left">Capa y largo</th>
                         <th className="px-4 py-3 text-center">Precio tono oscuro</th>
-                        <th className="px-4 py-3 text-center">Precio tono claro</th>
+                        <th className="px-4 py-3 text-center">Precio tono rubio y personalizado</th>
                       </tr>
                     </thead>
                     <tbody className="text-[#B8860B]">
                       <tr className="border-b border-[#B8860B]/20">
-                        <td className="px-4 py-3">40cm / 20 piezas</td>
-                        <td className="px-4 py-3 text-center">€89,90</td>
-                        <td className="px-4 py-3 text-center">€99,90</td>
+                        <td className="px-4 py-3 whitespace-nowrap">4cm 50cm / 20 piezas 20gr</td>
+                        <td className="px-4 py-3 text-center">€69.90</td>
+                        <td className="px-4 py-3 text-center">€74.90</td>
                       </tr>
                       <tr className="border-b border-[#B8860B]/20">
-                        <td className="px-4 py-3">50cm / 20 piezas</td>
-                        <td className="px-4 py-3 text-center">€99,90</td>
-                        <td className="px-4 py-3 text-center">€109,90</td>
+                        <td className="px-4 py-3 whitespace-nowrap">4cm 60cm / 20 piezas 20gr</td>
+                        <td className="px-4 py-3 text-center">€74.90</td>
+                        <td className="px-4 py-3 text-center">€79.90</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-3">60cm / 20 piezas</td>
-                        <td className="px-4 py-3 text-center">€109,90</td>
-                        <td className="px-4 py-3 text-center">€119,90</td>
+                        <td className="px-4 py-3 whitespace-nowrap">4cm 70cm / 20 piezas 25gr</td>
+                        <td className="px-4 py-3 text-center">Agotado</td>
+                        <td className="px-4 py-3 text-center">Agotado</td>
                       </tr>
                     </tbody>
                   </table>
@@ -267,7 +267,7 @@ export default function ExtensionesAdhesivas() {
                         <h5 className="font-medium">Tonos oscuros</h5>
                       </div>
                       <div className="px-4 py-3 text-left">
-                        <h5 className="font-medium">Tonos claros</h5>
+                        <h5 className="font-medium">Tonos rubios y personalizado</h5>
                       </div>
                     </div>
                   </div>
@@ -275,21 +275,20 @@ export default function ExtensionesAdhesivas() {
                     <div className="px-4 py-3">
                       <ul className="space-y-1">
                         <li>• 1</li>
-                        <li>• 1B</li>
                         <li>• 2</li>
                         <li>• 4</li>
                         <li>• 7</li>
+                        <li>• 9</li>
+                        <li>• 60</li>
                       </ul>
                     </div>
                     <div className="px-4 py-3">
                       <ul className="space-y-1">
-                        <li>• 60</li>
-                        <li>• 4-60</li>
-                        <li>• 613</li>
-                        <li>• 4-613</li>
-                        <li>• 7-613</li>
-                        <li>• 60/8</li>
-                        <li>• Color personalizado</li>
+                        <li>• 4 con raíz 2</li>
+                        <li>• 7 con raíz 2</li>
+                        <li>• 9 con raíz 2</li>
+                        <li>• 613-9 con raíz 2</li>
+                        <li>• 613-60 mechado</li>
                       </ul>
                     </div>
                   </div>
@@ -307,226 +306,145 @@ export default function ExtensionesAdhesivas() {
           <h2 className="text-3xl font-bold text-center mb-8" style={{color: '#B8860B'}}>
             Galería de Colores Extensiones Adhesivas
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {/* Color 1 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 1.jpg"
-                  alt="Color 1"
-                  className="w-full h-full object-cover"
-                />
+          <div className="grid grid-cols-4 gap-6">
+            {/* Color Nº1 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº1.jpg"
+                alt="Color Nº1"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº1</h3>
               </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 1</h3>
             </div>
             
-            {/* Color 1B */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 1B.jpg"
-                  alt="Color 1B"
-                  className="w-full h-full object-cover"
-                />
+            {/* Color Nº2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº2.jpg"
+                alt="Color Nº2"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº2</h3>
               </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 1B</h3>
             </div>
             
-            {/* Color 2 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 2.jpg"
-                  alt="Color 2"
-                  className="w-full h-full object-cover"
-                />
+            {/* Color Nº4 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº4.jpg"
+                alt="Color Nº4"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº4</h3>
               </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 2</h3>
+            </div>
+
+            {/* Color Nº7 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº7.jpg"
+                alt="Color Nº7"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº7</h3>
+              </div>
+            </div>
+
+            {/* Color Nº9 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº9.jpg"
+                alt="Color Nº9"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº9</h3>
+              </div>
+            </div>
+
+            {/* Color Nº60 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº60.jpg"
+                alt="Color Nº60"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº60</h3>
+              </div>
             </div>
             
-            {/* Color 4 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 4.jpg"
-                  alt="Color 4"
-                  className="w-full h-full object-cover"
-                />
+            {/* Color Nº4 Raíz 2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº4 Raíz 2.jpg"
+                alt="Color Nº4 Raíz 2"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº4 Raíz 2</h3>
               </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 4</h3>
             </div>
             
-            {/* Color 7 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 7.jpg"
-                  alt="Color 7"
-                  className="w-full h-full object-cover"
-                />
+            {/* Color Nº7 Raíz 2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº7 Raíz 2.jpg"
+                alt="Color Nº7 Raíz 2"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº7 Raíz 2</h3>
               </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 7</h3>
             </div>
             
-            {/* Color 60 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 60.jpg"
-                  alt="Color 60"
-                  className="w-full h-full object-cover"
-                />
+            {/* Color Nº9 Raíz 2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº9 Raíz 2.jpg"
+                alt="Color Nº9 Raíz 2"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº9 Raíz 2</h3>
               </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 60</h3>
             </div>
             
-            {/* Color 4-60 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 4-60.jpg"
-                  alt="Color 4-60"
-                  className="w-full h-full object-cover"
-                />
+            
+            
+            {/* Color 613-9 Raíz 2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color 613-9 Raíz 2.jpg"
+                alt="Color 613-9 Raíz 2"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color 613-9 Raíz 2</h3>
               </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 4-60</h3>
             </div>
             
-            {/* Color 613 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 613.jpg"
-                  alt="Color 613"
-                  className="w-full h-full object-cover"
-                />
+            {/* Color Nº613-60 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/images/Extensiones Adhesivas/Color Nº613-60.jpg"
+                alt="Color Nº613-60"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 bg-[#B8860B]">
+                <h3 className="text-lg font-semibold text-center text-white">Color Nº613-60 mechado</h3>
               </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 613</h3>
-            </div>
-            
-            {/* Color 4-613 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 4-613.jpg"
-                  alt="Color 4-613"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 4-613</h3>
-            </div>
-            
-            {/* Color 7-613 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 7-613.jpg"
-                  alt="Color 7-613"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 7-613</h3>
-            </div>
-            
-            {/* Color 60/8 */}
-            <div className="text-center">
-              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
-                <img
-                  src="/images/Extensiones Adhesivas/Color 60-8.jpg"
-                  alt="Color 60/8"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 60/8</h3>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Advantages Section */}
-      <section className="py-16 bg-transparent">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
-            Ventajas de las Extensiones Adhesivas
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                ⚡
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Rapidez</h3>
-              <p className="text-center" style={{color: '#B8860B'}}>
-                Aplicación en menos de una hora. Perfecto para cambios de último minuto.
-              </p>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                🔄
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Versatilidad</h3>
-              <p className="text-center" style={{color: '#B8860B'}}>
-                Cambia tu look cuando quieras. Ideal para experimentar con diferentes estilos.
-              </p>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                💰
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Económico</h3>
-              <p className="text-center" style={{color: '#B8860B'}}>
-                Opción más accesible para probar extensiones sin una gran inversión inicial.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Care Instructions */}
-      <section className="py-16 bg-transparent">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
-            Cuidados y Mantenimiento
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Cuidados Diarios</h3>
-                <ul className="space-y-3" style={{color: '#B8860B'}}>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Cepilla suavemente desde las puntas hacia arriba
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Evita productos con alcohol cerca de las cintas
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Usa productos sin sulfatos
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Recomendaciones</h3>
-                <ul className="space-y-3" style={{color: '#B8860B'}}>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Duerme con el cabello recogido en una trenza suelta
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Evita el calor excesivo en las cintas adhesivas
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Programa revisiones cada 3-4 semanas
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA Section */}
       <section className="py-16 bg-transparent">
@@ -537,9 +455,16 @@ export default function ExtensionesAdhesivas() {
           <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Prueba nuestras extensiones adhesivas y transforma tu look en minutos
           </p>
-          <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">
-            Reservar Ahora
-          </Button>
+          <a
+            href="https://wa.me/34634277456"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button className="bg-yellow-500 text-white hover:bg-white hover:text-black px-8 py-3 text-lg transition-colors duration-300">
+              Contactar Ahora
+            </Button>
+          </a>
         </div>
       </section>
 

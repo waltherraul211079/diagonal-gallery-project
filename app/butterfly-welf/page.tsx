@@ -317,9 +317,16 @@ export default function ButterflyWelf() {
           <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Transforma tu cabello con nuestra técnica exclusiva
           </p>
-          <Button className="bg-[#D4AF37] hover:bg-[#B8860B] text-white px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-            Reservar Cita
-          </Button>
+          <a
+            href="https://wa.me/34634277456"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button className="bg-yellow-500 text-white hover:bg-white hover:text-black px-8 py-3 text-lg transition-colors duration-300">
+              Contactar Ahora
+            </Button>
+          </a>
         </div>
       </section>
 

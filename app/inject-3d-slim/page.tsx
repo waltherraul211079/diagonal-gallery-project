@@ -317,56 +317,56 @@ export default function Inject3dSlim() {
             <div className="grid grid-cols-5 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="/images/Injec 3d slim/Negro Nº 1.jpg"
-                  alt="Negro Nº 1"
+                  src="/images/Injec 3d slim/Color Nº1.jpg"
+                  alt="Color Nº1"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Negro Nº 1</h3>
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº1</h3>
                 </div>
               </div>
 
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="/images/Injec 3d slim/Negro Nº 1B.jpg"
-                  alt="Negro Nº 1B"
+                  src="/images/Injec 3d slim/Color Nº1B.jpg"
+                  alt="Color Nº1B"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Negro Nº 1B</h3>
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº1B</h3>
                 </div>
               </div>
 
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="/images/Injec 3d slim/Castano Nº2.jpg"
-                  alt="Castaño Nº 2"
+                  src="/images/Injec 3d slim/Color Nº2.jpg"
+                  alt="Color Nº2"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 2</h3>
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº2</h3>
                 </div>
               </div>
 
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="/images/Injec 3d slim/Castano Nº 4.jpg"
-                  alt="Castaño Nº 4"
+                  src="/images/Injec 3d slim/Color Nº4.jpg"
+                  alt="Color Nº4"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 4</h3>
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº4</h3>
                 </div>
               </div>
 
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="/images/Injec 3d slim/Castano N7.jpg"
-                  alt="Castaño Nº 7"
+                  src="/images/Injec 3d slim/Color Nº7.jpg"
+                  alt="Color Nº7"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Castaño Nº 7</h3>
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº7</h3>
                 </div>
               </div>
             </div>
@@ -375,34 +375,34 @@ export default function Inject3dSlim() {
             <div className="grid grid-cols-5 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="/images/Injec 3d slim/Rubio Extraclaro Nº 60.jpg"
-                  alt="Rubio Extraclaro Nº 60"
+                  src="/images/Injec 3d slim/Color Nº60.jpg"
+                  alt="Color Nº60"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Extraclaro Nº 60</h3>
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº60</h3>
                 </div>
               </div>
 
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="/images/Injec 3d slim/Rubiomechado Nº 60-8.jpg"
-                  alt="Rubio Mechado Nº 60-8"
+                  src="/images/Injec 3d slim/Color Nº60-8.jpg"
+                  alt="Color Nº60-8"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Mechado Nº 60-8</h3>
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº60-8</h3>
                 </div>
               </div>
 
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="/images/Injec 3d slim/Rubio Claro Nº 613.jpg"
-                  alt="Rubio Claro Nº 613"
+                  src="/images/Injec 3d slim/Color Nº613.jpg"
+                  alt="Color Nº613"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Rubio Claro Nº 613</h3>
+                  <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº613</h3>
                 </div>
               </div>
 
