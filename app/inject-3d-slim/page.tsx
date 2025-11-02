@@ -371,8 +371,8 @@ export default function Inject3dSlim() {
               </div>
             </div>
 
-            {/* Segunda fila - 4 imágenes centradas */}
-            <div className="grid grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {/* Segunda fila - 4 imágenes alineadas a la izquierda y en 5 columnas */}
+            <div className="grid grid-cols-5 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="/images/Injec 3d slim/Rubio Extraclaro Nº 60.jpg"
@@ -416,6 +416,7 @@ export default function Inject3dSlim() {
                   <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Colores Personalizados</h3>
                 </div>
               </div>
+              {/* La quinta columna queda vacía para mantener alineamiento con la primera fila */}
             </div>
           </div>
         </div>
