@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
+import ExtensionesAdhesivasCarousel from "@/app/components/ExtensionesAdhesivasCarousel"
 
 export default function ExtensionesAdhesivas() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -188,7 +189,7 @@ export default function ExtensionesAdhesivas() {
       )}
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20 bg-transparent">
+      <section className="pt-40 pb-10 bg-transparent">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Extensiones Adhesivas
@@ -200,7 +201,7 @@ export default function ExtensionesAdhesivas() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-transparent">
+      <section className="py-8 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -213,31 +214,230 @@ export default function ExtensionesAdhesivas() {
               <p className="mb-6" style={{color: '#B8860B'}}>
                 Perfectas para eventos especiales, cambios temporales o para probar un nuevo estilo antes de comprometerse con algo más permanente.
               </p>
-              <ul className="space-y-2" style={{color: '#B8860B'}}>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                  Aplicación rápida (30-45 min)
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                  Fácil remoción
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                  Duración de 6-8 semanas
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                  Reutilizable
-                </li>
-              </ul>
+              
+              <p className="mb-4" style={{color: '#B8860B'}}>
+                Las Extensiones Adhesivas están disponibles en diferentes largos y son reutilizables con el cuidado adecuado.
+              </p>
+              <br />
+              
+              {/* Tabla de Estilos y Precios */}
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>
+                  Estilos y Largos Disponibles
+                </h3>
+                <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
+                  <table className="w-full">
+                    <thead className="bg-[#B8860B] text-white">
+                      <tr>
+                        <th className="px-4 py-3 text-left">Capa y largo</th>
+                        <th className="px-4 py-3 text-center">Precio tono oscuro</th>
+                        <th className="px-4 py-3 text-center">Precio tono claro</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[#B8860B]">
+                      <tr className="border-b border-[#B8860B]/20">
+                        <td className="px-4 py-3">40cm / 20 piezas</td>
+                        <td className="px-4 py-3 text-center">€89,90</td>
+                        <td className="px-4 py-3 text-center">€99,90</td>
+                      </tr>
+                      <tr className="border-b border-[#B8860B]/20">
+                        <td className="px-4 py-3">50cm / 20 piezas</td>
+                        <td className="px-4 py-3 text-center">€99,90</td>
+                        <td className="px-4 py-3 text-center">€109,90</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3">60cm / 20 piezas</td>
+                        <td className="px-4 py-3 text-center">€109,90</td>
+                        <td className="px-4 py-3 text-center">€119,90</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Tabla de Colores */}
+              <div>
+                <h4 className="text-lg font-semibold mb-3" style={{color: '#B8860B'}}>
+                  Colores:
+                </h4>
+                <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
+                  <div className="bg-[#B8860B] text-white">
+                    <div className="grid md:grid-cols-2 gap-0">
+                      <div className="px-4 py-3 text-left">
+                        <h5 className="font-medium">Tonos oscuros</h5>
+                      </div>
+                      <div className="px-4 py-3 text-left">
+                        <h5 className="font-medium">Tonos claros</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-0 text-[#B8860B]">
+                    <div className="px-4 py-3">
+                      <ul className="space-y-1">
+                        <li>• 1</li>
+                        <li>• 1B</li>
+                        <li>• 2</li>
+                        <li>• 4</li>
+                        <li>• 7</li>
+                      </ul>
+                    </div>
+                    <div className="px-4 py-3">
+                      <ul className="space-y-1">
+                        <li>• 60</li>
+                        <li>• 4-60</li>
+                        <li>• 613</li>
+                        <li>• 4-613</li>
+                        <li>• 7-613</li>
+                        <li>• 60/8</li>
+                        <li>• Color personalizado</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="relative">
-              <img
-                src="/images/inject-6.jpeg"
-                alt="Extensiones Adhesivas resultado"
-                className="rounded-lg shadow-xl w-full"
-              />
+            <ExtensionesAdhesivasCarousel />
+          </div>
+        </div>
+      </section>
+
+      {/* Color Gallery Section */}
+      <section className="pt-6 pb-10 bg-transparent">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8" style={{color: '#B8860B'}}>
+            Galería de Colores Extensiones Adhesivas
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {/* Color 1 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 1.jpg"
+                  alt="Color 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 1</h3>
+            </div>
+            
+            {/* Color 1B */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 1B.jpg"
+                  alt="Color 1B"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 1B</h3>
+            </div>
+            
+            {/* Color 2 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 2.jpg"
+                  alt="Color 2"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 2</h3>
+            </div>
+            
+            {/* Color 4 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 4.jpg"
+                  alt="Color 4"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 4</h3>
+            </div>
+            
+            {/* Color 7 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 7.jpg"
+                  alt="Color 7"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 7</h3>
+            </div>
+            
+            {/* Color 60 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 60.jpg"
+                  alt="Color 60"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 60</h3>
+            </div>
+            
+            {/* Color 4-60 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 4-60.jpg"
+                  alt="Color 4-60"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 4-60</h3>
+            </div>
+            
+            {/* Color 613 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 613.jpg"
+                  alt="Color 613"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 613</h3>
+            </div>
+            
+            {/* Color 4-613 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 4-613.jpg"
+                  alt="Color 4-613"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 4-613</h3>
+            </div>
+            
+            {/* Color 7-613 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 7-613.jpg"
+                  alt="Color 7-613"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 7-613</h3>
+            </div>
+            
+            {/* Color 60/8 */}
+            <div className="text-center">
+              <div className="w-full h-32 bg-gray-200 rounded-lg shadow-md mb-2 overflow-hidden">
+                <img
+                  src="/images/Extensiones Adhesivas/Color 60-8.jpg"
+                  alt="Color 60/8"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium" style={{color: '#B8860B'}}>Color 60/8</h3>
             </div>
           </div>
         </div>
