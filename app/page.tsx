@@ -288,15 +288,28 @@ export default function Home() {
                 Inicio
               </button>
               <div className="relative dropdown-container">
-                <a href="#methods" onClick={() => scrollToSection('methods')} className="text-white hover:text-gray-300 transition-colors flex items-center">
-                  Métodos <ChevronDown className="ml-1" size={16} />
-                </a>
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20">
-                  <Link href="/inject-3d-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Inject 3D Slim</Link>
-                  <Link href="/butterfly-welf" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Butterfly Welf</Link>
-                  <Link href="/invisible-welf-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Invisible Welf Slim</Link>
-                  <Link href="/extensiones-adhesivas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Extensiones Adhesivas</Link>
-                </div>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsMetodosDropdownOpen(!isMetodosDropdownOpen);
+                  }} 
+                  className="text-white hover:text-gray-300 transition-colors flex items-center text-lg"
+                >
+                  Métodos <ChevronDown className={`ml-1 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} size={16} />
+                </button>
+                {isMetodosDropdownOpen && (
+                  <div 
+                    className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Link href="/inject-3d-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Inject 3D Slim</Link>
+                    <Link href="/butterfly-welf" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Butterfly Welf</Link>
+                    <Link href="/invisible-welf-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Invisible Welf Slim</Link>
+                    <Link href="/extensiones-adhesivas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Extensiones Adhesivas</Link>
+                    <Link href="/toppers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Toppers</Link>
+                    <Link href="/flequillos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Flequillos</Link>
+                  </div>
+                )}
               </div>
               <Link href="/accesorios" className="hover:text-gray-300 text-lg cursor-pointer">
                 Accesorios
