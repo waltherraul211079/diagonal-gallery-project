@@ -263,7 +263,7 @@ export default function Inject3dSlim() {
                 </h4>
                 <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
                   <div className="bg-[#B8860B] text-white">
-                    <div className="grid md:grid-cols-2 gap-0">
+                    <div className="grid grid-cols-2 gap-0">
                       <div className="px-4 py-3 text-left">
                         <h5 className="font-medium">Tonos oscuros</h5>
                       </div>
@@ -272,7 +272,7 @@ export default function Inject3dSlim() {
                       </div>
                     </div>
                   </div>
-                  <div className="grid md:grid-cols-2 gap-0 text-[#B8860B]">
+                  <div className="grid grid-cols-2 gap-0 text-[#B8860B]">
                     <div className="px-4 py-3">
                       <ul className="space-y-1">
                         <li>• 1</li>
@@ -314,7 +314,7 @@ export default function Inject3dSlim() {
           </h2>
           <div className="space-y-6">
             {/* Fila única de 4 imágenes por fila */}
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="/images/Injec 3d slim/Color Nº1.jpg"
