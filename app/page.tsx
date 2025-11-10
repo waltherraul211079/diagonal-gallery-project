@@ -288,37 +288,15 @@ export default function Home() {
                 Inicio
               </button>
               <div className="relative dropdown-container">
-                <button 
-                  onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
-                  className="hover:text-gray-300 text-lg flex items-center gap-1 cursor-pointer"
-                >
-                  Métodos
-                  <ChevronDown className={`h-4 w-4 transition-transform ${isMetodosDropdownOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {isMetodosDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-50">
-                    <div className="py-1">
-                      <a href="/inject-3d-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                        Inject 3d Slim
-                      </a>
-                      <a href="/butterfly-welf" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                        Butterfly Welf
-                      </a>
-                      <a href="/invisible-welf-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                        Invisible Welf Slim
-                      </a>
-                      <a href="/extensiones-adhesivas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                        Extensiones Adhesivas
-                      </a>
-                      <a href="/toppers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                        Toppers
-                      </a>
-                      <a href="/flequillos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                        Flequillos
-                      </a>
-                    </div>
-                  </div>
-                )}
+                <a href="#methods" onClick={() => scrollToSection('methods')} className="text-white hover:text-gray-300 transition-colors flex items-center">
+                  Métodos <ChevronDown className="ml-1" size={16} />
+                </a>
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20">
+                  <Link href="/inject-3d-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Inject 3D Slim</Link>
+                  <Link href="/butterfly-welf" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Butterfly Welf</Link>
+                  <Link href="/invisible-welf-slim" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Invisible Welf Slim</Link>
+                  <Link href="/extensiones-adhesivas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Extensiones Adhesivas</Link>
+                </div>
               </div>
               <Link href="/accesorios" className="hover:text-gray-300 text-lg cursor-pointer">
                 Accesorios

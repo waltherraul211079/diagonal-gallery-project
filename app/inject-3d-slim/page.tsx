@@ -12,17 +12,22 @@ export default function Inject3dSlim() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement
-      if (!target.closest('.dropdown-container')) {
-        setIsMetodosDropdownOpen(false)
-      }
-    }
+  const toggleMenu = () => {
+    console.log("Toggling main menu");
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-    document.addEventListener('click', handleClickOutside)
-    return () => document.removeEventListener('click', handleClickOutside)
-  }, [])
+  const toggleMetodosDropdown = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    console.log("Toggling metodos dropdown");
+    setIsMetodosDropdownOpen(!isMetodosDropdownOpen);
+  };
+
+  const handleSubmenuClick = (path: string) => {
+    console.log(`Navigating to ${path} and closing menu`);
+    window.location.href = path;
+    setIsMenuOpen(false);
+  };
 
   const scrollToSection = (sectionId: string) => {
     if (sectionId === 'home') {
@@ -132,19 +137,19 @@ export default function Inject3dSlim() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={toggleMenu}
             className="absolute top-4 right-4 text-white hover:bg-white/20"
             aria-label="Close menu"
           >
             <X className="h-6 w-6" />
           </Button>
           <nav className="flex flex-col items-center space-y-6 text-white text-2xl">
-            <button onClick={() => { window.location.href = '/#home'; setIsMenuOpen(false); }} className="hover:text-gray-300 cursor-pointer">
+            <button onClick={() => handleSubmenuClick('/#home')} className="hover:text-gray-300 cursor-pointer">
               Inicio
             </button>
-            <div className="flex flex-col items-center space-y-3">
+            <div className="relative flex flex-col items-center space-y-3">
               <button 
-                onClick={() => setIsMetodosDropdownOpen(!isMetodosDropdownOpen)}
+                onClick={toggleMetodosDropdown}
                 className="hover:text-gray-300 flex items-center gap-2 cursor-pointer"
               >
                 Métodos
@@ -152,28 +157,28 @@ export default function Inject3dSlim() {
               </button>
               {isMetodosDropdownOpen && (
                 <div className="flex flex-col items-center space-y-2 text-lg pl-4">
-                  <a href="/inject-3d-slim" className="hover:text-gray-300 cursor-pointer">
+                  <a href="#" onClick={() => handleSubmenuClick('/inject-3d-slim')} className="hover:text-gray-300 cursor-pointer">
                     Inject 3d Slim
                   </a>
-                  <a href="/butterfly-welf" className="hover:text-gray-300 cursor-pointer">
+                  <a href="#" onClick={() => handleSubmenuClick('/butterfly-welf')} className="hover:text-gray-300 cursor-pointer">
                     Butterfly Welf
                   </a>
-                  <a href="/invisible-welf-slim" className="hover:text-gray-300 cursor-pointer">
+                  <a href="#" onClick={() => handleSubmenuClick('/invisible-welf-slim')} className="hover:text-gray-300 cursor-pointer">
                     Invisible Welf Slim
                   </a>
-                  <a href="/extensiones-adhesivas" className="hover:text-gray-300 cursor-pointer">
+                  <a href="#" onClick={() => handleSubmenuClick('/extensiones-adhesivas')} className="hover:text-gray-300 cursor-pointer">
                     Extensiones Adhesivas
                   </a>
-                  <a href="/toppers" className="hover:text-gray-300 cursor-pointer">
+                  <a href="#" onClick={() => handleSubmenuClick('/toppers')} className="hover:text-gray-300 cursor-pointer">
                     Toppers
                   </a>
-                  <a href="/flequillos" className="hover:text-gray-300 cursor-pointer">
+                  <a href="#" onClick={() => handleSubmenuClick('/flequillos')} className="hover:text-gray-300 cursor-pointer">
                     Flequillos
                   </a>
                 </div>
               )}
             </div>
-            <Link href="/accesorios" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-300 cursor-pointer">
+            <Link href="/accesorios" onClick={toggleMenu} className="hover:text-gray-300 cursor-pointer">
               Accesorios
             </Link>
             <button onClick={() => { window.location.href = '/#nuestra-historia'; setIsMenuOpen(false); }} className="hover:text-gray-300 cursor-pointer">
