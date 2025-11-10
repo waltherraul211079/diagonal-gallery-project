@@ -1,29 +1,20 @@
 "use client"
 
 import type React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
+import FlequillosCarousel from '../components/FlequillosCarousel'
+import ColorGallery from '../components/ColorGallery';
+import ColorTable from '../components/ColorTable';
 
 export default function Flequillos() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement
-      if (!target.closest('.dropdown-container')) {
-        setIsMetodosDropdownOpen(false)
-      }
-    }
-
-    document.addEventListener('click', handleClickOutside)
-    return () => document.removeEventListener('click', handleClickOutside)
-  }, [])
-
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen)
   };
 
   const toggleMetodosDropdown = (e: React.MouseEvent) => {
@@ -62,7 +53,7 @@ export default function Flequillos() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => setIsMenuOpen(true)}
+            onClick={toggleMenu}
             className="text-white hover:bg-white/20"
             aria-label="Open menu"
           >
@@ -202,7 +193,7 @@ export default function Flequillos() {
       )}
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20">
+      <section className="pt-40 pb-10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{color: '#B8860B'}}>
             Flequillos
@@ -214,7 +205,7 @@ export default function Flequillos() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-transparent">
+      <section className="py-4 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -227,178 +218,25 @@ export default function Flequillos() {
               <p className="mb-6" style={{color: '#B8860B'}}>
                 Disponibles en múltiples estilos, desde flequillos rectos clásicos hasta modernos flequillos laterales, todos personalizables según tu rostro y preferencias.
               </p>
-              <ul className="space-y-2" style={{color: '#B8860B'}}>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                  Cabello humano 100% natural
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full"></span>
-                  Múltiples estilos disponibles
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full"></span>
-                  Fácil aplicación y remoción
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full"></span>
-                  Reutilizable y duradero
-                </li>
-              </ul>
+              <div className="my-8">
+                <ColorTable />
+              </div>
             </div>
-            <div className="relative">
-              <img
-                src="/images/hair-1.jpeg"
-                alt="Flequillos resultado"
-                className="rounded-lg shadow-xl w-full"
-              />
+            <div className="relative h-96 md:h-[500px] shadow-xl">
+              <FlequillosCarousel />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Styles Section */}
-      <section className="py-16 bg-transparent">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
-            Estilos de Flequillos
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                ✂️
-              </div>
-              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Recto Clásico</h3>
-              <p className="text-sm" style={{color: '#B8860B'}}>
-                El flequillo tradicional que nunca pasa de moda. Perfecto para rostros ovalados.
-              </p>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                🌊
-              </div>
-              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Lateral</h3>
-              <p className="text-sm" style={{color: '#B8860B'}}>
-                Flequillo peinado hacia un lado. Ideal para suavizar facciones angulares.
-              </p>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                ✨
-              </div>
-              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Desfilado</h3>
-              <p className="text-sm" style={{color: '#B8860B'}}>
-                Flequillo con capas que aporta movimiento y textura natural.
-              </p>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                🎭
-              </div>
-              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Cortina</h3>
-              <p className="text-sm" style={{color: '#B8860B'}}>
-                Flequillo dividido al medio que enmarca el rostro elegantemente.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Application Section */}
-      <section className="py-16 bg-transparent">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
-            Métodos de Aplicación
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">📎</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Clip-In</h3>
-              <p className="mb-4" style={{color: '#B8860B'}}>
-                Aplicación instantánea con clips seguros. Perfecto para uso ocasional o diario.
-              </p>
-              <ul className="text-sm space-y-2" style={{color: '#B8860B'}}>
-                <li>• Aplicación en segundos</li>
-                <li>• No requiere profesional</li>
-                <li>• Reutilizable infinitas veces</li>
-              </ul>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">🎯</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Adhesivo</h3>
-              <p className="mb-4" style={{color: '#B8860B'}}>
-                Fijación con adhesivo especial para mayor seguridad y naturalidad.
-              </p>
-              <ul className="text-sm space-y-2" style={{color: '#B8860B'}}>
-                <li>• Mayor seguridad</li>
-                <li>• Aspecto más natural</li>
-                <li>• Duración de 2-4 semanas</li>
-              </ul>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">✨</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Integrado</h3>
-              <p className="mb-4" style={{color: '#B8860B'}}>
-                Aplicación profesional que se integra completamente con tu cabello.
-              </p>
-              <ul className="text-sm space-y-2" style={{color: '#B8860B'}}>
-                <li>• Resultado profesional</li>
-                <li>• Máxima naturalidad</li>
-                <li>• Personalización completa</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Tips Section */}
+
+
+      {/* Color Gallery Section */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{color: '#B8860B'}}>
-            Consejos para el Cuidado
-          </h2>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Cuidado Diario</h3>
-              <ul className="space-y-3" style={{color: '#B8860B'}}>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Cepilla suavemente con un cepillo de cerdas suaves
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Usa productos sin sulfatos
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Evita dormir con el flequillo húmedo
-                </li>
-              </ul>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4" style={{color: '#B8860B'}}>Mantenimiento</h3>
-              <ul className="space-y-3" style={{color: '#B8860B'}}>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Lava cada 15-20 usos
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Almacena en un lugar fresco y seco
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-rose-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Revisa y ajusta los clips regularmente
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ColorGallery />
         </div>
       </section>
 

@@ -10,18 +10,6 @@ export default function Toppers() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMetodosDropdownOpen, setIsMetodosDropdownOpen] = useState(false)
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement
-      if (!target.closest('.dropdown-container')) {
-        setIsMetodosDropdownOpen(false)
-      }
-    }
-
-    document.addEventListener('click', handleClickOutside)
-    return () => document.removeEventListener('click', handleClickOutside)
-  }, [])
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
