@@ -313,8 +313,8 @@ export default function Inject3dSlim() {
             Galería de Colores Inject 3D Slim
           </h2>
           <div className="space-y-6">
-            {/* Primera fila - 5 imágenes */}
-            <div className="grid grid-cols-5 gap-6">
+            {/* Fila única de 4 imágenes por fila */}
+            <div className="grid grid-cols-4 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="/images/Injec 3d slim/Color Nº1.jpg"
@@ -369,10 +369,6 @@ export default function Inject3dSlim() {
                   <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Color Nº7</h3>
                 </div>
               </div>
-            </div>
-
-            {/* Segunda fila - 4 imágenes alineadas a la izquierda y en 5 columnas */}
-            <div className="grid grid-cols-5 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="/images/Injec 3d slim/Color Nº60.jpg"
@@ -416,7 +412,6 @@ export default function Inject3dSlim() {
                   <h3 className="text-lg font-semibold text-center" style={{color: '#B8860B'}}>Colores Personalizados</h3>
                 </div>
               </div>
-              {/* La quinta columna queda vacía para mantener alineamiento con la primera fila */}
             </div>
           </div>
         </div>
