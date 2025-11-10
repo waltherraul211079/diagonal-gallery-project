@@ -257,7 +257,7 @@ export default function ButterflyWelf() {
                   </h4>
                   <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
                     <div className="bg-[#B8860B] text-white">
-                      <div className="grid md:grid-cols-2 gap-0">
+                      <div className="grid grid-cols-2 gap-0">
                         <div className="px-4 py-3 text-left">
                           <h5 className="font-medium">Tonos oscuros</h5>
                         </div>
@@ -266,7 +266,7 @@ export default function ButterflyWelf() {
                         </div>
                       </div>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-0 text-[#B8860B]">
+                    <div className="grid grid-cols-2 gap-0 text-[#B8860B]">
                       <div className="px-4 py-3">
                         <ul className="space-y-1">
                           <li>• 1</li>

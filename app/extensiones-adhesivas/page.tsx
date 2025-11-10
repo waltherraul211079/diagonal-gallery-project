@@ -236,17 +236,17 @@ export default function ExtensionesAdhesivas() {
                     </thead>
                     <tbody className="text-[#B8860B]">
                       <tr className="border-b border-[#B8860B]/20">
-                        <td className="px-4 py-3 whitespace-nowrap">4cm 50cm / 20 piezas 20gr</td>
+                        <td className="px-4 py-3">4cm 50cm / 20 piezas 20gr</td>
                         <td className="px-4 py-3 text-center">€69.90</td>
                         <td className="px-4 py-3 text-center">€74.90</td>
                       </tr>
                       <tr className="border-b border-[#B8860B]/20">
-                        <td className="px-4 py-3 whitespace-nowrap">4cm 60cm / 20 piezas 20gr</td>
+                        <td className="px-4 py-3">4cm 60cm / 20 piezas 20gr</td>
                         <td className="px-4 py-3 text-center">€74.90</td>
                         <td className="px-4 py-3 text-center">€79.90</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-3 whitespace-nowrap">4cm 70cm / 20 piezas 25gr</td>
+                        <td className="px-4 py-3">4cm 70cm / 20 piezas 25gr</td>
                         <td className="px-4 py-3 text-center">Agotado</td>
                         <td className="px-4 py-3 text-center">Agotado</td>
                       </tr>
@@ -262,16 +262,16 @@ export default function ExtensionesAdhesivas() {
                 </h4>
                 <div className="bg-transparent rounded-lg shadow-lg overflow-hidden border border-[#B8860B]/30">
                   <div className="bg-[#B8860B] text-white">
-                    <div className="grid md:grid-cols-2 gap-0">
-                      <div className="px-4 py-3 text-left">
+                    <div className="grid grid-cols-2 gap-0">
+                      <div className="px-4 py-3 text-center">
                         <h5 className="font-medium">Tonos oscuros</h5>
                       </div>
-                      <div className="px-4 py-3 text-left">
+                      <div className="px-4 py-3 text-center">
                         <h5 className="font-medium">Tonos rubios y personalizado</h5>
                       </div>
                     </div>
                   </div>
-                  <div className="grid md:grid-cols-2 gap-0 text-[#B8860B]">
+                  <div className="grid grid-cols-2 gap-0 text-[#B8860B]">
                     <div className="px-4 py-3">
                       <ul className="space-y-1">
                         <li>• 1</li>
@@ -306,7 +306,7 @@ export default function ExtensionesAdhesivas() {
           <h2 className="text-3xl font-bold text-center mb-8" style={{color: '#B8860B'}}>
             Galería de Colores Extensiones Adhesivas
           </h2>
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Color Nº1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <img
