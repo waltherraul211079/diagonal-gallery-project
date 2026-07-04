@@ -236,7 +236,7 @@ export default function AccesoriosPage() {
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
                 <Image 
-                  src="/images/hair-2.jpeg" 
+                  src="/images/Accesorios/Cepillos/Cepillos.jpg" 
                   alt="Cepillo para Extensiones con Curvatura"
                   width={400}
                   height={400}
