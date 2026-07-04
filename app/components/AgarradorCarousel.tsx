@@ -9,19 +9,19 @@ const AgarradorCarousel = () => {
 
   const images = [
     {
-      src: '/images/Accesorios/Agarrador/1000079915.jpg',
+      src: '/images/Accesorios/Agarrador/Agarrador-1.jpg',
       alt: 'Agarrador de Pelo - Imagen 1'
     },
     {
-      src: '/images/Accesorios/Agarrador/1000079916.jpg',
+      src: '/images/Accesorios/Agarrador/Agarrador-2.jpg',
       alt: 'Agarrador de Pelo - Imagen 2'
     },
     {
-      src: '/images/Accesorios/Agarrador/1000079917.jpg',
+      src: '/images/Accesorios/Agarrador/Agarrador-3.jpg',
       alt: 'Agarrador de Pelo - Imagen 3'
     },
     {
-      src: '/images/Accesorios/Agarrador/1000079918.jpg',
+      src: '/images/Accesorios/Agarrador/Agarrador-4.jpg',
       alt: 'Agarrador de Pelo - Imagen 4'
     }
   ];
