@@ -9,23 +9,23 @@ const AlicateCarousel = () => {
 
   const images = [
     {
-      src: '/images/Accesorios/Alicate/1000079884.jpg',
+      src: '/images/Accesorios/Alicate/Alicate-1.jpg',
       alt: 'Alicate manual - Imagen 1'
     },
     {
-      src: '/images/Accesorios/Alicate/1000079885.jpg',
+      src: '/images/Accesorios/Alicate/Alicate-2.jpg',
       alt: 'Alicate manual - Imagen 2'
     },
     {
-      src: '/images/Accesorios/Alicate/1000079886.jpg',
+      src: '/images/Accesorios/Alicate/Alicate-3.jpg',
       alt: 'Alicate manual - Imagen 3'
     },
     {
-      src: '/images/Accesorios/Alicate/1000079887.jpg',
+      src: '/images/Accesorios/Alicate/Alicate-4.jpg',
       alt: 'Alicate manual - Imagen 4'
     },
     {
-      src: '/images/Accesorios/Alicate/1000079888.jpg',
+      src: '/images/Accesorios/Alicate/Alicate-5.jpg',
       alt: 'Alicate manual - Imagen 5'
     }
   ];
