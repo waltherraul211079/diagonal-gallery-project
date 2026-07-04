@@ -237,16 +237,17 @@ export default function AccesoriosPage() {
               <div className="aspect-square">
                 <Image 
                   src="/images/hair-2.jpeg" 
-                  alt="Kit de Mantenimiento"
+                  alt="Cepillo para Extensiones con Curvatura"
                   width={400}
                   height={400}
                   className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold" style={{color: '#B8860B'}}>Kit de Mantenimiento</h3>
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Cepillo para Extensiones con Curvatura</h3>
                 <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                  Kit completo con productos esenciales para el cuidado y mantenimiento de tus extensiones.
+                  Desenreda fácil sin dañar las Extensiones<br/>
+                  Disponible en 7 colores: Rosa claro, Rojo, Azul, Blanco y Rosa, Negro y Dorado.
                 </p>
               </div>
             </div>
