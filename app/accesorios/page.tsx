@@ -256,7 +256,7 @@ export default function AccesoriosPage() {
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
                 <Image 
-                  src="/images/Accesorios/Micronano/1000079879.jpg" 
+                  src="/images/Accesorios/Micronano/Micronano-1.jpg" 
                   alt="Micronano anillas para Extensiones"
                   width={400}
                   height={400}
