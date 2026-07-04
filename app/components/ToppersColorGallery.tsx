@@ -15,7 +15,7 @@ const ToppersColorGallery = () => {
                 src="/images/Flequillos/negro-1.jpg"
                 alt="Negro Nº 1"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
+                style={{ objectPosition: '50% 50%', transform: 'scale(2.2)' }}
               />
             </div>
             <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Negro Nº 1</h3>
@@ -28,7 +28,7 @@ const ToppersColorGallery = () => {
                 src="/images/Flequillos/castano-2.jpg"
                 alt="Castaño Nº 2"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
+                style={{ objectPosition: '50% 50%', transform: 'scale(2.2)' }}
               />
             </div>
             <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Castaño Nº 2</h3>
@@ -41,7 +41,7 @@ const ToppersColorGallery = () => {
                 src="/images/Flequillos/castano-4.jpg"
                 alt="Castaño Nº 4"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
+                style={{ objectPosition: '50% 50%', transform: 'scale(2.2)' }}
               />
             </div>
             <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Castaño Nº 4</h3>
@@ -54,7 +54,7 @@ const ToppersColorGallery = () => {
                 src="/images/Flequillos/rubio-7.jpg"
                 alt="Rubio Nº 7"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
+                style={{ objectPosition: '50% 50%', transform: 'scale(2.2)' }}
               />
             </div>
             <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Rubio Nº 7</h3>
@@ -67,7 +67,7 @@ const ToppersColorGallery = () => {
                 src="/images/Flequillos/rubio-613.jpg"
                 alt="Rubio Nº 613"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
+                style={{ objectPosition: '50% 50%', transform: 'scale(2.2)' }}
               />
             </div>
             <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Rubio Nº 613</h3>
