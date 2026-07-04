@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
+import ToppersCarousel from "../components/ToppersCarousel"
 
 export default function Toppers() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -233,12 +234,8 @@ export default function Toppers() {
                 </li>
               </ul>
             </div>
-            <div className="relative">
-              <img
-                src="/images/inject-7.jpeg"
-                alt="Toppers resultado"
-                className="rounded-lg shadow-xl w-full"
-              />
+            <div className="relative h-96 md:h-[500px] shadow-xl">
+              <ToppersCarousel />
             </div>
           </div>
         </div>
@@ -385,9 +382,16 @@ export default function Toppers() {
           <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Agenda una consulta y descubre cómo nuestros toppers pueden transformar tu imagen
           </p>
-          <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">
-            Reservar Consulta
-          </Button>
+          <a
+            href="https://wa.me/34634277456"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">
+              Reservar Consulta
+            </Button>
+          </a>
         </div>
       </section>
 
