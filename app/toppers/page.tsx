@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { MenuIcon, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import ToppersCarousel from "../components/ToppersCarousel"
+import ToppersColorGallery from "../components/ToppersColorGallery"
 
 export default function Toppers() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -273,6 +274,9 @@ export default function Toppers() {
           </div>
         </div>
       </section>
+
+      {/* Color Gallery */}
+      <ToppersColorGallery />
 
       {/* CTA Section */}
       <section className="py-16 bg-transparent">
