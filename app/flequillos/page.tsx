@@ -249,9 +249,16 @@ export default function Flequillos() {
           <p className="text-xl mb-8" style={{color: '#B8860B'}}>
             Descubre nuestros flequillos y encuentra el estilo perfecto para ti
           </p>
-          <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">
-            Reservar Ahora
-          </Button>
+          <a
+            href="https://wa.me/34634277456"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">
+              Reservar Ahora
+            </Button>
+          </a>
         </div>
       </section>
 
