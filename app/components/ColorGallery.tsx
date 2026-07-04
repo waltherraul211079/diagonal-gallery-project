@@ -18,7 +18,7 @@ const ColorGallery = () => {
                 style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
               />
             </div>
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#000000'}}>Negro Nº 1</h3>
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Negro Nº 1</h3>
           </div>
 
           {/* Castaño Nº 2 */}
@@ -31,7 +31,7 @@ const ColorGallery = () => {
                 style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
               />
             </div>
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#3E2723'}}>Castaño Nº 2</h3>
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Castaño Nº 2</h3>
           </div>
 
           {/* Castaño Nº 4 */}
@@ -44,7 +44,7 @@ const ColorGallery = () => {
                 style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
               />
             </div>
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#5D4037'}}>Castaño Nº 4</h3>
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Castaño Nº 4</h3>
           </div>
 
           {/* Rubio Nº 7 */}
@@ -57,7 +57,7 @@ const ColorGallery = () => {
                 style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
               />
             </div>
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#8D6E63'}}>Rubio Nº 7</h3>
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Rubio Nº 7</h3>
           </div>
 
           {/* Rubio Nº 613 */}
@@ -70,7 +70,7 @@ const ColorGallery = () => {
                 style={{ objectPosition: '30% 30%', transform: 'scale(1.8)' }}
               />
             </div>
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#D4A574'}}>Rubio Nº 613</h3>
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Rubio Nº 613</h3>
           </div>
 
           {/* Colores Personalizados */}
