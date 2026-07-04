@@ -273,6 +273,44 @@ export default function AccesoriosPage() {
                 </p>
               </div>
             </div>
+
+            {/* Product Card 4 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
+              <div className="aspect-square">
+                <Image 
+                  src="/images/hair-1.jpeg" 
+                  alt="Acondicionador Especial"
+                  width={400}
+                  height={400}
+                  className="object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Acondicionador Especial</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                  Acondicionador hidratante diseñado para mantener la suavidad y el brillo de tus extensiones.
+                </p>
+              </div>
+            </div>
+
+            {/* Product Card 5 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
+              <div className="aspect-square">
+                <Image 
+                  src="/images/hair-2.jpeg" 
+                  alt="Spray de Protección Térmica"
+                  width={400}
+                  height={400}
+                  className="object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Spray de Protección Térmica</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                  Protege tus extensiones del daño causado por herramientas de calor como secadores y planchas.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
