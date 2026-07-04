@@ -11,41 +11,51 @@ const ColorGallery = () => {
           {/* Negro Nº 1 */}
           <div className="flex flex-col items-center">
             <img
-              src="/images/Butterfly Welf/Negro Nº1.jpg"
+              src="/images/Flequillos/negro-1.jpg"
               alt="Negro Nº 1"
               className="w-40 h-40 rounded-full object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
             />
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Negro Nº 1</h3>
-          </div>
-
-          {/* Negro Nº 1B */}
-          <div className="flex flex-col items-center">
-            <img
-              src="/images/Butterfly Welf/Negro Nº1B.jpg"
-              alt="Negro Nº 1B"
-              className="w-40 h-40 rounded-full object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
-            />
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Negro Nº 1B</h3>
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#000000'}}>Negro Nº 1</h3>
           </div>
 
           {/* Castaño Nº 2 */}
           <div className="flex flex-col items-center">
             <img
-              src="/images/Butterfly Welf/Castano Nº2.jpg"
+              src="/images/Flequillos/castano-2.jpg"
               alt="Castaño Nº 2"
               className="w-40 h-40 rounded-full object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
             />
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Castaño Nº 2</h3>
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#3E2723'}}>Castaño Nº 2</h3>
           </div>
 
           {/* Castaño Nº 4 */}
           <div className="flex flex-col items-center">
             <img
-              src="/images/Butterfly Welf/Castano Nº4.jpg"
+              src="/images/Flequillos/castano-4.jpg"
               alt="Castaño Nº 4"
               className="w-40 h-40 rounded-full object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
             />
-            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#B8860B'}}>Castaño Nº 4</h3>
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#5D4037'}}>Castaño Nº 4</h3>
+          </div>
+
+          {/* Rubio Nº 7 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/images/Flequillos/rubio-7.jpg"
+              alt="Rubio Nº 7"
+              className="w-40 h-40 rounded-full object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
+            />
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#8D6E63'}}>Rubio Nº 7</h3>
+          </div>
+
+          {/* Rubio Nº 613 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/images/Flequillos/rubio-613.jpg"
+              alt="Rubio Nº 613"
+              className="w-40 h-40 rounded-full object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
+            />
+            <h3 className="text-lg font-semibold text-center mt-4" style={{color: '#D4A574'}}>Rubio Nº 613</h3>
           </div>
 
           {/* Colores Personalizados */}

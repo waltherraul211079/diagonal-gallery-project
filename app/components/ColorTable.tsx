@@ -20,15 +20,15 @@ const ColorTable: React.FC = () => {
         <div className="grid grid-cols-2 gap-0 text-[#B8860B]">
           <div className="px-4 py-3">
             <ul className="space-y-1">
-              <li>• 1</li>
-              <li>• 1B</li>
-              <li>• 2</li>
-              <li>• 4</li>
-              <li>• 7</li>
+              <li>• Negro Nº 1</li>
+              <li>• Castaño Nº 2</li>
+              <li>• Castaño Nº 4</li>
             </ul>
           </div>
           <div className="px-4 py-3">
             <ul className="space-y-1">
+              <li>• Rubio Nº 7</li>
+              <li>• Rubio Nº 613</li>
               <li>• Color personalizado</li>
             </ul>
           </div>
