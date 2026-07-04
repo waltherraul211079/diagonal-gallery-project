@@ -220,87 +220,85 @@ export default function AccesoriosPage() {
       {/* Products Grid */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <div className="space-y-8">
-            {/* First Row - 3 Cards */}
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
-              {/* Product Card 1 */}
-              <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
-                <div className="aspect-square">
-                  <SoporteParedCarousel />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold" style={{color: '#B8860B'}}>Soporte de pared portátil para Extensiones</h3>
-                  <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                    Disponible en 2 colores: Blanco y Negro<br/>
-                    Medidas: 30cm
-                  </p>
-                </div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+            {/* Product Card 1 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
+              <div className="aspect-square">
+                <SoporteParedCarousel />
               </div>
-
-              {/* Product Card 2 */}
-              <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
-                <div className="aspect-square">
-                  <Image 
-                    src="/images/Accesorios/Cepillos/Cepillos.jpg" 
-                    alt="Cepillo para Extensiones con Curvatura"
-                    width={400}
-                    height={400}
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold" style={{color: '#B8860B'}}>Cepillo para Extensiones con Curvatura</h3>
-                  <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                    Desenreda fácil sin dañar las Extensiones.<br/>
-                    Disponible en 7 colores: Rosa claro, Rojo, Azul, Blanco, Rosa, Negro y Dorado.
-                  </p>
-                </div>
-              </div>
-
-              {/* Product Card 3 */}
-              <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
-                <div className="aspect-square">
-                  <MicronanoCarousel />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold" style={{color: '#B8860B'}}>Micronano anillas para Extensiones</h3>
-                  <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                    Medidas 3mmx1.5mm<br/>
-                    Disponible en 5 colores
-                  </p>
-                </div>
+              <div className="p-4">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Soporte de pared portátil para Extensiones</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                  Disponible en 2 colores: Blanco y Negro<br/>
+                  Medidas: 30cm
+                </p>
               </div>
             </div>
 
-            {/* Second Row - 2 Cards Centered */}
-            <div className="flex justify-center gap-8">
-              {/* Product Card 4 */}
-              <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
-                <div className="aspect-square">
-                  <AlicateCarousel />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold" style={{color: '#B8860B'}}>Alicate manual para cortar las Extensiones</h3>
-                  <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                    Sirve para cortar las extensiones de Keratina en Micromechas.<br/>
-                    Disponible en 5 colores: Azul, Rojo, negro, Marrón y Gris
-                  </p>
-                </div>
+            {/* Product Card 2 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
+              <div className="aspect-square">
+                <Image 
+                  src="/images/Accesorios/Cepillos/Cepillos.jpg" 
+                  alt="Cepillo para Extensiones con Curvatura"
+                  width={400}
+                  height={400}
+                  className="object-cover transition-transform group-hover:scale-105"
+                />
               </div>
-
-              {/* Product Card 5 */}
-              <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
-                <div className="aspect-square">
-                  <AgarradorCarousel />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold" style={{color: '#B8860B'}}>Agarrador de Pelo</h3>
-                  <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                    Accesorio para el auxilio de la colocación de Extensiones.
-                  </p>
-                </div>
+              <div className="p-4">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Cepillo para Extensiones con Curvatura</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                  Desenreda fácil sin dañar las Extensiones.<br/>
+                  Disponible en 7 colores: Rosa claro, Rojo, Azul, Blanco, Rosa, Negro y Dorado.
+                </p>
               </div>
             </div>
+
+            {/* Product Card 3 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
+              <div className="aspect-square">
+                <MicronanoCarousel />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Micronano anillas para Extensiones</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                  Medidas 3mmx1.5mm<br/>
+                  Disponible en 5 colores
+                </p>
+              </div>
+            </div>
+
+            {/* Spacer 1 for centering bottom cards */}
+            <div className="hidden lg:block"></div>
+            {/* Product Card 4 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
+              <div className="aspect-square">
+                <AlicateCarousel />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Alicate manual para cortar las Extensiones</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                  Sirve para cortar las extensiones de Keratina en Micromechas.<br/>
+                  Disponible en 5 colores: Azul, Rojo, negro, Marrón y Gris
+                </p>
+              </div>
+            </div>
+
+            {/* Product Card 5 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
+              <div className="aspect-square">
+                <AgarradorCarousel />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Agarrador de Pelo</h3>
+                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                  Accesorio para el auxilio de la colocación de Extensiones.
+                </p>
+              </div>
+            </div>
+            {/* Spacer 2 for centering bottom cards */}
+            <div className="hidden lg:block"></div>
           </div>
         </div>
       </section>
