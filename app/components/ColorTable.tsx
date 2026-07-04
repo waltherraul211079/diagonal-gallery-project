@@ -29,9 +29,6 @@ const ColorTable: React.FC = () => {
           </div>
           <div className="px-4 py-3">
             <ul className="space-y-1">
-              <li>• 613</li>
-              <li>• 60</li>
-              <li>• 60/8</li>
               <li>• Color personalizado</li>
             </ul>
           </div>
