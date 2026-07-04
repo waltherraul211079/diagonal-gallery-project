@@ -255,8 +255,8 @@ export default function Flequillos() {
             rel="noopener noreferrer"
             className="inline-block"
           >
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">
-              Reservar Ahora
+            <Button className="bg-yellow-500 text-white hover:bg-white hover:text-black px-8 py-3 text-lg transition-colors duration-300">
+              Contactar Ahora
             </Button>
           </a>
         </div>
