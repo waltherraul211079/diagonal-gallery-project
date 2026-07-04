@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import SoporteParedCarousel from "../components/SoporteParedCarousel"
 import MicronanoCarousel from "../components/MicronanoCarousel"
+import AlicateCarousel from "../components/AlicateCarousel"
 import { useState, useEffect } from "react"
 
 export default function AccesoriosPage() {
@@ -270,18 +271,13 @@ export default function AccesoriosPage() {
             {/* Product Card 4 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
-                <Image 
-                  src="/images/hair-1.jpeg" 
-                  alt="Acondicionador Especial"
-                  width={400}
-                  height={400}
-                  className="object-cover transition-transform group-hover:scale-105"
-                />
+                <AlicateCarousel />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold" style={{color: '#B8860B'}}>Acondicionador Especial</h3>
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Alicate manual para cortar las Extensiones</h3>
                 <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                  Acondicionador hidratante diseñado para mantener la suavidad y el brillo de tus extensiones.
+                  Sirve para cortar las extensiones de Keratina en Micromechas.<br/>
+                  Disponible en 5 colores: Azul, Rojo, negro, Marrón y Gris
                 </p>
               </div>
             </div>
