@@ -9,27 +9,27 @@ const SoporteParedCarousel = () => {
 
   const images = [
     {
-      src: '/images/Accesorios/soporte-1.jpg',
+      src: '/images/Accesorios/Soporte/Soporte-1.jpg',
       alt: 'Soporte de pared - Blanco'
     },
     {
-      src: '/images/Accesorios/soporte-2.jpg',
+      src: '/images/Accesorios/Soporte/Soporte-2.jpg',
       alt: 'Soporte de pared - Negro'
     },
     {
-      src: '/images/Accesorios/soporte-3.jpg',
+      src: '/images/Accesorios/Soporte/Soporte-3.jpg',
       alt: 'Soporte de pared - Uso'
     },
     {
-      src: '/images/Accesorios/soporte-4.jpg',
+      src: '/images/Accesorios/Soporte/Soporte-4.jpg',
       alt: 'Soporte de pared - Comparación'
     },
     {
-      src: '/images/Accesorios/soporte-5.jpg',
+      src: '/images/Accesorios/Soporte/Soporte-5.jpg',
       alt: 'Soporte de pared - Imagen 5'
     },
     {
-      src: '/images/Accesorios/soporte-6.jpg',
+      src: '/images/Accesorios/Soporte/Soporte 6.jpg',
       alt: 'Soporte de pared - Imagen 6'
     }
   ];
