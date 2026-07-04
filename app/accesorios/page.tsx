@@ -246,8 +246,8 @@ export default function AccesoriosPage() {
               <div className="p-4">
                 <h3 className="font-semibold" style={{color: '#B8860B'}}>Cepillo para Extensiones con Curvatura</h3>
                 <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                  Desenreda fácil sin dañar las Extensiones<br/>
-                  Disponible en 7 colores: Rosa claro, Rojo, Azul, Blanco y Rosa, Negro y Dorado.
+                  Desenreda fácil sin dañar las Extensiones.<br/>
+                  Disponible en 7 colores: Rosa claro, Rojo, Azul, Blanco, Rosa, Negro y Dorado.
                 </p>
               </div>
             </div>
