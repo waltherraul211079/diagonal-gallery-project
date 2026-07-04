@@ -284,7 +284,7 @@ export default function Toppers() {
             Agenda una consulta y descubre cómo nuestros toppers pueden transformar tu imagen
           </p>
           <a
-            href="https://wa.me/34634277456"
+            href="https://wa.me/34617444283"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block"
@@ -299,7 +299,7 @@ export default function Toppers() {
       {/* Floating WhatsApp Icon */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/34634277456"
+          href="https://wa.me/34617444283"
           target="_blank"
           rel="noopener noreferrer"
           className="shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
