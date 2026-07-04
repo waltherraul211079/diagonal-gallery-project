@@ -222,16 +222,17 @@ export default function AccesoriosPage() {
               <div className="aspect-square">
                 <Image 
                   src="/images/hair-1.jpeg" 
-                  alt="Cepillo Especial para Extensiones"
+                  alt="Soporte de pared portátil para Extensiones"
                   width={400}
                   height={400}
                   className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold" style={{color: '#B8860B'}}>Cepillo Especial para Extensiones</h3>
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Soporte de pared portátil para Extensiones</h3>
                 <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                  Cepillo diseñado específicamente para el cuidado de extensiones, evita enredos y mantiene el cabello suave.
+                  Disponible en 2 colores: Blanco y Negro<br/>
+                  Medidas: 30cm
                 </p>
               </div>
             </div>
