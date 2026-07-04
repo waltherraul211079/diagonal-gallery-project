@@ -7,6 +7,7 @@ import Link from "next/link"
 import SoporteParedCarousel from "../components/SoporteParedCarousel"
 import MicronanoCarousel from "../components/MicronanoCarousel"
 import AlicateCarousel from "../components/AlicateCarousel"
+import AgarradorCarousel from "../components/AgarradorCarousel"
 import { useState, useEffect } from "react"
 
 export default function AccesoriosPage() {
@@ -285,18 +286,12 @@ export default function AccesoriosPage() {
             {/* Product Card 5 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
-                <Image 
-                  src="/images/hair-2.jpeg" 
-                  alt="Spray de Protección Térmica"
-                  width={400}
-                  height={400}
-                  className="object-cover transition-transform group-hover:scale-105"
-                />
+                <AgarradorCarousel />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold" style={{color: '#B8860B'}}>Spray de Protección Térmica</h3>
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Agarrador de Pelo</h3>
                 <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                  Protege tus extensiones del daño causado por herramientas de calor como secadores y planchas.
+                  Accesorio para el auxilio de la colocación de Extensiones.
                 </p>
               </div>
             </div>
