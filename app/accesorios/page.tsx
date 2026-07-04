@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { MessageCircle, MenuIcon, X, ChevronDown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import SoporteParedCarousel from "../components/SoporteParedCarousel"
 import { useState, useEffect } from "react"
 
 export default function AccesoriosPage() {
@@ -220,13 +221,7 @@ export default function AccesoriosPage() {
             {/* Product Card 1 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
-                <Image 
-                  src="/images/hair-1.jpeg" 
-                  alt="Soporte de pared portátil para Extensiones"
-                  width={400}
-                  height={400}
-                  className="object-cover transition-transform group-hover:scale-105"
-                />
+                <SoporteParedCarousel />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold" style={{color: '#B8860B'}}>Soporte de pared portátil para Extensiones</h3>
