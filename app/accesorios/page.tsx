@@ -220,9 +220,9 @@ export default function AccesoriosPage() {
       {/* Products Grid */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
             {/* Product Card 1 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
               <div className="aspect-square">
                 <SoporteParedCarousel />
               </div>
@@ -236,7 +236,7 @@ export default function AccesoriosPage() {
             </div>
 
             {/* Product Card 2 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
               <div className="aspect-square">
                 <Image 
                   src="/images/Accesorios/Cepillos/Cepillos.jpg" 
@@ -256,7 +256,7 @@ export default function AccesoriosPage() {
             </div>
 
             {/* Product Card 3 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
               <div className="aspect-square">
                 <MicronanoCarousel />
               </div>
@@ -270,7 +270,7 @@ export default function AccesoriosPage() {
             </div>
 
             {/* Product Card 4 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
               <div className="aspect-square">
                 <AlicateCarousel />
               </div>
@@ -284,7 +284,7 @@ export default function AccesoriosPage() {
             </div>
 
             {/* Product Card 5 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
               <div className="aspect-square">
                 <AgarradorCarousel />
               </div>
