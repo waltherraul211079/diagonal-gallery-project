@@ -306,9 +306,16 @@ export default function AccesoriosPage() {
           <p className="text-lg mb-8 max-w-2xl mx-auto" style={{color: '#B8860B'}}>
             Nuestro equipo de expertos está aquí para asesorarte y ayudarte a encontrar los accesorios perfectos para tu tipo de cabello.
           </p>
-          <button className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-3 rounded-full font-semibold hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300 transform hover:scale-105">
-            Contactar Ahora
-          </button>
+          <a
+            href="https://wa.me/34617444283"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button className="bg-yellow-500 text-white hover:bg-white hover:text-black px-8 py-3 text-lg transition-colors duration-300">
+              Contactar Ahora
+            </Button>
+          </a>
         </div>
       </section>
 
