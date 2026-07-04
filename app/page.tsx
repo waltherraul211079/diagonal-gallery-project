@@ -749,7 +749,7 @@ export default function Home() {
                 novedosos métodos de extensiones del mercado, Este es tu momento!
               </p>
               <p className="text-[#B8860B] text-base md:text-lg font-semibold">
-                Estaremos encantados de que hagas parte de este equipo.
+                Estaremos encantados de que formes parte de este equipo.
               </p>
             </div>
 
