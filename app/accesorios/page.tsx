@@ -256,17 +256,18 @@ export default function AccesoriosPage() {
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm">
               <div className="aspect-square">
                 <Image 
-                  src="/images/hair-3.jpeg" 
-                  alt="Champú Especial"
+                  src="/images/Accesorios/Micronano/1000079879.jpg" 
+                  alt="Micronano anillas para Extensiones"
                   width={400}
                   height={400}
                   className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold" style={{color: '#B8860B'}}>Champú Especial</h3>
+                <h3 className="font-semibold" style={{color: '#B8860B'}}>Micronano anillas para Extensiones</h3>
                 <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                  Champú formulado específicamente para extensiones de cabello, mantiene el brillo y la suavidad.
+                  Medidas 3mmx1.5mm<br/>
+                  Disponible en 5 colores
                 </p>
               </div>
             </div>
