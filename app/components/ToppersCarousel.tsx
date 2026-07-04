@@ -27,6 +27,18 @@ const ToppersCarousel = () => {
     {
       src: '/images/Toppers/1000073508.jpg',
       alt: 'Topper - Estilo 5'
+    },
+    {
+      src: '/images/Toppers/1000073509.jpg',
+      alt: 'Topper - Estilo 6'
+    },
+    {
+      src: '/images/Toppers/1000073513.jpg',
+      alt: 'Topper - Estilo 7'
+    },
+    {
+      src: '/images/Toppers/1000073515.jpg',
+      alt: 'Topper - Estilo 8'
     }
   ];
 
