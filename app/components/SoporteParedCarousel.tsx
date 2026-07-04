@@ -23,6 +23,14 @@ const SoporteParedCarousel = () => {
     {
       src: '/images/Accesorios/soporte-4.jpg',
       alt: 'Soporte de pared - Comparación'
+    },
+    {
+      src: '/images/Accesorios/soporte-5.jpg',
+      alt: 'Soporte de pared - Imagen 5'
+    },
+    {
+      src: '/images/Accesorios/soporte-6.jpg',
+      alt: 'Soporte de pared - Imagen 6'
     }
   ];
 
