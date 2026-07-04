@@ -217,19 +217,19 @@ export default function Toppers() {
               </p>
               <ul className="space-y-2" style={{color: '#B8860B'}}>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+                  <span className="w-2 h-2 rounded-full" style={{backgroundColor: '#B8860B'}}></span>
                   Cobertura instantánea
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                  <span className="w-2 h-2 rounded-full" style={{backgroundColor: '#B8860B'}}></span>
                   Fácil aplicación
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                  <span className="w-2 h-2 rounded-full" style={{backgroundColor: '#B8860B'}}></span>
                   Cabello humano 100%
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                  <span className="w-2 h-2 rounded-full" style={{backgroundColor: '#B8860B'}}></span>
                   Múltiples sistemas de sujeción
                 </li>
               </ul>
@@ -249,7 +249,7 @@ export default function Toppers() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4" style={{backgroundColor: '#B8860B'}}>
                 📎
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Clip-In</h3>
@@ -263,7 +263,7 @@ export default function Toppers() {
               </ul>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4" style={{backgroundColor: '#B8860B'}}>
                 🔗
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Semi-Permanente</h3>
@@ -277,7 +277,7 @@ export default function Toppers() {
               </ul>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4" style={{backgroundColor: '#B8860B'}}>
                 ✨
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center" style={{color: '#B8860B'}}>Personalizado</h3>
@@ -302,28 +302,28 @@ export default function Toppers() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{backgroundColor: '#FFFCC6'}}>
                 <span className="text-2xl">🎯</span>
               </div>
               <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Cobertura Precisa</h3>
               <p className="text-sm" style={{color: '#B8860B'}}>Cubre exactamente donde necesitas volumen</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{backgroundColor: '#FFFCC6'}}>
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Resultado Inmediato</h3>
               <p className="text-sm" style={{color: '#B8860B'}}>Volumen y densidad al instante</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{backgroundColor: '#FFFCC6'}}>
                 <span className="text-2xl">🌟</span>
               </div>
               <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Aspecto Natural</h3>
               <p className="text-sm" style={{color: '#B8860B'}}>Se integra perfectamente con tu cabello</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{backgroundColor: '#FFFCC6'}}>
                 <span className="text-2xl">💪</span>
               </div>
               <h3 className="font-semibold mb-2" style={{color: '#B8860B'}}>Confianza</h3>
@@ -341,33 +341,33 @@ export default function Toppers() {
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
-                  1
-                </div>
-                <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Consulta</h3>
-                <p className="text-sm" style={{color: '#B8860B'}}>
-                  Evaluamos tu cabello y determinamos el tipo de topper ideal para ti.
-                </p>
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4" style={{backgroundColor: '#B8860B'}}>
+                1
               </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
-                  2
-                </div>
-                <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Personalización</h3>
-                <p className="text-sm" style={{color: '#B8860B'}}>
-                  Seleccionamos el color, textura y tamaño perfecto para tu caso.
-                </p>
+              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Consulta</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>
+                Evaluamos tu cabello y determinamos el tipo de topper ideal para ti.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4" style={{backgroundColor: '#B8860B'}}>
+                2
               </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4">
-                  3
-                </div>
-                <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Aplicación</h3>
-                <p className="text-sm" style={{color: '#B8860B'}}>
-                  Instalamos profesionalmente tu topper para un resultado natural.
-                </p>
+              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Personalización</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>
+                Seleccionamos el color, textura y tamaño perfecto para tu caso.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-4" style={{backgroundColor: '#B8860B'}}>
+                3
               </div>
+              <h3 className="text-lg font-semibold mb-2" style={{color: '#B8860B'}}>Aplicación</h3>
+              <p className="text-sm" style={{color: '#B8860B'}}>
+                Instalamos profesionalmente tu topper para un resultado natural.
+              </p>
+            </div>
             </div>
           </div>
         </div>
