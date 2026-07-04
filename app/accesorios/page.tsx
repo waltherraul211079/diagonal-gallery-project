@@ -220,7 +220,8 @@ export default function AccesoriosPage() {
       {/* Products Grid */}
       <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+          <div className="space-y-8">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
             {/* Product Card 1 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
               <div className="aspect-square">
@@ -268,37 +269,36 @@ export default function AccesoriosPage() {
                 </p>
               </div>
             </div>
-
-            {/* Spacer 1 for centering bottom cards */}
-            <div className="hidden lg:block"></div>
-            {/* Product Card 4 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
-              <div className="aspect-square">
-                <AlicateCarousel />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold" style={{color: '#B8860B'}}>Alicate manual para cortar las Extensiones</h3>
-                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                  Sirve para cortar las extensiones de Keratina en Micromechas.<br/>
-                  Disponible en 5 colores: Azul, Rojo, negro, Marrón y Gris
-                </p>
-              </div>
             </div>
 
-            {/* Product Card 5 */}
-            <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
-              <div className="aspect-square">
-                <AgarradorCarousel />
+            <div className="flex flex-wrap justify-center gap-8">
+              {/* Product Card 4 */}
+              <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
+                <div className="aspect-square">
+                  <AlicateCarousel />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold" style={{color: '#B8860B'}}>Alicate manual para cortar las Extensiones</h3>
+                  <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                    Sirve para cortar las extensiones de Keratina en Micromechas.<br/>
+                    Disponible en 5 colores: Azul, Rojo, negro, Marrón y Gris
+                  </p>
+                </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-semibold" style={{color: '#B8860B'}}>Agarrador de Pelo</h3>
-                <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
-                  Accesorio para el auxilio de la colocación de Extensiones.
-                </p>
+
+              {/* Product Card 5 */}
+              <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white/80 backdrop-blur-sm w-full max-w-sm">
+                <div className="aspect-square">
+                  <AgarradorCarousel />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold" style={{color: '#B8860B'}}>Agarrador de Pelo</h3>
+                  <p className="mt-2 text-sm" style={{color: '#B8860B'}}>
+                    Accesorio para el auxilio de la colocación de Extensiones.
+                  </p>
+                </div>
               </div>
             </div>
-            {/* Spacer 2 for centering bottom cards */}
-            <div className="hidden lg:block"></div>
           </div>
         </div>
       </section>
